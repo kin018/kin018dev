@@ -1,2 +1,3 @@
 # kin018.dev
-My portfolio 
+
+"Welcome! This README will grow as the website progresses. Stay tuned for frequent updates and changes!
