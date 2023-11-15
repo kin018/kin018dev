@@ -1,0 +1,7 @@
+/* Importing the 'Poppins' font from Google Fonts with specified weights */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Applying a universal box-sizing rule for consistency */
+* {
+  box-sizing: border-box;
+}
