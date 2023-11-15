@@ -1,8 +1,15 @@
 import React from 'react';
-//import SocialMedia from './SocialMedia';
+import SocialMedia from './SocialMedia';
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <div>
+        <h1>HOME</h1>
+        <SocialMedia />
+      </div>
+    </div>
+  );
 }
 
 export default Home;

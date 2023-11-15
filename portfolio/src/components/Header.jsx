@@ -1,12 +1,15 @@
 import React from 'react';
-//import Navbar from './components/Navbar';
+import Navbar from './Navbar';
+import Logo from './Logo';
 
 function Header() {
   return (
     <header>
-      <div>
-        <h1>Header</h1>
-      </div>
+      <>
+        <h1>HEADER</h1>
+        <Logo />
+        <Navbar />
+      </>
     </header>
   );
 }
