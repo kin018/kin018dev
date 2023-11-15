@@ -4,12 +4,11 @@ import Logo from './Logo';
 
 function Header() {
   return (
-    <header>
-      <>
-        <h1>HEADER</h1>
+    <header className="header" id="header">
+      <div>
         <Logo />
-        <Navbar />
-      </>
+        <Navbar className="nav-container" />
+      </div>
     </header>
   );
 }

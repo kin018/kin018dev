@@ -1,7 +1,18 @@
-/* Importing the 'Poppins' font from Google Fonts with specified weights */
+/* Importing 'Poppins' font with specified weights */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* Applying a universal box-sizing rule for consistency */
+/* Applying universal box-sizing for consistency */
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: green;
+  color: #fff;
+  line-height: 1.6;
+  background: '#222A35';
+}
+
+.footer {
 }
