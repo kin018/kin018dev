@@ -1,9 +1,9 @@
 import React from 'react';
+//import {} from './styledComponents/StyledComponents';
 
 function Navbar() {
   return (
     <div>
-      <p>NavBar</p>
       <li>Home</li>
       <li>About</li>
       <li>Skills</li>
