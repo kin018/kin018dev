@@ -1,7 +1,5 @@
-/* Importing 'Poppins' font with specified weights */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Global Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,34 +7,52 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Smooth scrolling for HTML element */
 html {
   scroll-behavior: smooth;
 }
 
-/* Body Styles */
 body {
-  margin: 0 !important;
+  margin: 0px !important;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
 
-/* Scrollbar Styles */
+/* width */
 ::-webkit-scrollbar {
   width: 4px;
   height: 80px;
 }
 
+/* Track */
 ::-webkit-scrollbar-track {
   background: #222a35;
 }
 
+/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #575c66;
   border-radius: 6px;
 }
 
-/* Hover effect on scrollbar thumb */
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #626970;
 }
+
+/****************************************************************************************************************************/
+
+.wrapper {
+  background: linear-gradient(
+      38.73deg,
+      rgba(204, 0, 187, 0.15) 0%,
+      rgba(201, 32, 184, 0) 50%
+    ),
+    linear-gradient(
+      141.27deg,
+      rgba(0, 70, 209, 0) 50%,
+      rgba(0, 70, 209, 0.15) 100%
+    );
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
+}
+/****************************************************************************************************************************/
