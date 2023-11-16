@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
-import { darkTheme, lightTheme } from './theme/Themes';
+import { ThemeProvider } from 'styled-components';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -9,30 +8,40 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Services from './components/Services';
 import Skills from './components/Skills';
-
-const Jawn = styled.div`
-  background-color: ${({ theme }) => theme.bg};
-  width: 100%;
-  overflow-x: hidden;
-`;
+import {
+  MainAppContainer,
+  GradientWrapper,
+  darkTheme,
+  lightTheme,
+} from './styledComponents/StyledComponents';
 
 function App() {
+  const [theme, setTheme] = useState('darkTheme');
+
+  // Check if the current theme is 'lightTheme' this will be TRUE if the variable 'theme' is equal to lightTheme
+  const isDarkTheme = theme === 'darkTheme';
+
+  const toggleTheme = () => {
+    // This checks and sets the theme to the opposite them
+    setTheme(isDarkTheme ? lightTheme : darkTheme);
+  };
+
   return (
-    <ThemeProvider theme={darkTheme}>
-      <Jawn>
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+      <MainAppContainer>
         <Header />
         <Home />
-        <div className="wrapper">
+        <GradientWrapper>
           <AboutMe />
           <Skills />
           <Services />
-        </div>
+        </GradientWrapper>
         <Projects />
-        <div className="wrapper">
+        <GradientWrapper>
           <Contact />
-        </div>
+        </GradientWrapper>
         <Footer />
-      </Jawn>
+      </MainAppContainer>
     </ThemeProvider>
   );
 }
