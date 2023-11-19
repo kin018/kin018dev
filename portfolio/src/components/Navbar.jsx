@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FiSun, FiMoon } from 'react-icons/fi';
 import {
   NavbarContainer,
   StyledNavLink,
 } from '../styledComponents/StyledComponents';
 
-function Navbar() {
+function Navbar({ toggleTheme }) {
   return (
     <nav>
       <NavbarContainer>
@@ -27,6 +28,8 @@ function Navbar() {
         <StyledNavLink as={NavLink} to="/contact">
           Contact Me
         </StyledNavLink>
+        {/* <FiSun />
+        <FiMoon /> */}
       </NavbarContainer>
     </nav>
   );

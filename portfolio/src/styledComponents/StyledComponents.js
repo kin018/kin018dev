@@ -96,6 +96,7 @@ export const StyledNavLink = styled.a`
     border-bottom: 2px solid ${({ theme }) => theme.primary};
   }
 `;
+
 // Theme Definitions
 export const darkTheme = {
   bg: '#1C1C27',
