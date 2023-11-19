@@ -1,19 +1,32 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import {
-  StyledNavLink,
   NavbarContainer,
+  StyledNavLink,
 } from '../styledComponents/StyledComponents';
 
 function Navbar() {
   return (
     <nav>
       <NavbarContainer>
-        <StyledNavLink href="#home">Home</StyledNavLink>
-        <StyledNavLink href="#about">About</StyledNavLink>
-        <StyledNavLink href="#skills">Skills</StyledNavLink>
-        <StyledNavLink href="#services">Services</StyledNavLink>
-        <StyledNavLink href="#projects">Projects</StyledNavLink>
-        <StyledNavLink href="#contact">Contact Me</StyledNavLink>
+        <StyledNavLink as={NavLink} to="/home">
+          Home
+        </StyledNavLink>
+        <StyledNavLink as={NavLink} to="/about">
+          About
+        </StyledNavLink>
+        <StyledNavLink as={NavLink} to="/skills">
+          Skills
+        </StyledNavLink>
+        <StyledNavLink as={NavLink} to="/services">
+          Services
+        </StyledNavLink>
+        <StyledNavLink as={NavLink} to="/projects">
+          Projects
+        </StyledNavLink>
+        <StyledNavLink as={NavLink} to="/contact">
+          Contact Me
+        </StyledNavLink>
       </NavbarContainer>
     </nav>
   );

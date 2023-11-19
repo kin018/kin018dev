@@ -29,22 +29,22 @@ function App() {
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-      {/* <Router> */}
-      <Header />
-      <MainAppContainer>
-        <Home />
-        <GradientWrapper>
-          <AboutMe />
-          <Skills />
-          <Services />
-        </GradientWrapper>
-        <Projects />
-        <GradientWrapper>
-          <Contact />
-        </GradientWrapper>
-        <Footer />
-      </MainAppContainer>
-      {/* </Router> */}
+      <Router>
+        <Header />
+        <MainAppContainer>
+          <Home />
+          <GradientWrapper>
+            <AboutMe />
+            <Skills />
+            <Services />
+          </GradientWrapper>
+          <Projects />
+          <GradientWrapper>
+            <Contact />
+          </GradientWrapper>
+          <Footer />
+        </MainAppContainer>
+      </Router>
     </ThemeProvider>
   );
 }
