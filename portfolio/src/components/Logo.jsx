@@ -1,10 +1,8 @@
 import React from 'react';
+import { LogoWrapper } from '../styledComponents/StyledComponents';
 
 function Logo() {
-  return <p>Logo</p>;
-
-  // const imagePath = process.env.PUBLIC_URL + '/images/Logo.png';
-  // return <img src={imagePath} alt="My Logo" />;
+  return <LogoWrapper src="../images/LogoBrackets.png" alt="Logo" />;
 }
 
 export default Logo;

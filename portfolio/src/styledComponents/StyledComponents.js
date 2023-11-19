@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-// App.js main stlying
+// App.js main styling
 export const MainAppContainer = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -27,7 +27,7 @@ export const GradientWrapper = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
 
-//Header
+// Header
 export const AppHeader = styled.div`
   background-color: ${({ theme }) => theme.card_light};
   font-size: 1rem;
@@ -38,6 +38,7 @@ export const AppHeader = styled.div`
   top: 0;
   z-index: 10;
   position: sticky;
+
   @media (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -56,6 +57,7 @@ export const HeaderMainContainer = styled.div`
 
 export const HeaderBurger = styled.div`
   display: none;
+
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -67,7 +69,8 @@ export const HeaderBurger = styled.div`
     color: ${({ theme }) => theme.text_primary};
   }
 `;
-//Nav
+
+// Nav
 export const NavbarContainer = styled.ul`
   width: 100%;
   display: flex;
@@ -88,12 +91,29 @@ export const StyledNavLink = styled.a`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+
   :hover {
     color: ${({ theme }) => theme.primary};
   }
 
   &.active {
     border-bottom: 2px solid ${({ theme }) => theme.primary};
+  }
+`;
+
+// Logo
+export const LogoWrapper = styled.img`
+  background-repeat: no-repeat;
+  padding: 0 6px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+  width: min(80px, 90%);
+  height: max(80px, 90%);
+
+  @media (max-width: 640px) {
+    padding: 0;
   }
 `;
 
@@ -120,17 +140,3 @@ export const lightTheme = {
   card: '#FFFFFF',
   button: '#5c5b5b',
 };
-
-//Logo
-
-//export const header1 = styled(LinkJawn)`
-
-// display: inline-block;
-// height: 80px;
-// width: 80px;
-// border-radius: 40px;
-// background-repeat: no-repeat;
-// background-size: cover;
-// background-position: center center;
-// background-image: url('../images/kg-the-maker-logo-portrait.png');
-// cursor: pointer;
