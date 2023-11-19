@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// App.js main stlying
 export const MainAppContainer = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -26,6 +27,75 @@ export const GradientWrapper = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
 
+//Header
+export const AppHeader = styled.div`
+  background-color: ${({ theme }) => theme.card_light};
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  top: 0;
+  z-index: 10;
+  position: sticky;
+  @media (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
+`;
+
+export const HeaderMainContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1200px;
+`;
+
+export const HeaderBurger = styled.div`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: ${({ theme }) => theme.text_primary};
+  }
+`;
+//Nav
+export const NavbarContainer = styled.ul`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 0 6px;
+  list-style: none;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const StyledNavLink = styled.a`
+  color: ${({ theme }) => theme.text_primary};
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  :hover {
+    color: ${({ theme }) => theme.primary};
+  }
+
+  &.active {
+    border-bottom: 2px solid ${({ theme }) => theme.primary};
+  }
+`;
 // Theme Definitions
 export const darkTheme = {
   bg: '#1C1C27',
@@ -49,3 +119,17 @@ export const lightTheme = {
   card: '#FFFFFF',
   button: '#5c5b5b',
 };
+
+//Logo
+
+//export const header1 = styled(LinkJawn)`
+
+// display: inline-block;
+// height: 80px;
+// width: 80px;
+// border-radius: 40px;
+// background-repeat: no-repeat;
+// background-size: cover;
+// background-position: center center;
+// background-image: url('../images/kg-the-maker-logo-portrait.png');
+// cursor: pointer;

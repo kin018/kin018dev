@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
@@ -30,8 +30,8 @@ function App() {
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       {/* <Router> */}
+      <Header />
       <MainAppContainer>
-        <Header />
         <Home />
         <GradientWrapper>
           <AboutMe />
