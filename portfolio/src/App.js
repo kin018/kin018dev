@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
@@ -28,20 +29,22 @@ function App() {
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-      <MainAppContainer>
+      <Router>
         <Header />
-        <Home />
-        <GradientWrapper>
-          <AboutMe />
-          <Skills />
+        <MainAppContainer>
+          <Home />
+          <GradientWrapper>
+            <AboutMe />
+            <Skills />
+          </GradientWrapper>
           <Services />
-        </GradientWrapper>
-        <Projects />
-        <GradientWrapper>
-          <Contact />
-        </GradientWrapper>
-        <Footer />
-      </MainAppContainer>
+          <Projects />
+          <GradientWrapper>
+            <Contact />
+          </GradientWrapper>
+          <Footer />
+        </MainAppContainer>
+      </Router>
     </ThemeProvider>
   );
 }

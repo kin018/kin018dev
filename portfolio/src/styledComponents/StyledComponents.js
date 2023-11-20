@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// App.js main styling
 export const MainAppContainer = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -26,6 +27,95 @@ export const GradientWrapper = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
 
+// Header
+export const AppHeader = styled.div`
+  background-color: ${({ theme }) => theme.card_light};
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  top: 0;
+  z-index: 10;
+  position: sticky;
+
+  @media (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
+`;
+
+export const HeaderMainContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1200px;
+`;
+
+export const HeaderBurger = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: ${({ theme }) => theme.text_primary};
+  }
+`;
+
+// Nav
+export const NavbarContainer = styled.ul`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 0 6px;
+  list-style: none;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const StyledNavLink = styled.a`
+  color: ${({ theme }) => theme.text_primary};
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  :hover {
+    color: ${({ theme }) => theme.primary};
+  }
+
+  &.active {
+    border-bottom: 2px solid ${({ theme }) => theme.primary};
+  }
+`;
+
+// Logo
+export const LogoWrapper = styled.img`
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  background: no-repeat center center/cover;
+  cursor: pointer;
+
+  @media (max-width: 640px) {
+    padding: 0;
+  }
+`;
+
 // Theme Definitions
 export const darkTheme = {
   bg: '#1C1C27',
@@ -49,3 +139,79 @@ export const lightTheme = {
   card: '#FFFFFF',
   button: '#5c5b5b',
 };
+
+//Footer
+export const FooterMainContainer = styled.div`
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+`;
+
+export const FooterWrapper = styled.footer`
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  padding: 1rem;
+  color: ${({ theme }) => theme.text_primary};
+`;
+export const Copyright = styled.p`
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: ${({ theme }) => theme.soft2};
+  text-align: center;
+`;
+
+export const SocialMediaIconDiv = styled.div`
+  display: flex;
+  margin-top: 1rem;
+`;
+
+export const SocialMediaIconLink = styled.a`
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.text_primary};
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+export const NameHeader = styled.h1`
+  font-weight: 600;
+  font-size: 20px;
+  color: ${({ theme }) => theme.primary};
+`;
+
+export const FooterLink = styled.a`
+  color: ${({ theme }) => theme.text_primary};
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+
+export const FooterNav = styled.nav`
+  width: 100%;
+  max-width: 800px;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+  }
+`;

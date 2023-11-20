@@ -1,15 +1,21 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Logo from './Logo';
+import {
+  AppHeader,
+  HeaderMainContainer,
+} from '../styledComponents/StyledComponents';
 
 function Header() {
   return (
-    <header className="header" id="header">
-      <div>
+    <AppHeader>
+      <HeaderMainContainer>
         <Logo />
-        <Navbar className="nav-container" />
-      </div>
-    </header>
+        {/* <HeaderBurger></HeaderBurger> */}
+        <Navbar />
+        {/* <HeaderButtonContainer>TempButton</HeaderButtonContainer> */}
+      </HeaderMainContainer>
+    </AppHeader>
   );
 }
 

@@ -1,16 +1,37 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { FiSun, FiMoon } from 'react-icons/fi';
+import {
+  NavbarContainer,
+  StyledNavLink,
+} from '../styledComponents/StyledComponents';
 
-function Navbar() {
+function Navbar({ toggleTheme }) {
   return (
-    <div>
-      <p>NavBar</p>
-      <li>Home</li>
-      <li>About</li>
-      <li>Skills</li>
-      <li>Services</li>
-      <li>Projects</li>
-      <li>Contact Me</li>
-    </div>
+    <nav>
+      <NavbarContainer>
+        <StyledNavLink as={NavLink} to="/home">
+          Home
+        </StyledNavLink>
+        <StyledNavLink as={NavLink} to="/about">
+          About
+        </StyledNavLink>
+        <StyledNavLink as={NavLink} to="/skills">
+          Skills
+        </StyledNavLink>
+        <StyledNavLink as={NavLink} to="/services">
+          Services
+        </StyledNavLink>
+        <StyledNavLink as={NavLink} to="/projects">
+          Projects
+        </StyledNavLink>
+        <StyledNavLink as={NavLink} to="/contact">
+          Contact Me
+        </StyledNavLink>
+        {/* <FiSun />
+        <FiMoon /> */}
+      </NavbarContainer>
+    </nav>
   );
 }
 
