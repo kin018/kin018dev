@@ -103,14 +103,13 @@ export const StyledNavLink = styled.a`
 
 // Logo
 export const LogoWrapper = styled.img`
-  background-repeat: no-repeat;
-  padding: 0 6px;
   display: flex;
-  justify-content: start;
   align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  background: no-repeat center center/cover;
   cursor: pointer;
-  width: min(80px, 90%);
-  height: max(80px, 90%);
 
   @media (max-width: 640px) {
     padding: 0;
