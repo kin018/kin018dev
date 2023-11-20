@@ -6,7 +6,7 @@ function Home() {
     <div>
       <div>
         <h1>HOME</h1>
-        <SocialMedia />
+        {/* <SocialMedia /> */}
       </div>
     </div>
   );

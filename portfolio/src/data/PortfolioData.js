@@ -8,10 +8,6 @@ export const Bio = {
   ],
   description:
     'Results-driven strategic planner with a proficiency in developing business applications and programs, implementing integrations, and adeptly managing technical projects. As an accomplished solutions-builder, I have a proven track record of maximizing customer and end-user experiences through rapid problem-solving and the effective translation of technological concepts. My approach is strengthened by leveraging agile scrum methodology, ensuring efficient project execution and delivering optimal outcomes.',
-  github: 'https://github.com/kin018',
-  linkedin: 'https://www.linkedin.com/in/kenechukwu-n-261a11228/',
-  twitter: 'https://twitter.com/kin018_',
-  instagram: 'https://www.instagram.com/kin018_/',
 };
 
 export const skills = [
