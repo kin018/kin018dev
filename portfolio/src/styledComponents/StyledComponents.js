@@ -16,6 +16,16 @@ export const darkTheme = {
   black: '#000000',
 };
 
+//Blob
+export const HomeBlobImg = styled.img`
+  width: 170px;
+`;
+
+export const HomeBlobImgSVGWrapper = styled.div`
+  order: 1;
+  justify-self: center;
+`;
+
 export const lightTheme = {
   bg: '#FFFFFF',
   bgLight: '#f0f0f0',
