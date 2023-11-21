@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SocialMedia from './SocialMedia';
 import {
   Copyright,
@@ -17,10 +18,18 @@ function Footer() {
       <FooterWrapper>
         <NameHeader>Kenechukwu Nwankwo</NameHeader>
         <FooterNav>
-          <FooterLink href="#about">About</FooterLink>
-          <FooterLink href="#about">Skills</FooterLink>
-          <FooterLink href="#about">Services</FooterLink>
-          <FooterLink href="#about">Projects</FooterLink>
+          <FooterLink as={Link} to="/about">
+            About
+          </FooterLink>
+          <FooterLink as={Link} to="/skills">
+            Skills
+          </FooterLink>
+          <FooterLink as={Link} to="/services">
+            Services
+          </FooterLink>
+          <FooterLink as={Link} to="/projects">
+            Projects
+          </FooterLink>
         </FooterNav>
         <SocialMedia />
         <Copyright>
