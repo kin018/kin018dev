@@ -18,7 +18,7 @@ function Navbar({ toggleTheme, isDarkTheme }) {
   return (
     <nav>
       <NavbarContainer>
-        <StyledNavLink as={NavLink} to="/home">
+        <StyledNavLink as={NavLink} to="/">
           Home
         </StyledNavLink>
         <StyledNavLink as={NavLink} to="/about">
