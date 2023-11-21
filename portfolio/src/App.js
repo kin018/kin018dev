@@ -17,10 +17,10 @@ import {
 } from './styledComponents/StyledComponents';
 
 function App() {
-  const [theme, setTheme] = useState('darkTheme');
+  const [theme, setTheme] = useState(darkTheme);
 
   // Check if the current theme is 'lightTheme' this will be TRUE if the variable 'theme' is equal to lightTheme
-  const isDarkTheme = theme === 'darkTheme';
+  const isDarkTheme = theme === darkTheme;
 
   const toggleTheme = () => {
     // This checks and sets the theme to the opposite them
