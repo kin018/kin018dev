@@ -4,6 +4,7 @@ import Logo from './Logo';
 import {
   AppHeader,
   HeaderMainContainer,
+  HeaderBurger,
 } from '../styledComponents/StyledComponents';
 
 function Header() {
@@ -11,9 +12,8 @@ function Header() {
     <AppHeader>
       <HeaderMainContainer>
         <Logo />
-        {/* <HeaderBurger></HeaderBurger> */}
+        <HeaderBurger />
         <Navbar />
-        {/* <HeaderButtonContainer>TempButton</HeaderButtonContainer> */}
       </HeaderMainContainer>
     </AppHeader>
   );
