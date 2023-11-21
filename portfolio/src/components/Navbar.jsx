@@ -4,6 +4,7 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 import {
   NavbarContainer,
   StyledNavLink,
+  StyledThemeDarkLightLogo,
 } from '../styledComponents/StyledComponents';
 
 function Navbar({ toggleTheme }) {
@@ -28,8 +29,12 @@ function Navbar({ toggleTheme }) {
         <StyledNavLink as={NavLink} to="/contact">
           Contact Me
         </StyledNavLink>
-        {/* <FiSun />
-        <FiMoon /> */}
+        <StyledThemeDarkLightLogo>
+          <FiSun />
+        </StyledThemeDarkLightLogo>
+        <StyledThemeDarkLightLogo>
+          <FiMoon />
+        </StyledThemeDarkLightLogo>
       </NavbarContainer>
     </nav>
   );
