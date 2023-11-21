@@ -30,7 +30,7 @@ function App() {
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <Router>
-        <Header />
+        <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
         <MainAppContainer>
           <Home />
           <GradientWrapper>

@@ -7,13 +7,13 @@ import {
   HeaderBurger,
 } from '../styledComponents/StyledComponents';
 
-function Header() {
+function Header({ toggleTheme, isDarkTheme }) {
   return (
     <AppHeader>
       <HeaderMainContainer>
         <Logo />
         <HeaderBurger />
-        <Navbar />
+        <Navbar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
       </HeaderMainContainer>
     </AppHeader>
   );
