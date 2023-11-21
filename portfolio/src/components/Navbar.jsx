@@ -37,7 +37,7 @@ function Navbar({ toggleTheme, isDarkTheme }) {
           Contact Me
         </StyledNavLink>
         <StyledThemeDarkLightLogo onClick={onToggle}>
-          {isToggled ? <FiMoon /> : <FiSun />}
+          {isToggled ? <FiSun /> : <FiMoon />}
         </StyledThemeDarkLightLogo>
       </NavbarContainer>
     </nav>
