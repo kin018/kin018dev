@@ -4,16 +4,16 @@ import Logo from './Logo';
 import {
   AppHeader,
   HeaderMainContainer,
+  HeaderBurger,
 } from '../styledComponents/StyledComponents';
 
-function Header() {
+function Header({ toggleTheme, isDarkTheme }) {
   return (
     <AppHeader>
       <HeaderMainContainer>
         <Logo />
-        {/* <HeaderBurger></HeaderBurger> */}
-        <Navbar />
-        {/* <HeaderButtonContainer>TempButton</HeaderButtonContainer> */}
+        <HeaderBurger />
+        <Navbar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
       </HeaderMainContainer>
     </AppHeader>
   );

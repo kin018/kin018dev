@@ -1,5 +1,43 @@
 import styled from 'styled-components';
 
+// Theme Definitions
+export const darkTheme = {
+  bg: '#1C1C27',
+  bgLight: '#1C1E27',
+  primary: '#854CE6',
+  text_primary: '#F2F3F4',
+  text_secondary: '#b1b2b3',
+  card: '#171721',
+  card_light: 'rgba(25, 25, 36,1)',
+  // card_light: 'rgba(25, 25, 36,.985)', //.985 is alpha channel in other others the transparency, with 0 being completely transparent and 1 being completely opaque
+  // card_light: '#191924', og
+  button: '#854CE6',
+  white: '#FFFFFF',
+  black: '#000000',
+};
+
+//Blob
+export const HomeBlobImg = styled.img`
+  width: 170px;
+`;
+
+export const HomeBlobImgSVGWrapper = styled.div`
+  order: 1;
+  justify-self: center;
+`;
+
+export const lightTheme = {
+  bg: '#FFFFFF',
+  bgLight: '#f0f0f0',
+  primary: '#be1adb',
+  text_primary: '#111111',
+  text_secondary: '#48494a',
+  card: '#FFFFFF',
+  card_light: 'rgba(255, 255, 255, 1)',
+  button: '#5c5b5b',
+  white: '#FFFFFF',
+  black: '#000000',
+};
 // App.js main styling
 export const MainAppContainer = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -55,21 +93,20 @@ export const HeaderMainContainer = styled.div`
   max-width: 1200px;
 `;
 
-export const HeaderBurger = styled.div`
-  display: none;
+// Logo
+export const LogoWrapper = styled.img`
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  background: no-repeat center center/cover;
+  cursor: pointer;
 
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: ${({ theme }) => theme.text_primary};
+  @media (max-width: 640px) {
+    padding: 0;
   }
 `;
-
 // Nav
 export const NavbarContainer = styled.ul`
   width: 100%;
@@ -94,51 +131,57 @@ export const StyledNavLink = styled.a`
 
   :hover {
     color: ${({ theme }) => theme.primary};
-  }
-
-  &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
+    border-bottom: 1.5px solid ${({ theme }) => theme.primary};
   }
 `;
 
-// Logo
-export const LogoWrapper = styled.img`
-  display: flex;
-  align-items: center;
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
-  background: no-repeat center center/cover;
+export const StyledThemeDarkLightLogo = styled.a`
+  color: ${({ theme }) => theme.text_primary};
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
-  @media (max-width: 640px) {
-    padding: 0;
+  :hover {
+    color: ${({ theme }) => theme.primary};
   }
 `;
 
-// Theme Definitions
-export const darkTheme = {
-  bg: '#1C1C27',
-  bgLight: '#1C1E27',
-  primary: '#854CE6',
-  text_primary: '#F2F3F4',
-  text_secondary: '#b1b2b3',
-  card: '#171721',
-  card_light: '#191924',
-  button: '#854CE6',
-  white: '#FFFFFF',
-  black: '#000000',
-};
+export const HeaderBurger = styled.div`
+  display: none;
 
-export const lightTheme = {
-  bg: '#FFFFFF',
-  bgLight: '#f0f0f0',
-  primary: '#be1adb',
-  text_primary: '#111111',
-  text_secondary: '#48494a',
-  card: '#FFFFFF',
-  button: '#5c5b5b',
-};
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: ${({ theme }) => theme.text_primary};
+  }
+`;
+
+export const HeaderBurgerMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  padding: 12px 40px 24px 40px;
+
+  background: ${({ theme }) => theme.card_light};
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 20px 20px;
+
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
+
+  transition: all 0.6s ease-in-out;
+  transform: ${({ isOpen }) =>
+    isOpen ? 'translateY(0)' : 'translateY(-100%)'};
+`;
 
 //Footer
 export const FooterMainContainer = styled.div`
@@ -189,7 +232,7 @@ export const NameHeader = styled.h1`
 export const FooterLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.2rem; //Need to change font size this is too large currently
   transition: color 0.2s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};

@@ -1,11 +1,13 @@
 import React from 'react';
-import SocialMedia from './SocialMedia';
+//import SocialMedia from './SocialMedia';
+import Blob from './Blob';
 
 function Home() {
   return (
     <div>
       <div>
         <h1>HOME</h1>
+        <Blob />
         {/* <SocialMedia /> */}
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
