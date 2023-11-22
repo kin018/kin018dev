@@ -159,7 +159,15 @@ export const HeaderBurger = styled.div`
     color: ${({ theme }) => theme.text_primary};
   }
 `;
-
+export const HeaderBurgerNavBtns = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  margin-right: -16px;
+  svg {
+    vertical-align: middle;
+  }
+`;
 export const HeaderBurgerMenu = styled.div`
   display: flex;
   flex-direction: column;

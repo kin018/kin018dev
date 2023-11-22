@@ -1,20 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FiSun, FiMoon } from 'react-icons/fi';
+import ThemeIcon from './ThemeIcon';
 import {
   NavbarContainer,
   StyledNavLink,
-  StyledThemeDarkLightLogo,
 } from '../styledComponents/StyledComponents';
 
 function Navbar({ toggleTheme, isDarkTheme }) {
-  const [isToggled, setIsToggled] = useState(isDarkTheme);
-
-  const onToggle = () => {
-    setIsToggled(!isToggled);
-    toggleTheme();
-  };
-
   return (
     <nav>
       <NavbarContainer>
@@ -36,9 +28,7 @@ function Navbar({ toggleTheme, isDarkTheme }) {
         <StyledNavLink as={NavLink} to="/contact">
           Contact Me
         </StyledNavLink>
-        <StyledThemeDarkLightLogo onClick={onToggle}>
-          {isToggled ? <FiSun /> : <FiMoon />}
-        </StyledThemeDarkLightLogo>
+        <ThemeIcon toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
       </NavbarContainer>
     </nav>
   );
