@@ -14,6 +14,7 @@ import {
 
 function Header({ toggleTheme, isDarkTheme }) {
   const [isMenuOpenToggle, setMenuOpenToggle] = useState(false);
+
   const handleMenuClick = () => {
     setMenuOpenToggle(!isMenuOpenToggle);
   };
