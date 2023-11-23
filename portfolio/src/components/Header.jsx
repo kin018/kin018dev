@@ -7,8 +7,8 @@ import ThemeIcon from './ThemeIcon';
 import {
   AppHeader,
   HeaderMainContainer,
-  HeaderBurger,
-  HeaderBurgerNavBtns,
+  HeaderThemeMobileMenuWrapper,
+  HeaderThemeMobileMenuBtns,
 } from '../styledComponents/StyledComponents';
 
 function Header({ toggleTheme, isDarkTheme }) {
@@ -16,13 +16,13 @@ function Header({ toggleTheme, isDarkTheme }) {
     <AppHeader>
       <HeaderMainContainer>
         <Logo />
-        <HeaderBurger>
-          <HeaderBurgerNavBtns>
+        <HeaderThemeMobileMenuWrapper>
+          <HeaderThemeMobileMenuBtns>
             <ThemeIcon toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
             <FaBars />
             {/* <IoClose /> */}
-          </HeaderBurgerNavBtns>
-        </HeaderBurger>
+          </HeaderThemeMobileMenuBtns>
+        </HeaderThemeMobileMenuWrapper>
         <Navbar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
       </HeaderMainContainer>
     </AppHeader>
