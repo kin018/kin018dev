@@ -1,36 +1,52 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
-import { StyledHeaderDropdownMenuLink } from '../styledComponents/StyledComponents';
+import {
+  StyledHeaderDropdownMenuLink,
+  HeaderDropdownMenuList,
+  StyledHeaderDropdownMenuIcon,
+} from '../styledComponents/StyledComponents';
 
 function HeaderDropdownMenu() {
   return (
-    <>
+    <HeaderDropdownMenuList>
       <StyledHeaderDropdownMenuLink as={Link} to="/">
-        <Icon icon="uil:estate" />
+        <StyledHeaderDropdownMenuIcon>
+          <Icon icon="uil:estate" />
+        </StyledHeaderDropdownMenuIcon>
         Home
       </StyledHeaderDropdownMenuLink>
       <StyledHeaderDropdownMenuLink k as={Link} to="/about">
-        <Icon icon="uil:user" />
+        <StyledHeaderDropdownMenuIcon>
+          <Icon icon="uil:user" />
+        </StyledHeaderDropdownMenuIcon>
         About
       </StyledHeaderDropdownMenuLink>
       <StyledHeaderDropdownMenuLink as={Link} to="/skills">
-        <Icon icon="uil:file-alt" />
+        <StyledHeaderDropdownMenuIcon>
+          <Icon icon="uil:file-alt" />
+        </StyledHeaderDropdownMenuIcon>
         Skills
       </StyledHeaderDropdownMenuLink>
       <StyledHeaderDropdownMenuLink as={Link} to="/services">
-        <Icon icon="uil:briefcase-alt" />
+        <StyledHeaderDropdownMenuIcon>
+          <Icon icon="uil:briefcase-alt" />
+        </StyledHeaderDropdownMenuIcon>
         Services
       </StyledHeaderDropdownMenuLink>
       <StyledHeaderDropdownMenuLink as={Link} to="/projects">
-        <Icon icon="uil:scenery" />
+        <StyledHeaderDropdownMenuIcon>
+          <Icon icon="uil:scenery" />
+        </StyledHeaderDropdownMenuIcon>
         Projects
       </StyledHeaderDropdownMenuLink>
       <StyledHeaderDropdownMenuLink as={Link} to="/contact">
-        <Icon icon="uil:message" />
+        <StyledHeaderDropdownMenuIcon>
+          <Icon icon="uil:message" />
+        </StyledHeaderDropdownMenuIcon>
         Contact Me
       </StyledHeaderDropdownMenuLink>
-    </>
+    </HeaderDropdownMenuList>
   );
 }
 

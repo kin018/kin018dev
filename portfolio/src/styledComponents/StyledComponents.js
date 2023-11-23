@@ -137,7 +137,7 @@ export const StyledNavLink = styled.a`
   }
 `;
 
-export const StyledThemeDarkLightLogo = styled.a`
+export const StyledThemeDarkLightLogo = styled.i`
   color: ${({ theme }) => theme.text_primary};
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -205,6 +205,17 @@ export const StyledHeaderDropdownMenuLink = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.primary};
+  }
+`;
+
+export const HeaderDropdownMenuList = styled.div`
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+  }
+`;
+
+export const StyledHeaderDropdownMenuIcon = styled.i`
+font-size: 1.2rem;
   }
 `;
 
