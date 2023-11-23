@@ -14,9 +14,11 @@ import {
 
 function Header({ toggleTheme, isDarkTheme }) {
   const [isMenuOpenToggle, setMenuOpenToggle] = useState(false);
+  const [isThemeIconIconVisible, setThemeIconVisibility] = useState(true);
 
   const handleMenuClick = () => {
     setMenuOpenToggle(!isMenuOpenToggle);
+    setThemeIconVisibility(!isThemeIconIconVisible);
   };
 
   return (
@@ -26,7 +28,12 @@ function Header({ toggleTheme, isDarkTheme }) {
         <HeaderThemeMobileMenuWrapper>
           <HeaderThemeMobileMenuBtns>
             <StyledThemeDarkLightLogoRightMargin>
-              <ThemeIcon toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+              {isThemeIconIconVisible && (
+                <ThemeIcon
+                  toggleTheme={toggleTheme}
+                  isDarkTheme={isDarkTheme}
+                />
+              )}
             </StyledThemeDarkLightLogoRightMargin>
             {isMenuOpenToggle ? (
               <IoClose onClick={handleMenuClick} />

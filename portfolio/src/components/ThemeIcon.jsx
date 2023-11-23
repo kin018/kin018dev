@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { StyledThemeDarkLightLogo } from '../styledComponents/StyledComponents';
 
-function ThemeIcon({ toggleTheme, isDarkTheme }) {
+function ThemeIcon({ toggleTheme, isDarkTheme, isVisible }) {
   const [isToggled, setIsToggled] = useState(isDarkTheme);
 
   const onToggle = () => {
