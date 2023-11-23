@@ -105,6 +105,8 @@ export const LogoWrapper = styled.img`
 
   @media (max-width: 640px) {
     padding: 0;
+    height: 60px
+    width: 60px;
   }
 `;
 // Nav
@@ -135,7 +137,7 @@ export const StyledNavLink = styled.a`
   }
 `;
 
-export const StyledThemeDarkLightLogo = styled.a`
+export const StyledThemeDarkLightLogo = styled.i`
   color: ${({ theme }) => theme.text_primary};
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -145,7 +147,7 @@ export const StyledThemeDarkLightLogo = styled.a`
   }
 `;
 
-export const HeaderBurger = styled.div`
+export const HeaderThemeMobileMenuWrapper = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
@@ -159,7 +161,7 @@ export const HeaderBurger = styled.div`
     color: ${({ theme }) => theme.text_primary};
   }
 `;
-export const HeaderBurgerNavBtns = styled.div`
+export const HeaderThemeMobileMenuBtns = styled.div`
   display: flex;
   align-items: center;
   gap: 21px;
@@ -168,27 +170,67 @@ export const HeaderBurgerNavBtns = styled.div`
     vertical-align: middle;
   }
 `;
-export const HeaderBurgerMenu = styled.div`
+// export const HeaderBurgerMenu = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   gap: 16px;
+//   position: absolute;
+//   top: 80px;
+//   right: 0;
+//   width: 100%;
+//   padding: 12px 40px 24px 40px;
+
+//   background: ${({ theme }) => theme.card_light};
+//   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+//   border-radius: 0 0 20px 20px;
+
+//   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+//   z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
+
+//   transition: all 0.6s ease-in-out;
+//   transform: ${({ isOpen }) =>
+//     isOpen ? 'translateY(0)' : 'translateY(-100%)'};
+// `;
+
+export const StyledHeaderDropdownMenuLink = styled.a`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 16px;
-  position: absolute;
-  top: 80px;
-  right: 0;
-  width: 100%;
-  padding: 12px 40px 24px 40px;
+  align-items: center;
+  font-size: 0.813rem; /* Corrected syntax for rem unit */
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: ${({ theme }) => theme.text_primary};
 
-  background: ${({ theme }) => theme.card_light};
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 20px 20px;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
 
-  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-  z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
+export const HeaderDropdownMenuContainer = styled.div`
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    /* background-color: ${({ theme }) => theme.primary}; */
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+`;
+export const HeaderDropdownMenuGrid = styled.div`
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+  }
+`;
 
-  transition: all 0.6s ease-in-out;
-  transform: ${({ isOpen }) =>
-    isOpen ? 'translateY(0)' : 'translateY(-100%)'};
+export const StyledHeaderDropdownMenuIcon = styled.i`
+font-size: 1.2rem;
+  }
 `;
 
 //Footer
