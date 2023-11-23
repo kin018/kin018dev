@@ -32,8 +32,10 @@ function App() {
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <Router>
         <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-        <HeaderDropdownMenu />
+
         <MainAppContainer>
+          <HeaderDropdownMenu />
+
           <Home />
           <GradientWrapper>
             <AboutMe />

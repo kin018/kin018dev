@@ -208,12 +208,21 @@ export const StyledHeaderDropdownMenuLink = styled.a`
   }
 `;
 
-export const HeaderDropdownMenu = styled.div`
-grid-template-columns: repeat(3, 1fr);
-gap: 2rem;
+export const HeaderDropdownMenuContainer = styled.div`
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    /* background-color: ${({ theme }) => theme.primary}; */
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
   }
 `;
 export const HeaderDropdownMenuGrid = styled.div`
+display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 2rem;
   }
