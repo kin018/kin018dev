@@ -9,7 +9,6 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Services from './components/Services';
 import Skills from './components/Skills';
-import HeaderDropdownMenu from './components/HeaderDropdownMenu'; //Temp
 import {
   MainAppContainer,
   GradientWrapper,
@@ -32,10 +31,7 @@ function App() {
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <Router>
         <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-
         <MainAppContainer>
-          <HeaderDropdownMenu />
-
           <Home />
           <GradientWrapper>
             <AboutMe />

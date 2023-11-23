@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-// import { IoClose } from 'react-icons/io5';
+import { IoClose } from 'react-icons/io5';
 import Navbar from './Navbar';
 import Logo from './Logo';
 import ThemeIcon from './ThemeIcon';
 import {
   AppHeader,
   HeaderMainContainer,
-  HeaderThemeMobileMenuWrapper,
   HeaderThemeMobileMenuBtns,
+  HeaderThemeMobileMenuWrapper,
+  StyledThemeDarkLightLogoInvisible,
   StyledThemeDarkLightLogoRightMargin,
 } from '../styledComponents/StyledComponents';
 
 function Header({ toggleTheme, isDarkTheme }) {
+  const [isMenuOpenToggle, setMenuOpenToggle] = useState(false);
+  // const [isThemeIconIconVisible, setThemeIconVisibility] = useState(true);
+
+  const handleMenuClick = () => {
+    setMenuOpenToggle(!isMenuOpenToggle);
+    // setThemeIconVisibility(!isThemeIconIconVisible);
+  };
+
   return (
     <AppHeader>
       <HeaderMainContainer>
@@ -20,10 +29,27 @@ function Header({ toggleTheme, isDarkTheme }) {
         <HeaderThemeMobileMenuWrapper>
           <HeaderThemeMobileMenuBtns>
             <StyledThemeDarkLightLogoRightMargin>
-              <ThemeIcon toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+              {isMenuOpenToggle ? (
+                // If the menu is open, hide the ThemeIcon
+                <StyledThemeDarkLightLogoInvisible>
+                  <ThemeIcon
+                    toggleTheme={toggleTheme}
+                    isDarkTheme={isDarkTheme}
+                  />
+                </StyledThemeDarkLightLogoInvisible>
+              ) : (
+                // If the menu is closed, display the ThemeIcon
+                <ThemeIcon
+                  toggleTheme={toggleTheme}
+                  isDarkTheme={isDarkTheme}
+                />
+              )}
             </StyledThemeDarkLightLogoRightMargin>
-            <FaBars />
-            {/* <IoClose /> */}
+            {isMenuOpenToggle ? (
+              <IoClose onClick={handleMenuClick} />
+            ) : (
+              <FaBars onClick={handleMenuClick} />
+            )}
           </HeaderThemeMobileMenuBtns>
         </HeaderThemeMobileMenuWrapper>
         <Navbar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
