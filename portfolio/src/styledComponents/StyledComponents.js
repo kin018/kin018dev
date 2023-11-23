@@ -148,6 +148,10 @@ export const StyledThemeDarkLightLogo = styled.i`
     color: ${({ theme }) => theme.primary};
   }
 `;
+export const StyledThemeDarkLightLogoInvisible = styled.i`
+visibility: hidden;
+  }
+`;
 export const StyledThemeDarkLightLogoRightMargin = styled.div`
 margin-right: 1rem
   }

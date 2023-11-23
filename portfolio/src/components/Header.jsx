@@ -9,16 +9,17 @@ import {
   HeaderMainContainer,
   HeaderThemeMobileMenuBtns,
   HeaderThemeMobileMenuWrapper,
+  StyledThemeDarkLightLogoInvisible,
   StyledThemeDarkLightLogoRightMargin,
 } from '../styledComponents/StyledComponents';
 
 function Header({ toggleTheme, isDarkTheme }) {
   const [isMenuOpenToggle, setMenuOpenToggle] = useState(false);
-  const [isThemeIconIconVisible, setThemeIconVisibility] = useState(true);
+  // const [isThemeIconIconVisible, setThemeIconVisibility] = useState(true);
 
   const handleMenuClick = () => {
     setMenuOpenToggle(!isMenuOpenToggle);
-    setThemeIconVisibility(!isThemeIconIconVisible);
+    // setThemeIconVisibility(!isThemeIconIconVisible);
   };
 
   return (
@@ -28,7 +29,16 @@ function Header({ toggleTheme, isDarkTheme }) {
         <HeaderThemeMobileMenuWrapper>
           <HeaderThemeMobileMenuBtns>
             <StyledThemeDarkLightLogoRightMargin>
-              {isThemeIconIconVisible && (
+              {isMenuOpenToggle ? (
+                // If the menu is open, hide the ThemeIcon
+                <StyledThemeDarkLightLogoInvisible>
+                  <ThemeIcon
+                    toggleTheme={toggleTheme}
+                    isDarkTheme={isDarkTheme}
+                  />
+                </StyledThemeDarkLightLogoInvisible>
+              ) : (
+                // If the menu is closed, display the ThemeIcon
                 <ThemeIcon
                   toggleTheme={toggleTheme}
                   isDarkTheme={isDarkTheme}
