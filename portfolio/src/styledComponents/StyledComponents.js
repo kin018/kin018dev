@@ -118,6 +118,8 @@ export const NavbarContainer = styled.ul`
   gap: 32px;
   padding: 0 6px;
   list-style: none;
+  margin-left: 1.5rem; //Alexa
+  margin-right: 1.5rem; //Alexa
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -146,6 +148,10 @@ export const StyledThemeDarkLightLogo = styled.i`
     color: ${({ theme }) => theme.primary};
   }
 `;
+export const StyledThemeDarkLightLogoRightMargin = styled.div`
+margin-right: 1rem
+  }
+`;
 
 export const HeaderThemeMobileMenuWrapper = styled.div`
   display: none;
@@ -164,7 +170,6 @@ export const HeaderThemeMobileMenuWrapper = styled.div`
 export const HeaderThemeMobileMenuBtns = styled.div`
   display: flex;
   align-items: center;
-  gap: 21px;
   margin-right: -16px;
   svg {
     vertical-align: middle;
@@ -209,7 +214,7 @@ export const StyledHeaderDropdownMenuLink = styled.a`
 `;
 
 export const HeaderDropdownMenuContainer = styled.div`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     position: fixed;
     bottom: -100%;
     left: 0;

@@ -9,6 +9,7 @@ import {
   HeaderMainContainer,
   HeaderThemeMobileMenuWrapper,
   HeaderThemeMobileMenuBtns,
+  StyledThemeDarkLightLogoRightMargin,
 } from '../styledComponents/StyledComponents';
 
 function Header({ toggleTheme, isDarkTheme }) {
@@ -18,7 +19,9 @@ function Header({ toggleTheme, isDarkTheme }) {
         <Logo />
         <HeaderThemeMobileMenuWrapper>
           <HeaderThemeMobileMenuBtns>
-            <ThemeIcon toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+            <StyledThemeDarkLightLogoRightMargin>
+              <ThemeIcon toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+            </StyledThemeDarkLightLogoRightMargin>
             <FaBars />
             {/* <IoClose /> */}
           </HeaderThemeMobileMenuBtns>
