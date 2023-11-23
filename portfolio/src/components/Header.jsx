@@ -4,6 +4,7 @@ import { IoClose } from 'react-icons/io5';
 import Navbar from './Navbar';
 import Logo from './Logo';
 import ThemeIcon from './ThemeIcon';
+import HeaderDropdownMenu from './HeaderDropdownMenu';
 import {
   AppHeader,
   HeaderMainContainer,
@@ -15,11 +16,11 @@ import {
 
 function Header({ toggleTheme, isDarkTheme }) {
   const [isMenuOpenToggle, setMenuOpenToggle] = useState(false);
-  // const [isThemeIconIconVisible, setThemeIconVisibility] = useState(true);
+  const [isDropdownActive, setDropdown] = useState(false);
 
   const handleMenuClick = () => {
     setMenuOpenToggle(!isMenuOpenToggle);
-    // setThemeIconVisibility(!isThemeIconIconVisible);
+    setDropdown(!isDropdownActive);
   };
 
   return (
@@ -46,7 +47,10 @@ function Header({ toggleTheme, isDarkTheme }) {
               )}
             </StyledThemeDarkLightLogoRightMargin>
             {isMenuOpenToggle ? (
-              <IoClose onClick={handleMenuClick} />
+              <>
+                <IoClose onClick={handleMenuClick} />
+                <HeaderDropdownMenu />
+              </>
             ) : (
               <FaBars onClick={handleMenuClick} />
             )}
