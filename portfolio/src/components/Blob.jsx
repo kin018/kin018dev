@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  HomeBlobImg,
+  // HomeBlobImg,
   HomeBlobImgSVGWrapper,
 } from '../styledComponents/StyledComponents';
 
@@ -10,7 +10,7 @@ function Blob() {
       {/* Blob was created using https://www.softr.io/tools/svg-shape-generator */}
 
       {/* Blob design 1 */}
-      {/* <svg
+      <svg
         id="sw-js-blob-svg"
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
@@ -35,13 +35,14 @@ function Blob() {
             </linearGradient>
           </mask>
         </defs>
+
         <path
           fill="url(#sw-gradient)"
           d="M25.2,-20.6C29.3,-14.9,27.1,-4.6,25.1,6.4C23.2,17.4,21.4,29.1,14.6,33.6C7.8,38.2,-4.1,35.6,-14.2,30.4C-24.4,25.2,-32.9,17.3,-33.7,9C-34.5,0.7,-27.7,-8,-20.8,-14.3C-13.9,-20.7,-7,-24.7,1.8,-26.1C10.5,-27.5,21,-26.3,25.2,-20.6Z"
           transform="translate(50 50)"
           strokeWidth="0"
         ></path>
-      </svg> */}
+      </svg>
 
       {/* Blob design 2 */}
       {/* <svg
