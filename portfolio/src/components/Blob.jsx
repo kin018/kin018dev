@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  HomeBlobImg,
+  // HomeBlobImg,
   HomeBlobImgSVGWrapper,
 } from '../styledComponents/StyledComponents';
 
