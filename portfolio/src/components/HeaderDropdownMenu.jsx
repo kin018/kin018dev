@@ -3,13 +3,13 @@ import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
 import {
   StyledHeaderDropdownMenuLink,
-  HeaderDropdownMenuList,
+  HeaderDropdownMenuGrid,
   StyledHeaderDropdownMenuIcon,
 } from '../styledComponents/StyledComponents';
 
 function HeaderDropdownMenu() {
   return (
-    <HeaderDropdownMenuList>
+    <HeaderDropdownMenuGrid>
       <StyledHeaderDropdownMenuLink as={Link} to="/">
         <StyledHeaderDropdownMenuIcon>
           <Icon icon="uil:estate" />
@@ -46,7 +46,7 @@ function HeaderDropdownMenu() {
         </StyledHeaderDropdownMenuIcon>
         Contact Me
       </StyledHeaderDropdownMenuLink>
-    </HeaderDropdownMenuList>
+    </HeaderDropdownMenuGrid>
   );
 }
 

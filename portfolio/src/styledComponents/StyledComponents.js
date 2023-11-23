@@ -208,7 +208,12 @@ export const StyledHeaderDropdownMenuLink = styled.a`
   }
 `;
 
-export const HeaderDropdownMenuList = styled.div`
+export const HeaderDropdownMenu = styled.div`
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+  }
+`;
+export const HeaderDropdownMenuGrid = styled.div`
 grid-template-columns: repeat(3, 1fr);
 gap: 2rem;
   }
