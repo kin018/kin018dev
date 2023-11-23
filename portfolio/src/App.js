@@ -35,7 +35,6 @@ function App() {
 
         <MainAppContainer>
           <HeaderDropdownMenu />
-
           <Home />
           <GradientWrapper>
             <AboutMe />
