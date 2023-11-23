@@ -4,10 +4,11 @@ export const Bio = {
     'Full Stack Developer',
     'Certified Scrum Master',
     'UI/UX Designer',
+    'QA Engineer',
     'Freelancer',
   ],
   description:
-    'Results-driven strategic planner with a proficiency in developing business applications and programs, implementing integrations, and adeptly managing technical projects. As an accomplished solutions-builder, I have a proven track record of maximizing customer and end-user experiences through rapid problem-solving and the effective translation of technological concepts. My approach is strengthened by leveraging agile scrum methodology, ensuring efficient project execution and delivering optimal outcomes.',
+    'Results-driven strategic planner with a strong track record in business application development, program implementation, and technical project management. Skilled in maximizing customer experiences through rapid problem-solving and effective translation of tech concepts. Proficient in agile scrum methodology for efficient project execution and optimal outcomes.',
 };
 
 export const skills = [

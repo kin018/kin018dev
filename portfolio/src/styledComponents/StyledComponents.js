@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 //Blob
 export const HomeBlobImg = styled.img`
-  width: 170px;
+  width: 200px;
 `;
 
 export const HomeBlobImgSVGWrapper = styled.div`
@@ -324,4 +324,129 @@ font-size: 1.2rem;
   }
 `;
 
-//Next Component
+//Home Component
+export const HomeMainContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: ${({ theme }) => theme.card_light};
+  padding: 80px 30px;
+
+  @media (max-width: 960px) {
+    padding: 66px 16px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 32px 16px;
+  }
+
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+`;
+
+export const HomeMainWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+export const HomeDescriptionContainer = styled.div`
+  width: 100%;
+  order: 1; // Content order on larger screens
+
+  @media (max-width: 960px) {
+    order: 2; // Content order on smaller screens
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 640px) {
+    order: 2; // Content order on smaller screens
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const HomePictureContainer = styled.div`
+  width: 100%;
+  display: flex;
+  order: 2;
+  justify-content: end;
+  gap: 12px;
+
+  @media (max-width: 960px) {
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 640px) {
+    margin-bottom: 30px;
+  }
+`;
+
+export const TitleName = styled.div`
+  font-weight: 700;
+  font-size: 50px;
+  color: ${({ theme }) => theme.text_primary};
+  line-height: 68px;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
+`;
+
+export const TextLoop = styled.div`
+  font-weight: 600;
+  font-size: 32px;
+  display: flex;
+  gap: 12px;
+  color: ${({ theme }) => theme.text_primary};
+  line-height: 68px;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+  @media (max-width: 640px) {
+    font-size: 22px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+`;
+
+export const TextSpan = styled.span`
+  color: ${({ theme }) => theme.primary};
+  cursor: pointer;
+`;
+
+export const SubTitle = styled.div`
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 42px;
+  color: ${({ theme }) => theme.text_primary + 95};
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+    line-height: 32px;
+  }
+`;
