@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-// import { IoClose } from 'react-icons/io5';
+import { IoClose } from 'react-icons/io5';
 import Navbar from './Navbar';
 import Logo from './Logo';
 import ThemeIcon from './ThemeIcon';
@@ -13,6 +13,11 @@ import {
 } from '../styledComponents/StyledComponents';
 
 function Header({ toggleTheme, isDarkTheme }) {
+  const [isMenuOpenToggle, setMenuOpenToggle] = useState(false);
+  const handleMenuClick = () => {
+    setMenuOpenToggle(!isMenuOpenToggle);
+  };
+
   return (
     <AppHeader>
       <HeaderMainContainer>
@@ -22,8 +27,11 @@ function Header({ toggleTheme, isDarkTheme }) {
             <StyledThemeDarkLightLogoRightMargin>
               <ThemeIcon toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
             </StyledThemeDarkLightLogoRightMargin>
-            <FaBars />
-            {/* <IoClose /> */}
+            {isMenuOpenToggle ? (
+              <IoClose onClick={handleMenuClick} />
+            ) : (
+              <FaBars onClick={handleMenuClick} />
+            )}
           </HeaderThemeMobileMenuBtns>
         </HeaderThemeMobileMenuWrapper>
         <Navbar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
