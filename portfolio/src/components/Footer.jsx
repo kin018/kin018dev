@@ -4,10 +4,11 @@ import SocialMedia from './SocialMedia';
 import {
   Copyright,
   FooterMainContainer,
-  FooterWrapper,
-  FooterNav,
-  NameHeader,
   FooterLink,
+  FooterNav,
+  FooterWrapper,
+  NameHeader,
+  SocialMediaIconDiv,
 } from '../styledComponents/StyledComponents';
 
 function Footer() {
@@ -31,7 +32,9 @@ function Footer() {
             Projects
           </FooterLink>
         </FooterNav>
-        <SocialMedia />
+        <SocialMediaIconDiv>
+          <SocialMedia />
+        </SocialMediaIconDiv>
         <Copyright>
           &copy; {currentYear} Kenechukwu Nwankwo. All rights reserved.
         </Copyright>

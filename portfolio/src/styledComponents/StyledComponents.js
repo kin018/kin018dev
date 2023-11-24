@@ -399,7 +399,7 @@ export const HomePictureContainer = styled.div`
 
 export const TitleName = styled.div`
   font-weight: 700;
-  font-size: 50px;
+  font-size: 45px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   @media (max-width: 960px) {
@@ -420,6 +420,7 @@ export const TextLoop = styled.div`
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
+  white-space: nowrap;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -436,7 +437,7 @@ export const TextSpan = styled.span`
 `;
 
 export const SubTitle = styled.div`
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};
@@ -449,4 +450,13 @@ export const SubTitle = styled.div`
     font-size: 16px;
     line-height: 32px;
   }
+`;
+
+export const HomeSocialMediaDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-right: 1rem;
+  color: ${({ theme }) => theme.primary};
+  font-size: 1.25rem;
 `;

@@ -7,6 +7,12 @@ export const Bio = {
     'QA Engineer',
     'Freelancer',
   ],
+  socialMedia: {
+    github: 'http://github.com/kin018',
+    linkedin: 'https://www.linkedin.com/in/kenechukwu-n-261a11228/',
+    twitter: 'https://www.twitter.com/kin018_',
+    instagram: 'http://www.instagram.com/kin018_',
+  },
   description:
     'Results-driven strategic planner with a strong track record in business application development, program implementation, and technical project management. Skilled in maximizing customer experiences through rapid problem-solving and effective translation of tech concepts. Proficient in agile scrum methodology for efficient project execution and optimal outcomes.',
 };

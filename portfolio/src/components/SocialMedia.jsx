@@ -1,23 +1,16 @@
 import React from 'react';
+import { Bio } from '../data/PortfolioData';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import {
-  SocialMediaIconDiv,
-  SocialMediaIconLink,
-} from '../styledComponents/StyledComponents';
+import { SocialMediaIconLink } from '../styledComponents/StyledComponents';
 
 function SocialMedia() {
-  const githubPath = 'http://github.com/kin018';
-  const linkedinPath = 'https://www.linkedin.com/in/kenechukwu-n-261a11228/';
-  const twitterPath = 'https://www.twitter.com/kin018_';
-  const instagramPath = 'http://www.instagram.com/kin018_';
-
   return (
-    <SocialMediaIconDiv>
+    <>
       <SocialMediaIconLink
-        href={githubPath}
+        href={Bio.socialMedia.github}
         target="_blank"
         rel="noreferrer noopener"
         aria-label="GitHub"
@@ -26,7 +19,7 @@ function SocialMedia() {
       </SocialMediaIconLink>
 
       <SocialMediaIconLink
-        href={linkedinPath}
+        href={Bio.socialMedia.linkedin}
         target="_blank"
         rel="noreferrer noopener"
         aria-label="LinkedIn"
@@ -35,7 +28,7 @@ function SocialMedia() {
       </SocialMediaIconLink>
 
       <SocialMediaIconLink
-        href={twitterPath}
+        href={Bio.socialMedia.twitter}
         target="_blank"
         rel="noreferrer noopener"
         aria-label="Twitter"
@@ -44,14 +37,14 @@ function SocialMedia() {
       </SocialMediaIconLink>
 
       <SocialMediaIconLink
-        href={instagramPath}
+        href={Bio.socialMedia.instagram}
         target="_blank"
         rel="noreferrer noopener"
         aria-label="Instagram"
       >
         <InstagramIcon aria-label="Instagram" alt="Instagram" />
       </SocialMediaIconLink>
-    </SocialMediaIconDiv>
+    </>
   );
 }
 

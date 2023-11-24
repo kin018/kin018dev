@@ -1,13 +1,14 @@
 import React from 'react';
-//import SocialMedia from './SocialMedia';
 import Blob from './Blob';
 import { Bio } from '../data/PortfolioData';
 import Typewriter from 'typewriter-effect';
+import SocialMedia from './SocialMedia';
 import {
   HomeMainWrapper,
   HomeDescriptionContainer,
   HomePictureContainer,
   HomeMainContainer,
+  HomeSocialMediaDiv,
   TitleName,
   TextLoop,
   TextSpan,
@@ -25,6 +26,9 @@ function Home() {
     <div id="home">
       <HomeMainContainer>
         <HomeMainWrapper>
+          <HomeSocialMediaDiv>
+            <SocialMedia />
+          </HomeSocialMediaDiv>
           <HomeDescriptionContainer>
             <TitleName>
               Greetings, I am
