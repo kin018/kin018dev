@@ -6,7 +6,6 @@ function Logo({ isDarkTheme }) {
   const WhiteCurlyBraces = '../images/LogoWhite.png';
   const BlackCurlyBraces = '../images/LogoBlack.png';
   const logoSrc = isDarkTheme ? WhiteCurlyBraces : BlackCurlyBraces;
-
   const altText = isDarkTheme ? 'LogoWhiteCurlyBraces' : 'LogoBlackCurlyBraces';
 
   return (
