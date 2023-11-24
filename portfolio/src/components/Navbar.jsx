@@ -26,7 +26,7 @@ function Navbar({ toggleTheme, isDarkTheme }) {
           Projects
         </StyledNavLink>
         <StyledNavLink as={NavLink} to="/contact">
-          Contact Me
+          Contact
         </StyledNavLink>
         <ThemeIcon toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
       </NavbarContainer>
