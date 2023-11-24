@@ -3,11 +3,11 @@ import { LogoWrapper } from '../styledComponents/StyledComponents';
 import { Link } from 'react-router-dom';
 
 function Logo({ isDarkTheme }) {
-  const logoSrc = isDarkTheme
-    ? '../images/LogoWhiteBrackets.png'
-    : '../images/LogoBlackBrackets.png';
+  const WhiteCurlyBraces = '../images/LogoWhite.png';
+  const BlackCurlyBraces = '../images/LogoBlack.png';
+  const logoSrc = isDarkTheme ? WhiteCurlyBraces : BlackCurlyBraces;
 
-  const altText = isDarkTheme ? 'LogoWhite' : 'LogoBlack';
+  const altText = isDarkTheme ? 'LogoWhiteCurlyBraces' : 'LogoBlackCurlyBraces';
 
   return (
     <Link to="/">
