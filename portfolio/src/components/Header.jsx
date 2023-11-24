@@ -13,8 +13,6 @@ import {
   HeaderThemeMobileMenuWrapper,
   StyledThemeDarkLightLogoInvisible,
   StyledThemeDarkLightLogoRightMargin,
-  // HeaderDropdownMenuContainer,
-  // HeaderDropdownMenuGrid,
 } from '../styledComponents/StyledComponents';
 
 function Header({ toggleTheme, isDarkTheme }) {

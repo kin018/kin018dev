@@ -308,23 +308,36 @@ margin-right: 1rem
 export const HeaderBurgerMenu = styled.div.attrs({
   className: 'HeaderBurgerMenu',
 })`
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  top: 50px;
   gap: 16px;
-  position: absolute;
-  top: 80px;
-  right: 0;
   width: 100%;
-  padding: 12px 40px 24px 40px;
-  background: ${({ theme }) => theme.card_light + 99};
+  padding: 10px 40px;
+  background: ${({ theme }) => theme.card_light};
   transition: all 0.6s ease-in-out;
   transform: ${({ isDropdownActive }) =>
     isDropdownActive ? 'translateY(0)' : 'translateY(-100%)'};
-  border-radius: 0 0 20px 20px;
+  border-radius: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   opacity: ${({ isDropdownActive }) => (isDropdownActive ? '100%' : '0')};
   z-index: ${({ isDropdownActive }) => (isDropdownActive ? '1000' : '-1000')};
+  position: absolute;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 65%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 20px;
+    background: ${({ theme }) => theme.card_light};
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 export const HeaderDropdownMenuContainer = styled.div.attrs({
@@ -340,14 +353,6 @@ export const HeaderDropdownMenuContainer = styled.div.attrs({
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
-  }
-`;
-export const HeaderDropdownMenuGrid = styled.div.attrs({
-  className: 'HeaderDropdownMenuGrid',
-})`
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 2rem;
   }
 `;
 
