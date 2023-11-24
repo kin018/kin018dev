@@ -27,7 +27,7 @@ function Header({ toggleTheme, isDarkTheme }) {
   return (
     <AppHeader>
       <HeaderMainContainer>
-        <Logo />
+        <Logo isDarkTheme={isDarkTheme} />
         <HeaderThemeMobileMenuWrapper>
           <HeaderThemeMobileMenuBtns>
             <StyledThemeDarkLightLogoRightMargin>
