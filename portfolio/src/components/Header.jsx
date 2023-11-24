@@ -8,10 +8,13 @@ import HeaderDropdownMenu from './HeaderDropdownMenu';
 import {
   AppHeader,
   HeaderMainContainer,
+  HeaderBurgerMenu,
   HeaderThemeMobileMenuBtns,
   HeaderThemeMobileMenuWrapper,
   StyledThemeDarkLightLogoInvisible,
   StyledThemeDarkLightLogoRightMargin,
+  // HeaderDropdownMenuContainer,
+  // HeaderDropdownMenuGrid,
 } from '../styledComponents/StyledComponents';
 
 function Header({ toggleTheme, isDarkTheme }) {
@@ -49,7 +52,9 @@ function Header({ toggleTheme, isDarkTheme }) {
             {isMenuOpenToggle ? (
               <>
                 <IoClose onClick={handleMenuClick} />
-                <HeaderDropdownMenu />
+                <HeaderBurgerMenu isDropdownActive={isDropdownActive}>
+                  <HeaderDropdownMenu />
+                </HeaderBurgerMenu>
               </>
             ) : (
               <FaBars onClick={handleMenuClick} />

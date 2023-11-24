@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Logo() {
   return (
     <Link to="/">
-      <LogoWrapper src="../images/LogoBrackets.png" alt="Logo" />
+      <LogoWrapper src="../images/LogoWhiteBrackets.png" alt="Logo" />
     </Link>
   );
 }
