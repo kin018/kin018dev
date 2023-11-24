@@ -362,7 +362,7 @@ export const StyledHeaderDropdownMenuLink = styled.a.attrs({
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.813rem; /* Corrected syntax for rem unit */
+  font-size: 0.813rem;
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;

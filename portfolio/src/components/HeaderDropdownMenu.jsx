@@ -43,7 +43,7 @@ function HeaderDropdownMenu() {
         <StyledHeaderDropdownMenuIcon>
           <Icon icon="uil:message" />
         </StyledHeaderDropdownMenuIcon>
-        Contact Me
+        Contact
       </StyledHeaderDropdownMenuLink>
     </>
   );
