@@ -8,7 +8,8 @@ import {
   HomeDescriptionContainer,
   HomePictureContainer,
   HomeMainContainer,
-  HomeSocialMediaDiv,
+  HomeSocialMediaHorizantalDiv,
+  HomeSocialMediaVerticalDiv,
   TitleName,
   TextLoop,
   TextSpan,
@@ -26,9 +27,9 @@ function Home() {
     <div id="home">
       <HomeMainContainer>
         <HomeMainWrapper>
-          <HomeSocialMediaDiv>
+          <HomeSocialMediaVerticalDiv>
             <SocialMedia />
-          </HomeSocialMediaDiv>
+          </HomeSocialMediaVerticalDiv>
           <HomeDescriptionContainer>
             <TitleName>
               Greetings, I am
@@ -42,6 +43,9 @@ function Home() {
               </TextSpan>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
+            <HomeSocialMediaHorizantalDiv>
+              <SocialMedia />
+            </HomeSocialMediaHorizantalDiv>
           </HomeDescriptionContainer>
           <HomePictureContainer>
             <Blob></Blob>

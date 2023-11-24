@@ -176,8 +176,8 @@ export const SocialMediaIconLink = styled.a.attrs({
     color: ${({ theme }) => theme.primary};
   }
 `;
-export const NameHeader = styled.h1.attrs({
-  className: 'NameHeader',
+export const FooterName = styled.h1.attrs({
+  className: 'FooterName',
 })`
   font-weight: 600;
   font-size: 20px;
@@ -523,8 +523,8 @@ export const SubTitle = styled.div.attrs({
   }
 `;
 
-export const HomeSocialMediaDiv = styled.div.attrs({
-  className: 'HomeSocialMediaDiv',
+export const HomeSocialMediaVerticalDiv = styled.div.attrs({
+  className: 'HomeSocialMediaVerticalDiv',
 })`
   display: flex;
   flex-direction: column;
@@ -532,4 +532,17 @@ export const HomeSocialMediaDiv = styled.div.attrs({
   padding-right: 1rem;
   color: ${({ theme }) => theme.primary};
   font-size: 1.25rem;
+
+  @media (max-width: 960px) {
+    display: none;
+  }
+`;
+
+export const HomeSocialMediaHorizantalDiv = styled.div.attrs({
+  className: 'HomeSocialMediaHorizantalDiv',
+})`
+  font-size: 1.25rem;
+  @media (min-width: 961px) {
+    display: none;
+  }
 `;
