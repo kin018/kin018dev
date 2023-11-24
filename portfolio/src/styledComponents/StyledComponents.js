@@ -145,7 +145,8 @@ export const SocialMediaIconLink = styled.a`
   display: inline-block;
   margin: 0 1rem;
   font-size: 1.5rem;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) =>
+    theme.text_primary}; //This changes the Icon Color but may need to change TextLoop Color because I do not like that they match
   transition: color 0.2s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};
