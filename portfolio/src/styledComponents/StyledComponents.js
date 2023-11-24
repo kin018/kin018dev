@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 //Blob
-export const HomeBlobImg = styled.img`
+export const HomeBlobImg = styled.img.attrs({
+  className: 'HomeBlobImg',
+})`
   width: 200px;
 `;
 
-export const HomeBlobImgSVGWrapper = styled.div`
+export const HomeBlobImgSVGWrapper = styled.div.attrs({
+  className: 'HomeBlobImgSVGWrapper',
+})`
   order: 1;
   justify-self: center;
 `;
@@ -40,7 +44,9 @@ export const lightTheme = {
 };
 
 // Logo
-export const LogoWrapper = styled.img`
+export const LogoWrapper = styled.img.attrs({
+  className: 'LogoWrapper',
+})`
   display: flex;
   align-items: center;
   height: 80px;
@@ -57,13 +63,17 @@ export const LogoWrapper = styled.img`
 `;
 
 // App.js Main styling
-export const MainAppContainer = styled.div`
+export const MainAppContainer = styled.div.attrs({
+  className: 'MainAppContainer',
+})`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
   overflow-x: hidden;
 `;
 
-export const GradientWrapper = styled.div`
+export const GradientWrapper = styled.div.attrs({
+  className: 'GradientWrapper',
+})`
   --purple-gradient-start: rgba(204, 0, 187, 0.15);
   --purple-gradient-end: rgba(201, 32, 184, 0);
   --blue-gradient-start: rgba(0, 70, 209, 0);
@@ -84,7 +94,9 @@ export const GradientWrapper = styled.div`
 `;
 
 // Nav
-export const NavbarContainer = styled.ul`
+export const NavbarContainer = styled.ul.attrs({
+  className: 'NavbarContainer',
+})`
   width: 100%;
   display: flex;
   align-items: center;
@@ -98,7 +110,9 @@ export const NavbarContainer = styled.ul`
   }
 `;
 
-export const StyledNavLink = styled.a`
+export const StyledNavLink = styled.a.attrs({
+  className: 'StyledNavLink',
+})`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
@@ -112,14 +126,18 @@ export const StyledNavLink = styled.a`
 `;
 
 //Footer
-export const FooterMainContainer = styled.div`
+export const FooterMainContainer = styled.div.attrs({
+  className: 'FooterMainContainer',
+})`
   width: 100%;
   padding: 2rem 0;
   display: flex;
   justify-content: center;
 `;
 
-export const FooterWrapper = styled.footer`
+export const FooterWrapper = styled.footer.attrs({
+  className: 'FooterWrapper',
+})`
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -129,35 +147,46 @@ export const FooterWrapper = styled.footer`
   padding: 1rem;
   color: ${({ theme }) => theme.text_primary};
 `;
-export const Copyright = styled.p`
+export const Copyright = styled.p.attrs({
+  className: 'Copyright',
+})`
   margin-top: 1.5rem;
   font-size: 0.9rem;
   color: ${({ theme }) => theme.soft2};
   text-align: center;
 `;
 
-export const SocialMediaIconDiv = styled.div`
+export const SocialMediaIconDiv = styled.div.attrs({
+  className: 'SocialMediaIconDiv',
+})`
   display: flex;
   margin-top: 1rem;
 `;
 
-export const SocialMediaIconLink = styled.a`
+export const SocialMediaIconLink = styled.a.attrs({
+  className: 'SocialMediaIconLink',
+})`
   display: inline-block;
   margin: 0 1rem;
   font-size: 1.5rem;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) =>
+    theme.text_primary}; //This changes the Icon Color but may need to change TextLoop Color because I do not like that they match
   transition: color 0.2s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
 `;
-export const NameHeader = styled.h1`
+export const FooterName = styled.h1.attrs({
+  className: 'FooterName',
+})`
   font-weight: 600;
   font-size: 20px;
   color: ${({ theme }) => theme.primary};
 `;
 
-export const FooterLink = styled.a`
+export const FooterLink = styled.a.attrs({
+  className: 'FooterLink',
+})`
   color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
   font-size: 1.2rem; //Need to change font size this is too large currently
@@ -170,7 +199,9 @@ export const FooterLink = styled.a`
   }
 `;
 
-export const FooterNav = styled.nav`
+export const FooterNav = styled.nav.attrs({
+  className: 'FooterNav',
+})`
   width: 100%;
   max-width: 800px;
   margin-top: 0.5rem;
@@ -188,7 +219,9 @@ export const FooterNav = styled.nav`
 `;
 
 //ThemeIcon
-export const StyledThemeDarkLightLogo = styled.i`
+export const StyledThemeDarkLightLogo = styled.i.attrs({
+  className: 'StyledThemeDarkLightLogo',
+})`
   color: ${({ theme }) => theme.text_primary};
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -199,7 +232,9 @@ export const StyledThemeDarkLightLogo = styled.i`
 `;
 
 // Header
-export const AppHeader = styled.div`
+export const AppHeader = styled.div.attrs({
+  className: 'AppHeader',
+})`
   background-color: ${({ theme }) => theme.card_light};
   font-size: 1rem;
   display: flex;
@@ -215,7 +250,9 @@ export const AppHeader = styled.div`
   }
 `;
 
-export const HeaderMainContainer = styled.div`
+export const HeaderMainContainer = styled.div.attrs({
+  className: 'HeaderMainContainer',
+})`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -226,7 +263,9 @@ export const HeaderMainContainer = styled.div`
   max-width: 1200px;
 `;
 
-export const HeaderThemeMobileMenuWrapper = styled.div`
+export const HeaderThemeMobileMenuWrapper = styled.div.attrs({
+  className: 'HeaderThemeMobileMenuWrapper',
+})`
   display: none;
 
   @media screen and (max-width: 768px) {
@@ -241,7 +280,9 @@ export const HeaderThemeMobileMenuWrapper = styled.div`
   }
 `;
 
-export const HeaderThemeMobileMenuBtns = styled.div`
+export const HeaderThemeMobileMenuBtns = styled.div.attrs({
+  className: 'HeaderThemeMobileMenuBtns',
+})`
   display: flex;
   align-items: center;
   margin-right: -16px;
@@ -250,65 +291,78 @@ export const HeaderThemeMobileMenuBtns = styled.div`
   }
 `;
 
-export const StyledThemeDarkLightLogoInvisible = styled.i`
+export const StyledThemeDarkLightLogoInvisible = styled.i.attrs({
+  className: 'StyledThemeDarkLightLogoInvisible',
+})`
 visibility: hidden;
   }
 `;
 
-export const StyledThemeDarkLightLogoRightMargin = styled.div`
+export const StyledThemeDarkLightLogoRightMargin = styled.div.attrs({
+  className: 'StyledThemeDarkLightLogoRightMargin',
+})`
 margin-right: 1rem
   }
 `;
 
-// export const HeaderBurgerMenu = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   gap: 16px;
-//   position: absolute;
-//   top: 80px;
-//   right: 0;
-//   width: 100%;
-//   padding: 12px 40px 24px 40px;
+export const HeaderBurgerMenu = styled.div.attrs({
+  className: 'HeaderBurgerMenu',
+})`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50px;
+  gap: 16px;
+  width: 100%;
+  padding: 10px 40px;
+  background: ${({ theme }) => theme.card_light};
+  transition: all 0.6s ease-in-out;
+  transform: ${({ isDropdownActive }) =>
+    isDropdownActive ? 'translateY(0)' : 'translateY(-100%)'};
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: ${({ isDropdownActive }) => (isDropdownActive ? '100%' : '0')};
+  z-index: ${({ isDropdownActive }) => (isDropdownActive ? '1000' : '-1000')};
+  position: absolute;
 
-//   background: ${({ theme }) => theme.card_light};
-//   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-//   border-radius: 0 0 20px 20px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 65%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 20px;
+    background: ${({ theme }) => theme.card_light};
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+`;
 
-//   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-//   z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
-
-//   transition: all 0.6s ease-in-out;
-//   transform: ${({ isOpen }) =>
-//     isOpen ? 'translateY(0)' : 'translateY(-100%)'};
-// `;
-
-//HeaderDropdownMenu
-export const HeaderDropdownMenuContainer = styled.div`
+export const HeaderDropdownMenuContainer = styled.div.attrs({
+  className: 'HeaderDropdownMenuContainer',
+})`
   @media screen and (min-width: 769px) {
     position: fixed;
     bottom: -100%;
     left: 0;
     width: 100%;
-    /* background-color: ${({ theme }) => theme.primary}; */
+    background-color: ${({ theme }) => theme.primary}; */
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
   }
 `;
-export const HeaderDropdownMenuGrid = styled.div`
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 2rem;
-  }
-`;
 
-export const StyledHeaderDropdownMenuLink = styled.a`
+export const StyledHeaderDropdownMenuLink = styled.a.attrs({
+  className: 'StyledHeaderDropdownMenuLink',
+})`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.813rem; /* Corrected syntax for rem unit */
+  font-size: 0.813rem;
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
@@ -319,13 +373,17 @@ export const StyledHeaderDropdownMenuLink = styled.a`
   }
 `;
 
-export const StyledHeaderDropdownMenuIcon = styled.i`
+export const StyledHeaderDropdownMenuIcon = styled.i.attrs({
+  className: 'StyledHeaderDropdownMenuIcon',
+})`
 font-size: 1.2rem;
   }
 `;
 
 //Home Component
-export const HomeMainContainer = styled.div`
+export const HomeMainContainer = styled.div.attrs({
+  className: 'HomeMainContainer',
+})`
   display: flex;
   justify-content: center;
   position: relative;
@@ -344,7 +402,9 @@ export const HomeMainContainer = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
-export const HomeMainWrapper = styled.div`
+export const HomeMainWrapper = styled.div.attrs({
+  className: 'HomeMainWrapper',
+})`
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -357,7 +417,9 @@ export const HomeMainWrapper = styled.div`
   }
 `;
 
-export const HomeDescriptionContainer = styled.div`
+export const HomeDescriptionContainer = styled.div.attrs({
+  className: 'HomeDescriptionContainer',
+})`
   width: 100%;
   order: 1; // Content order on larger screens
 
@@ -378,7 +440,9 @@ export const HomeDescriptionContainer = styled.div`
   }
 `;
 
-export const HomePictureContainer = styled.div`
+export const HomePictureContainer = styled.div.attrs({
+  className: 'HomePictureContainer',
+})`
   width: 100%;
   display: flex;
   order: 2;
@@ -397,9 +461,11 @@ export const HomePictureContainer = styled.div`
   }
 `;
 
-export const TitleName = styled.div`
+export const TitleName = styled.div.attrs({
+  className: 'TitleName',
+})`
   font-weight: 700;
-  font-size: 50px;
+  font-size: 45px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   @media (max-width: 960px) {
@@ -413,13 +479,16 @@ export const TitleName = styled.div`
   }
 `;
 
-export const TextLoop = styled.div`
+export const TextLoop = styled.div.attrs({
+  className: 'TextLoop',
+})`
   font-weight: 600;
   font-size: 32px;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
+  white-space: nowrap;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -430,13 +499,17 @@ export const TextLoop = styled.div`
   }
 `;
 
-export const TextSpan = styled.span`
+export const TextSpan = styled.span.attrs({
+  className: 'TextSpan',
+})`
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
 `;
 
-export const SubTitle = styled.div`
-  font-size: 20px;
+export const SubTitle = styled.div.attrs({
+  className: 'SubTitle',
+})`
+  font-size: 18px;
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};
@@ -448,5 +521,29 @@ export const SubTitle = styled.div`
   @media (max-width: 640px) {
     font-size: 16px;
     line-height: 32px;
+  }
+`;
+
+export const HomeSocialMediaVerticalDiv = styled.div.attrs({
+  className: 'HomeSocialMediaVerticalDiv',
+})`
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-right: 1rem;
+  color: ${({ theme }) => theme.primary};
+  font-size: 1.25rem;
+
+  @media (max-width: 960px) {
+    display: none;
+  }
+`;
+
+export const HomeSocialMediaHorizantalDiv = styled.div.attrs({
+  className: 'HomeSocialMediaHorizantalDiv',
+})`
+  font-size: 1.25rem;
+  @media (min-width: 961px) {
+    display: none;
   }
 `;
