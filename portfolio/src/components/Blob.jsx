@@ -42,6 +42,14 @@ function Blob() {
           transform="translate(50 50)"
           strokeWidth="0"
         ></path>
+
+        <image
+          href="/images/Logo.png"
+          x="25%" // adjust the x and y coordinates as needed
+          y="30%"
+          width="50%"
+          height="50%"
+        />
       </svg>
 
       {/* Blob design 2 */}
