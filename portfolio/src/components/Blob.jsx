@@ -12,12 +12,12 @@ function Blob() {
       {/* Blob design 1 */}
       <svg
         id="sw-js-blob-svg"
-        viewBox="0 10 100 100"
-        // viewBox="16.24 23.37 61.28 62.62" from svg crop the og
+        // viewBox="0 10 100 100"
+        viewBox="16.24 23.37 61.28 62.62"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        width="500px"
-        height="500px"
+        width="100%"
+        height="100%"
         style={{ transition: 'all 0.3s ease 0s' }}
       >
         <defs>
@@ -25,12 +25,12 @@ function Blob() {
             <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
               <stop
                 id="stop1"
-                stop-color="rgba(108, 85, 224, 1)"
+                stopColor="rgba(108, 85, 224, 1)"
                 offset="0%"
               ></stop>
               <stop
                 id="stop2"
-                stop-color="rgba(89, 67, 203, 1)"
+                stopColor="rgba(89, 67, 203, 1)"
                 offset="100%"
               ></stop>
             </linearGradient>
@@ -42,15 +42,15 @@ function Blob() {
           width="100%"
           height="100%"
           transform="translate(50 50)"
-          stroke-width="0"
+          strokeWidth="0"
           stroke="url(#sw-gradient)"
         />
         <image
           href="/images/Logo.png"
-          x="25%" // adjust the x and y coordinates as needed
-          y="30%"
-          width="50%"
-          height="50%"
+          x="32%" // adjust the x and y coordinates as needed
+          y="45%"
+          width="100%"
+          height="85%"
         />
       </svg>
       {/* Blob design 2 */}
