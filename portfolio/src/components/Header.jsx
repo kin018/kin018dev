@@ -24,10 +24,23 @@ function Header({ toggleTheme, isDarkTheme }) {
   //useEffect(<function><dependency>)
   useEffect(() => {
     const dropdownHandler = (event) => {
-      setDropdown(false);
+      if (
+        !dropDownMenuRef.current ||
+        !dropDownMenuRef.current.contains(event.target)
+      ) {
+        setDropdown(false);
+        setMenuOpenToggle(false); //toggles back to menu icon
+      }
     };
+
+    //Mounted component eventlistener to mousedown even
     document.addEventListener('mousedown', dropdownHandler);
-  });
+
+    //Cleanup function to remove event listener
+    return () => {
+      document.removeEventListener('mousedown', dropdownHandler);
+    };
+  }, [dropDownMenuRef, setDropdown, setMenuOpenToggle]); //decided to all dependencies used to prevent bugs ***useEffect(<function><dependency>)***
 
   const handleMenuClick = () => {
     setMenuOpenToggle(!isMenuOpenToggle);
@@ -60,7 +73,10 @@ function Header({ toggleTheme, isDarkTheme }) {
             {isMenuOpenToggle ? (
               <>
                 <IoClose onClick={handleMenuClick} />
-                <HeaderBurgerMenu isDropdownActive={isDropdownActive}>
+                <HeaderBurgerMenu
+                  isDropdownActive={isDropdownActive}
+                  ref={dropDownMenuRef}
+                >
                   <HeaderDropdownMenu />
                 </HeaderBurgerMenu>
               </>
