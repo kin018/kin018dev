@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
 import Navbar from './Navbar';
@@ -18,6 +18,16 @@ import {
 function Header({ toggleTheme, isDarkTheme }) {
   const [isMenuOpenToggle, setMenuOpenToggle] = useState(false);
   const [isDropdownActive, setDropdown] = useState(false);
+  const dropDownMenuRef = useRef();
+
+  //useEffect has 2 arguments but <dependency> is optional>
+  //useEffect(<function><dependency>)
+  useEffect(() => {
+    const dropdownHandler = (event) => {
+      setDropdown(false);
+    };
+    document.addEventListener('mousedown', dropdownHandler);
+  });
 
   const handleMenuClick = () => {
     setMenuOpenToggle(!isMenuOpenToggle);
