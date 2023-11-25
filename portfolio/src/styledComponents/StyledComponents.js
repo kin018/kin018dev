@@ -1,12 +1,6 @@
 import styled from 'styled-components';
 
 //Blob
-export const HomeBlobImg = styled.img.attrs({
-  className: 'HomeBlobImg',
-})`
-  width: 200px;
-`;
-
 export const HomeBlobImgSVGWrapper = styled.div.attrs({
   className: 'HomeBlobImgSVGWrapper',
 })`
