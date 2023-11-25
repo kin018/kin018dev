@@ -1,12 +1,6 @@
 import styled from 'styled-components';
 
 //Blob
-export const HomeBlobImg = styled.img.attrs({
-  className: 'HomeBlobImg',
-})`
-  width: 200px;
-`;
-
 export const HomeBlobImgSVGWrapper = styled.div.attrs({
   className: 'HomeBlobImgSVGWrapper',
 })`
@@ -49,8 +43,8 @@ export const LogoWrapper = styled.img.attrs({
 })`
   display: flex;
   align-items: center;
-  height: 80px;
-  width: 80px;
+  height: 75px;
+  width: 75px;
   border-radius: 40px;
   background: no-repeat center center/cover;
   cursor: pointer;
@@ -453,11 +447,11 @@ export const HomePictureContainer = styled.div.attrs({
     order: 1;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px; //previous 80px
   }
 
   @media (max-width: 640px) {
-    margin-bottom: 30px;
+    margin-bottom: 5px; //previous 30px
   }
 `;
 
