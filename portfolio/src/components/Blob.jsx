@@ -10,13 +10,13 @@ function Blob() {
       {/* Blob was created using https://www.softr.io/tools/svg-shape-generator */}
 
       {/* Blob design 1 */}
-      {/* <svg
+      <svg
         id="sw-js-blob-svg"
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        width="100%"
-        height="100%"
+        width="500px"
+        height="500px"
         style={{ transition: 'all 0.3s ease 0s' }}
       >
         <defs>
@@ -50,7 +50,7 @@ function Blob() {
           width="50%"
           height="50%"
         />
-      </svg> */}
+      </svg>
 
       {/* Blob design 2 */}
       {/* <svg
@@ -58,8 +58,8 @@ function Blob() {
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        width="100%"
-        height="100%"
+        width="500px"
+        height="500px"
         style={{ transition: 'all 0.3s ease 0s' }}
       >
         <defs>
@@ -99,8 +99,8 @@ function Blob() {
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        width="100%"
-        height="100%"
+        width="500px"
+        height="500px"
         style={{ transition: 'all 0.3s ease 0s' }}
       >
         <defs>
@@ -140,8 +140,8 @@ function Blob() {
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        width="100%"
-        height="100%"
+        width="500px"
+        height="500px"
         style={{ transition: 'all 0.3s ease 0s' }}
       >
         <defs>
@@ -181,8 +181,8 @@ function Blob() {
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        width="100%"
-        height="100%"
+        width="400px"
+        height="400px"
       >
         <defs>
           <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
@@ -209,7 +209,7 @@ function Blob() {
           x="25%" // adjust the x and y coordinates as needed
           y="30%"
           width="50%"
-          height="50%"
+          height="55%"
         />
       </svg> */}
     </HomeBlobImgSVGWrapper>
