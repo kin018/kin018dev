@@ -330,7 +330,6 @@ export const HeaderBurgerMenu = styled.div.attrs({
     height: 20px;
     background: ${({ theme }) => theme.card_light};
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
 `;
 
