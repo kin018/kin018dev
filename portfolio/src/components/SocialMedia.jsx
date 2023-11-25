@@ -3,7 +3,8 @@ import { Bio } from '../data/PortfolioData';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import { FaXTwitter } from 'react-icons/fa6';
+// import TwitterIcon from '@mui/icons-material/Twitter';
 import { SocialMediaIconLink } from '../styledComponents/StyledComponents';
 
 function SocialMedia() {
@@ -33,7 +34,8 @@ function SocialMedia() {
         rel="noreferrer noopener"
         aria-label="Twitter"
       >
-        <TwitterIcon aria-label="Twitter" alt="Twitter" />
+        <FaXTwitter aria-label="X/Twitter" alt="X/Twitter" />
+        {/* <TwitterIcon aria-label="Twitter" alt="Twitter" /> */}
       </SocialMediaIconLink>
 
       <SocialMediaIconLink
