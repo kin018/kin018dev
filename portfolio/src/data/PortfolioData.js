@@ -10,7 +10,7 @@ export const Bio = {
   socialMedia: {
     github: 'http://github.com/kin018',
     linkedin: 'https://www.linkedin.com/in/kenechukwu-n-261a11228/',
-    twitter: 'https://www.X.com/kin018_',
+    twitter: 'https://www.x.com/kin018_',
     instagram: 'http://www.instagram.com/kin018_',
   },
   description:
