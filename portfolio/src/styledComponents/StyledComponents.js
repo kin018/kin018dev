@@ -577,7 +577,58 @@ export const HomeSocialMediaHorizantalDiv = styled.div.attrs({
   }
 `;
 
-//Skills Component
-export const BlankName = styled.div.attrs({
-  className: '',
-})``;
+// About
+export const AboutWrapper = styled.div.attrs({
+  className: 'AboutWrapper',
+})`
+  width: 900px;
+  max-width: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row dense;
+  grid-gap: 10px;
+  counter-reset: boxes;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const AboutMainContainer = styled.div.attrs({
+  className: 'AboutMainContainer',
+})`
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  width: 300px;
+  height: 300px;
+`;
+
+export const AboutSquare = styled.div.attrs({
+  className: 'AboutSquare',
+})`
+  display: flex; //idk
+  padding-top: 100%;
+  background-color: lightblue;
+`;
+
+export const AboutHorizontal = styled.div.attrs({
+  className: 'AboutHorizontal',
+})`
+  display: flex; //idk
+  grid-column: span 2;
+  background-color: lightblue;
+`;
+
+export const AboutRectangle = styled.div.attrs({
+  className: 'AboutRectangle',
+})`
+  display: flex; //idk
+  grid-row: span 2;
+  background-color: lightblue;
+`;
