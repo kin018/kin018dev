@@ -576,3 +576,8 @@ export const HomeSocialMediaHorizantalDiv = styled.div.attrs({
     display: none;
   }
 `;
+
+//Skills Component
+export const BlankName = styled.div.attrs({
+  className: '',
+})``;
