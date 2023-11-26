@@ -578,26 +578,9 @@ export const HomeSocialMediaHorizantalDiv = styled.div.attrs({
 `;
 
 // About
-export const AboutWrapper = styled.div.attrs({
-  className: 'AboutWrapper',
-})`
-  width: 900px;
-  max-width: 100%;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: 1fr;
-  grid-auto-flow: row dense;
-  grid-gap: 10px;
-  counter-reset: boxes;
 
-  @media (max-width: 500px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
-export const AboutMainContainer = styled.div.attrs({
-  className: 'AboutMainContainer',
+export const AboutPuzzle = styled.div.attrs({
+  className: 'AboutPuzzle',
 })`
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -605,30 +588,69 @@ export const AboutMainContainer = styled.div.attrs({
   gap: 10px;
   width: 100%;
   height: 100%;
-  width: 300px;
-  height: 300px;
+  max-width: 500px;
+  margin: 0 auto;
 `;
 
 export const AboutSquare = styled.div.attrs({
   className: 'AboutSquare',
 })`
-  display: flex; //idk
+  display: flex;
   padding-top: 100%;
   background-color: lightblue;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
 `;
 
 export const AboutHorizontal = styled.div.attrs({
   className: 'AboutHorizontal',
 })`
-  display: flex; //idk
+  display: flex;
   grid-column: span 2;
   background-color: lightblue;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
 `;
 
-export const AboutRectangle = styled.div.attrs({
-  className: 'AboutRectangle',
+export const CenteredContainer = styled.div.attrs({
+  className: 'CenteredContainer',
 })`
-  display: flex; //idk
-  grid-row: span 2;
-  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+export const AboutContainer = styled.div.attrs({
+  className: 'AboutContainer',
+})`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+`;
+
+export const AboutWrapper = styled.div.attrs({
+  className: 'AboutWrapper',
+})`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
 `;
