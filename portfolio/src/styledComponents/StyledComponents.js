@@ -459,11 +459,20 @@ export const TitleName = styled.div.attrs({
   className: 'TitleName',
 })`
   font-weight: 700;
-  font-size: 44.5px;
+  font-size: 44px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   @media (max-width: 960px) {
     text-align: center;
+  }
+
+  @media (max-width: 1102px){
+    font-weight: 700;
+    font-size: 42px;
+    color: ${({ theme }) => theme.text_primary};
+    line-height: 66px;
+    @media (max-width: 960px) {
+      text-align: center;
   }
 
   @media (max-width: 640px) {
@@ -477,7 +486,7 @@ export const TextLoop = styled.div.attrs({
   className: 'TextLoop',
 })`
   font-weight: 600;
-  font-size: 28.5px;
+  font-size: 32px;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
@@ -486,6 +495,18 @@ export const TextLoop = styled.div.attrs({
   @media (max-width: 960px) {
     text-align: center;
   }
+  @media (max-width: 1102px){
+    font-weight: 600;
+    font-size: 28.5px;
+    display: flex;
+    gap: 12px;
+    color: ${({ theme }) => theme.text_primary};
+    line-height: 62px;
+    white-space: nowrap;
+    @media (max-width: 960px) {
+      text-align: center;
+  }
+
   @media (max-width: 640px) {
     font-size: 22px;
     line-height: 48px;
