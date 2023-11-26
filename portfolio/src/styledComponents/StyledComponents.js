@@ -441,6 +441,7 @@ export const HomePictureContainer = styled.div.attrs({
   order: 2;
   justify-content: end;
   gap: 12px;
+  // margin-left: 10px;
 
   @media (max-width: 960px) {
     order: 1;
@@ -458,7 +459,7 @@ export const TitleName = styled.div.attrs({
   className: 'TitleName',
 })`
   font-weight: 700;
-  font-size: 45px;
+  font-size: 44.5px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   @media (max-width: 960px) {
@@ -476,7 +477,7 @@ export const TextLoop = styled.div.attrs({
   className: 'TextLoop',
 })`
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28.5px;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
