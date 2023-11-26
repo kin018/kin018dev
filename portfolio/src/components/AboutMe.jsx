@@ -20,6 +20,8 @@ function AboutMe() {
             <AboutSquare></AboutSquare>
             <AboutHorizontal></AboutHorizontal>
             <AboutSquare></AboutSquare>
+            {/* <AboutSquare></AboutSquare>
+            <AboutSquare></AboutSquare> */}
             <AboutHorizontal></AboutHorizontal>
           </AboutPuzzle>
         </CenteredContainer>
