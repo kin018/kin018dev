@@ -436,6 +436,21 @@ export const HomeDescriptionContainer = styled.div.attrs({
 export const HomePictureContainer = styled.div.attrs({
   className: 'HomePictureContainer',
 })`
+  //Animation for Blob
+
+  animation: updown 6s linear infinite;
+  @keyframes updown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
   width: 100%;
   display: flex;
   order: 2;
@@ -458,11 +473,20 @@ export const TitleName = styled.div.attrs({
   className: 'TitleName',
 })`
   font-weight: 700;
-  font-size: 45px;
+  font-size: 44px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   @media (max-width: 960px) {
     text-align: center;
+  }
+
+  @media (max-width: 1102px){
+    font-weight: 700;
+    font-size: 42px;
+    color: ${({ theme }) => theme.text_primary};
+    line-height: 66px;
+    @media (max-width: 960px) {
+      text-align: center;
   }
 
   @media (max-width: 640px) {
@@ -485,6 +509,18 @@ export const TextLoop = styled.div.attrs({
   @media (max-width: 960px) {
     text-align: center;
   }
+  @media (max-width: 1102px){
+    font-weight: 600;
+    font-size: 28.5px;
+    display: flex;
+    gap: 12px;
+    color: ${({ theme }) => theme.text_primary};
+    line-height: 62px;
+    white-space: nowrap;
+    @media (max-width: 960px) {
+      text-align: center;
+  }
+
   @media (max-width: 640px) {
     font-size: 22px;
     line-height: 48px;
@@ -540,3 +576,8 @@ export const HomeSocialMediaHorizantalDiv = styled.div.attrs({
     display: none;
   }
 `;
+
+//Skills Component
+export const BlankName = styled.div.attrs({
+  className: '',
+})``;
