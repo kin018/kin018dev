@@ -436,12 +436,26 @@ export const HomeDescriptionContainer = styled.div.attrs({
 export const HomePictureContainer = styled.div.attrs({
   className: 'HomePictureContainer',
 })`
+  //Animation for Blob
+
+  animation: updown 6s linear infinite;
+  @keyframes updown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
   width: 100%;
   display: flex;
   order: 2;
   justify-content: end;
   gap: 12px;
-  // margin-left: 10px;
 
   @media (max-width: 960px) {
     order: 1;
