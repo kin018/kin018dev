@@ -12,6 +12,10 @@ export const Bio = {
     linkedin: 'https://www.linkedin.com/in/kenechukwu-n-261a11228/',
     twitter: 'https://www.x.com/kin018_',
     instagram: 'http://www.instagram.com/kin018_',
+    credly_CCP:
+      'https://www.credly.com/badges/d23bb641-27ea-44e8-aa8d-b18bf8f6e9f6/linked_in_profile',
+    Credly_PSM:
+      'https://www.credly.com/badges/16da1cb3-aab1-4d6b-af19-d032aae4a00b/linked_in_profile',
   },
   description:
     'Results-driven strategic planner with a strong track record in business application development, program implementation, and technical project management. Skilled in maximizing customer experiences through rapid problem-solving and effective translation of tech concepts. Proficient in agile scrum methodology for efficient project execution and optimal outcomes.',

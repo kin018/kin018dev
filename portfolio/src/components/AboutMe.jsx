@@ -1,18 +1,22 @@
 import React from 'react';
-
+import { Bio } from '../data/PortfolioData';
 import {
+  AboutCenteredCert,
+  AboutCenteredText,
+  AboutCertImg,
   AboutContainer,
   AboutHorizontal,
   AboutLogoSquareImg,
+  AboutMissionStatementTitle,
+  AboutNumber,
   AboutParagraph,
+  AboutParagraphTitle,
   AboutPuzzle,
   AboutSquare,
-  AboutTitle,
-  CenteredContainer,
-  AboutWrapper,
-  AboutNumber,
   AboutSquareText,
-  AboutCenteredText,
+  AboutTitle,
+  AboutWrapper,
+  CenteredContainer,
 } from '../styledComponents/StyledComponents';
 
 function AboutMe() {
@@ -24,20 +28,23 @@ function AboutMe() {
           <AboutPuzzle>
             <AboutHorizontal>
               <AboutParagraph>
-                I am Ken,
-                <br />
-                <br />
-                A passionate developer, blending creativity with technical
+                <AboutParagraphTitle>
+                  Your ultimate development partner
+                </AboutParagraphTitle>
+                I am a passionate developer, blending creativity with technical
                 mastery. I guide projects from concept to launch, ensuring a
-                personalized and innovative journey at every step.
+                personalized and innovative journey at every stage.
                 <br />
                 <br />
-                Striking design, captivating interactions, and an exceptional
-                user experience are my top priorities.
+                Elevating design, captivating interactions, and delivering
+                exceptional user experiences are my foremost priorities.
               </AboutParagraph>
             </AboutHorizontal>
             <AboutSquare>
-              <AboutLogoSquareImg src="../images/Logo.png" alt="Logo" />
+              <AboutLogoSquareImg
+                src="../images/Logo.png"
+                alt="Front Face Logo"
+              />
             </AboutSquare>
             <AboutSquare>
               <AboutCenteredText>
@@ -50,8 +57,11 @@ function AboutMe() {
             </AboutSquare>
             <AboutHorizontal>
               <AboutParagraph>
+                <AboutMissionStatementTitle>
+                  "Elevate! Elevate! Elevate!"
+                </AboutMissionStatementTitle>
                 Empowering startups, small businesses, and creatives with
-                tailor-made web and design solutions crafted to elevate your
+                tailor-made web and design solutions crafted to amplify your
                 digital presence.
               </AboutParagraph>
             </AboutHorizontal>
@@ -59,14 +69,39 @@ function AboutMe() {
               <AboutCenteredText>
                 <AboutNumber>3+</AboutNumber>
                 <AboutSquareText>
-                  Professional <br />
-                  Experience
+                  Years of <br /> Professional <br />
+                  expertise
                 </AboutSquareText>
               </AboutCenteredText>
             </AboutSquare>
-            {/* <AboutSquare>6</AboutSquare>
-            <AboutSquare>7</AboutSquare> */}
-            <AboutHorizontal>8</AboutHorizontal>
+            <AboutSquare>
+              <AboutParagraph>
+                <AboutParagraphTitle>Certifications</AboutParagraphTitle>
+                <AboutCenteredCert>
+                  <a
+                    href={Bio.socialMedia.credly_CCP}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AboutCertImg
+                      src="../images/ccp.png"
+                      alt="AWS Certified Cloud Practitioner Badge"
+                    />
+                  </a>
+                  <a
+                    href={Bio.socialMedia.Credly_PSM}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AboutCertImg
+                      src="../images/psm.png"
+                      alt="Professional Scrum Master™ I (PSM I) Badge"
+                    />
+                  </a>
+                </AboutCenteredCert>
+              </AboutParagraph>
+            </AboutSquare>
+            <AboutSquare></AboutSquare>
           </AboutPuzzle>
         </CenteredContainer>
       </AboutWrapper>

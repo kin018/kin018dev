@@ -16,6 +16,7 @@ export const darkTheme = {
   text_primary: '#F2F3F4',
   text_secondary: '#b1b2b3',
   card: '#171721',
+  // card: '#211D35',
   card_light: 'rgba(25, 25, 36,1)',
   // card_light: 'rgba(25, 25, 36,.985)', //.985 is alpha channel in other others the transparency, with 0 being completely transparent and 1 being completely opaque
   // card_light: '#191924', og
@@ -476,7 +477,7 @@ export const TitleName = styled.div.attrs({
   font-weight: 700;
   font-size: 44px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+  line-height: 58px;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -505,7 +506,7 @@ export const TextLoop = styled.div.attrs({
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+  line-height: 55px;
   white-space: nowrap;
   @media (max-width: 960px) {
     text-align: center;
@@ -598,7 +599,7 @@ export const AboutPuzzle = styled.div.attrs({
   gap: 10px;
   width: 100%;
   height: 100%;
-  max-width: 500px;
+  //max-width: 600px;
   margin: 0 auto;
 
   @media (max-width: 560px) {
@@ -612,11 +613,12 @@ export const AboutSquare = styled.div.attrs({
 })`
   display: flex;
   background-color: lightblue;
-  width: 160px;
-  height: 185px;
+  grid-column: span 0.5;
   border-radius: 16px;
   justify-content: center;
   align-items: center;
+  background-color: ${({ theme }) => theme.card};
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
 
   @media (max-width: 560px) {
     padding-top: 0;
@@ -629,7 +631,7 @@ export const AboutSquare = styled.div.attrs({
 export const AboutLogoSquareImg = styled.img.attrs({
   className: 'AboutLogoSquareImg',
 })`
-  width: 50%;
+  width: 30%;
   height: auto;
   object-fit: cover;
 
@@ -648,7 +650,9 @@ export const AboutHorizontal = styled.div.attrs({
   border-radius: 16px;
   justify-content: center;
   align-items: center;
-  height: 185px;
+  background-color: ${({ theme }) => theme.card};
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+
   @media (max-width: 560px) {
     background-color: pink;
     height: 163.33px;
@@ -700,10 +704,15 @@ export const AboutWrapper = styled.div.attrs({
 export const AboutParagraph = styled.div.attrs({
   className: 'AboutParagraph',
 })`
-  font-size: 13px;
-  line-height: 1.35em;
+  font-weight:900px
+ // font-size: 16px;
+  line-height: 1.3em;
   box-sizing: border-box;
-  margin: 10px 20px;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: center;
+  color: ${({ theme }) => theme.text_secondary};
 `;
 
 export const AboutNumber = styled.span.attrs({
@@ -711,6 +720,7 @@ export const AboutNumber = styled.span.attrs({
 })`
   font-size: 24px;
   font-weight: bold;
+  color: ${({ theme }) => theme.text_primary};
 `;
 export const AboutCenteredText = styled.div.attrs({
   className: 'AboutCenteredText',
@@ -719,7 +729,7 @@ export const AboutCenteredText = styled.div.attrs({
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  //justify-content: center;
   // height: 100vh; /* Adjust as needed for your layout */
 `;
 
@@ -727,4 +737,47 @@ export const AboutSquareText = styled.span.attrs({
   className: 'AboutSquareText',
 })`
   font-size: 16px;
+  color: ${({ theme }) => theme.text_secondary};
+`;
+
+export const AboutParagraphTitle = styled.h2.attrs({
+  className: 'AboutParagraphTitle',
+})`
+font-size: 24px;
+font-weight: 600;
+color: ${({ theme }) => theme.primary};
+margin-bottom: 10px;
+text-align: center;
+  }
+`;
+export const AboutMissionStatementTitle = styled.h2.attrs({
+  className: 'AboutMissionStatementTitle',
+})`
+font-style: italic;
+font-size: 24px;
+font-weight: 600;
+color: ${({ theme }) => theme.primary};
+margin-bottom: 10px;
+text-align: center;
+  }
+`;
+
+export const AboutCertImg = styled.img.attrs({
+  className: 'AboutCertImg',
+})`
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  @media (max-width: 560px) {
+    width: 20%;
+    height: auto;
+  }
+`;
+
+export const AboutCenteredCert = styled.div.attrs({
+  className: 'AboutCenteredCert',
+})`
+  text-align: center;
+  align-items: center;
 `;
