@@ -590,6 +590,11 @@ export const AboutPuzzle = styled.div.attrs({
   height: 100%;
   max-width: 500px;
   margin: 0 auto;
+
+  @media (max-width: 560px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const AboutSquare = styled.div.attrs({
@@ -601,6 +606,13 @@ export const AboutSquare = styled.div.attrs({
   width: 100%;
   height: 100%;
   border-radius: 16px;
+
+  @media (max-width: 560px) {
+    padding-top: 0;
+    background-color: green;
+    height: 163.33px;
+    width: 490px;
+  }
 `;
 
 export const AboutHorizontal = styled.div.attrs({
@@ -612,6 +624,12 @@ export const AboutHorizontal = styled.div.attrs({
   width: 100%;
   height: 100%;
   border-radius: 16px;
+
+  @media (max-width: 560px) {
+    background-color: pink;
+    height: 163.33px;
+    width: 490px;
+  }
 `;
 
 export const CenteredContainer = styled.div.attrs({
