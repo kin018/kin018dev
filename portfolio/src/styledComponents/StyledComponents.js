@@ -608,6 +608,19 @@ export const AboutPuzzle = styled.div.attrs({
   }
 `;
 
+export const AboutLogoSquareImg = styled.img.attrs({
+  className: 'AboutLogoSquareImg',
+})`
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+
+  @media (max-width: 560px) {
+    width: 20%;
+    height: auto;
+  }
+`;
+
 export const AboutSquare = styled.div.attrs({
   className: 'AboutSquare',
 })`
@@ -620,24 +633,13 @@ export const AboutSquare = styled.div.attrs({
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
 
+  //border: 0.1px solid #854ce6;
+
   @media (max-width: 560px) {
     padding-top: 0;
     background-color: green;
     height: 163.33px;
     width: 490px;
-  }
-`;
-
-export const AboutLogoSquareImg = styled.img.attrs({
-  className: 'AboutLogoSquareImg',
-})`
-  width: 30%;
-  height: auto;
-  object-fit: cover;
-
-  @media (max-width: 560px) {
-    width: 20%;
-    height: auto;
   }
 `;
 
@@ -652,6 +654,8 @@ export const AboutHorizontal = styled.div.attrs({
   align-items: center;
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+
+  // border: 0.1px solid #854ce6;
 
   @media (max-width: 560px) {
     background-color: pink;
@@ -765,7 +769,7 @@ text-align: center;
 export const AboutCertImg = styled.img.attrs({
   className: 'AboutCertImg',
 })`
-  width: 40%;
+  width: 40%; //square
   height: auto;
   object-fit: cover;
   cursor: pointer;

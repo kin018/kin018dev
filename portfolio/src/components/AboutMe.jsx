@@ -33,7 +33,7 @@ function AboutMe() {
                 </AboutParagraphTitle>
                 I am a passionate developer, blending creativity with technical
                 mastery. I guide projects from concept to launch, ensuring a
-                personalized and innovative journey at every stage.
+                personalized and innovative journey.
                 <br />
                 <br />
                 Elevating design, captivating interactions, and delivering
