@@ -1,10 +1,12 @@
 import React from 'react';
 import {
+  AboutContainer,
+  AboutHorizontal,
+  AboutLogoSquare,
   AboutPuzzle,
   AboutSquare,
-  AboutHorizontal,
+  AboutTitle,
   CenteredContainer,
-  AboutContainer,
   AboutWrapper,
 } from '../styledComponents/StyledComponents';
 
@@ -12,17 +14,17 @@ function AboutMe() {
   return (
     <AboutContainer>
       <AboutWrapper>
-        <h1>ABOUT</h1>
+        <AboutTitle>ABOUT</AboutTitle>
         <CenteredContainer>
           <AboutPuzzle>
-            <AboutHorizontal></AboutHorizontal>
-            <AboutSquare></AboutSquare>
-            <AboutSquare></AboutSquare>
-            <AboutHorizontal></AboutHorizontal>
-            <AboutSquare></AboutSquare>
-            {/* <AboutSquare></AboutSquare>
-            <AboutSquare></AboutSquare> */}
-            <AboutHorizontal></AboutHorizontal>
+            <AboutHorizontal>1</AboutHorizontal>
+            <AboutSquare>{/* <AboutLogoSquare /> */}</AboutSquare>
+            <AboutSquare>3</AboutSquare>
+            <AboutHorizontal>4</AboutHorizontal>
+            <AboutSquare>5</AboutSquare>
+            {/* <AboutSquare>6</AboutSquare>
+            <AboutSquare>7</AboutSquare> */}
+            <AboutHorizontal>8</AboutHorizontal>
           </AboutPuzzle>
         </CenteredContainer>
       </AboutWrapper>

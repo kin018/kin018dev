@@ -29,7 +29,8 @@ export const lightTheme = {
   bgLight: '#f0f0f0',
   primary: '#be1adb',
   text_primary: '#111111',
-  text_secondary: '#48494a',
+  // text_secondary: '#48494a',
+  text_secondary: 'black',
   card: '#FFFFFF',
   card_light: 'rgba(255, 255, 255, 1)',
   button: '#5c5b5b',
@@ -578,7 +579,16 @@ export const HomeSocialMediaHorizantalDiv = styled.div.attrs({
 `;
 
 // About
-
+export const AboutTitle = styled.h2.attrs({
+  className: 'AboutTitle',
+})`
+font-size: 28px;
+font-weight: 600;
+color: ${({ theme }) => theme.text_secondary};
+margin-bottom: 20px;
+text-align: center;
+  }
+`;
 export const AboutPuzzle = styled.div.attrs({
   className: 'AboutPuzzle',
 })`
@@ -614,6 +624,10 @@ export const AboutSquare = styled.div.attrs({
     width: 490px;
   }
 `;
+
+export const AboutLogoSquare = styled.div.attrs({
+  className: 'AboutLogoSquare',
+})``;
 
 export const AboutHorizontal = styled.div.attrs({
   className: 'AboutHorizontal',
