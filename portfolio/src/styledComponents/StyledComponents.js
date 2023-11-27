@@ -611,11 +611,12 @@ export const AboutSquare = styled.div.attrs({
   className: 'AboutSquare',
 })`
   display: flex;
-  padding-top: 100%;
   background-color: lightblue;
-  width: 100%;
-  height: 100%;
+  width: 160px;
+  height: 185px;
   border-radius: 16px;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 560px) {
     padding-top: 0;
@@ -625,9 +626,18 @@ export const AboutSquare = styled.div.attrs({
   }
 `;
 
-export const AboutLogoSquare = styled.div.attrs({
-  className: 'AboutLogoSquare',
-})``;
+export const AboutLogoSquareImg = styled.img.attrs({
+  className: 'AboutLogoSquareImg',
+})`
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+
+  @media (max-width: 560px) {
+    width: 20%;
+    height: auto;
+  }
+`;
 
 export const AboutHorizontal = styled.div.attrs({
   className: 'AboutHorizontal',
@@ -635,10 +645,10 @@ export const AboutHorizontal = styled.div.attrs({
   display: flex;
   grid-column: span 2;
   background-color: lightblue;
-  width: 100%;
-  height: 100%;
   border-radius: 16px;
-
+  justify-content: center;
+  align-items: center;
+  height: 185px;
   @media (max-width: 560px) {
     background-color: pink;
     height: 163.33px;
@@ -685,4 +695,36 @@ export const AboutWrapper = styled.div.attrs({
   @media (max-width: 960px) {
     flex-direction: column;
   }
+`;
+
+export const AboutParagraph = styled.div.attrs({
+  className: 'AboutParagraph',
+})`
+  font-size: 13px;
+  line-height: 1.35em;
+  box-sizing: border-box;
+  margin: 10px 20px;
+`;
+
+export const AboutNumber = styled.span.attrs({
+  className: 'AboutNumber',
+})`
+  font-size: 24px;
+  font-weight: bold;
+`;
+export const AboutCenteredText = styled.div.attrs({
+  className: 'AboutCenteredText',
+})`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // height: 100vh; /* Adjust as needed for your layout */
+`;
+
+export const AboutSquareText = styled.span.attrs({
+  className: 'AboutSquareText',
+})`
+  font-size: 16px;
 `;

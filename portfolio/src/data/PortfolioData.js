@@ -1,11 +1,11 @@
 export const Bio = {
-  name: 'Kenechukwu Nwankwo',
+  name: 'Ken Nwankwo',
   roles: [
-    // 'Full Stack Developer',
+    'Full Stack Developer',
     'Certified Scrum Master',
-    // 'UI/UX Designer',
-    // 'QA Engineer',
-    // 'Freelancer',
+    'UI/UX Designer',
+    'QA Engineer',
+    'Freelancer',
   ],
   socialMedia: {
     github: 'http://github.com/kin018',
