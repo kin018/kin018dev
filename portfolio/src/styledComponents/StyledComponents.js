@@ -167,8 +167,10 @@ export const SocialMediaIconLink = styled.a.attrs({
   font-size: 1.5rem;
   color: ${({ theme }) =>
     theme.text_primary}; //This changes the Icon Color but may need to change TextLoop Color because I do not like that they match
+
   transition: color 0.2s ease-in-out;
   &:hover {
+    transform: translateY(-1px);
     color: ${({ theme }) => theme.primary};
   }
 `;
@@ -190,6 +192,7 @@ export const FooterLink = styled.a.attrs({
   transition: color 0.2s ease-in-out;
 
   &:hover {
+    transform: translateY(-1px);
     color: ${({ theme }) => theme.primary};
   }
 
@@ -650,11 +653,6 @@ export const AboutSquare = styled.div.attrs({
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.5);
     transform: translateY(-10px);
     filter: brightness(1.1);
-
-  @media (max-width: 960px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
 `;
 
 export const AboutHorizontal = styled.div.attrs({
