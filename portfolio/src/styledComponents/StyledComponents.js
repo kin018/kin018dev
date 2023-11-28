@@ -172,6 +172,7 @@ export const SocialMediaIconLink = styled.a.attrs({
     color: ${({ theme }) => theme.primary};
   }
 `;
+
 export const FooterName = styled.h1.attrs({
   className: 'FooterName',
 })`
@@ -187,9 +188,11 @@ export const FooterLink = styled.a.attrs({
   text-decoration: none;
   font-size: 1.2rem; //Need to change font size this is too large currently
   transition: color 0.2s ease-in-out;
+
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
+
   @media (max-width: 768px) {
     font-size: 1rem;
   }
@@ -205,6 +208,7 @@ export const FooterNav = styled.nav.attrs({
   flex-direction: row;
   gap: 2rem;
   justify-content: center;
+
   @media (max-width: 768px) {
     flex-wrap: wrap;
     gap: 1rem;
@@ -282,6 +286,7 @@ export const HeaderThemeMobileMenuBtns = styled.div.attrs({
   display: flex;
   align-items: center;
   margin-right: -16px;
+
   svg {
     vertical-align: middle;
   }
@@ -297,7 +302,7 @@ visibility: hidden;
 export const StyledThemeDarkLightLogoRightMargin = styled.div.attrs({
   className: 'StyledThemeDarkLightLogoRightMargin',
 })`
-margin-right: 1rem
+  margin-right: 1rem
   }
 `;
 
@@ -476,8 +481,9 @@ export const TitleName = styled.div.attrs({
 })`
   font-weight: 700;
   font-size: 44px;
-  color: ${({ theme }) => theme.text_primary};
   line-height: 58px;
+  color: ${({ theme }) => theme.text_primary};
+
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -508,6 +514,7 @@ export const TextLoop = styled.div.attrs({
   color: ${({ theme }) => theme.text_primary};
   line-height: 55px;
   white-space: nowrap;
+
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -519,6 +526,7 @@ export const TextLoop = styled.div.attrs({
     color: ${({ theme }) => theme.text_primary};
     line-height: 62px;
     white-space: nowrap;
+
     @media (max-width: 960px) {
       text-align: center;
   }
@@ -574,6 +582,7 @@ export const HomeSocialMediaHorizantalDiv = styled.div.attrs({
   className: 'HomeSocialMediaHorizantalDiv',
 })`
   font-size: 1.25rem;
+
   @media (min-width: 961px) {
     display: none;
   }
@@ -599,10 +608,9 @@ export const AboutPuzzle = styled.div.attrs({
   gap: 10px;
   width: 100%;
   height: 100%;
-  //max-width: 600px;
   margin: 0 auto;
 
-  @media (max-width: 560px) {
+  @media (max-width: 960px) {
     display: flex;
     flex-direction: column;
   }
@@ -615,8 +623,8 @@ export const AboutLogoSquareImg = styled.img.attrs({
   height: auto;
   object-fit: cover;
 
-  @media (max-width: 560px) {
-    width: 20%;
+  @media (max-width: 960px) {
+    width: 15%;
     height: auto;
   }
 `;
@@ -626,7 +634,7 @@ export const AboutSquare = styled.div.attrs({
 })`
   display: flex;
   background-color: lightblue;
-  grid-column: span 0.5;
+  grid-column: span 1;
   border-radius: 16px;
   justify-content: center;
   align-items: center;
@@ -635,11 +643,8 @@ export const AboutSquare = styled.div.attrs({
 
   //border: 0.1px solid #854ce6;
 
-  @media (max-width: 560px) {
-    padding-top: 0;
-    background-color: green;
-    height: 163.33px;
-    width: 490px;
+  @media (max-width: 960px) {
+    width: 100%;
   }
 `;
 
@@ -655,12 +660,10 @@ export const AboutHorizontal = styled.div.attrs({
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
 
-  // border: 0.1px solid #854ce6;
+  //border: 0.1px solid #854ce6;
 
-  @media (max-width: 560px) {
-    background-color: pink;
-    height: 163.33px;
-    width: 490px;
+  @media (max-width: 960px) {
+    width: 100%;
   }
 `;
 
@@ -673,8 +676,17 @@ export const CenteredContainer = styled.div.attrs({
   width: 100%;
   max-width: 1100px;
   gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
+
+  @media (max-width: 1681px) {
+    width: 95%;
+  }
+
+  @media (max-width: 1451px) {
+    width: 90%;
+  }
+
+  @media (max-width: 1151px) {
+    width: 80%;
   }
 `;
 
@@ -700,6 +712,7 @@ export const AboutWrapper = styled.div.attrs({
   width: 100%;
   max-width: 1100px;
   gap: 12px;
+
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -709,7 +722,6 @@ export const AboutParagraph = styled.div.attrs({
   className: 'AboutParagraph',
 })`
   font-weight:900px
- // font-size: 16px;
   line-height: 1.3em;
   box-sizing: border-box;
   margin: 20px 20px;
@@ -733,8 +745,6 @@ export const AboutCenteredText = styled.div.attrs({
   display: flex;
   flex-direction: column;
   align-items: center;
-  //justify-content: center;
-  // height: 100vh; /* Adjust as needed for your layout */
 `;
 
 export const AboutSquareText = styled.span.attrs({
@@ -753,6 +763,11 @@ color: ${({ theme }) => theme.primary};
 margin-bottom: 10px;
 text-align: center;
   }
+
+  @media (max-width: 960px) {
+    font-size: 22px;
+    font-weight: 600;
+  }
 `;
 export const AboutMissionStatementTitle = styled.h2.attrs({
   className: 'AboutMissionStatementTitle',
@@ -769,14 +784,13 @@ text-align: center;
 export const AboutCertImg = styled.img.attrs({
   className: 'AboutCertImg',
 })`
-  width: 40%; //square
+  // width: 40%; //square
+  width: 20%; //horizontal
   height: auto;
   object-fit: cover;
   cursor: pointer;
-  @media (max-width: 560px) {
-    width: 20%;
-    height: auto;
-  }
+
+56
 `;
 
 export const AboutCenteredCert = styled.div.attrs({
@@ -784,4 +798,13 @@ export const AboutCenteredCert = styled.div.attrs({
 })`
   text-align: center;
   align-items: center;
+`;
+
+export const AboutText = styled.div.attrs({
+  className: 'AboutText',
+})`
+  @media (max-width: 960px) {
+    text-align: center;
+    align-items: center;
+  }
 `;

@@ -17,6 +17,7 @@ import {
   AboutTitle,
   AboutWrapper,
   CenteredContainer,
+  AboutText,
 } from '../styledComponents/StyledComponents';
 
 function AboutMe() {
@@ -31,13 +32,15 @@ function AboutMe() {
                 <AboutParagraphTitle>
                   Your ultimate development partner
                 </AboutParagraphTitle>
-                I am a passionate developer, blending creativity with technical
-                mastery. I guide projects from concept to launch, ensuring a
-                personalized and innovative journey.
-                <br />
-                <br />
-                Elevating design, captivating interactions, and delivering
-                exceptional user experiences are my foremost priorities.
+                <AboutText>
+                  I am a passionate developer, blending creativity with
+                  technical mastery. I guide projects from concept to launch,
+                  ensuring a personalized and innovative journey.
+                  <br />
+                  <br />
+                  Elevating design, captivating interactions, and delivering
+                  exceptional user experiences are my foremost priorities.
+                </AboutText>
               </AboutParagraph>
             </AboutHorizontal>
             <AboutSquare>
@@ -60,9 +63,11 @@ function AboutMe() {
                 <AboutMissionStatementTitle>
                   "Elevate! Elevate! Elevate!"
                 </AboutMissionStatementTitle>
-                Empowering startups, small businesses, and creatives with
-                tailor-made web and design solutions crafted to amplify your
-                digital presence.
+                <AboutText>
+                  Empowering startups, small businesses, and creatives with
+                  tailor-made web and design solutions crafted to amplify your
+                  digital presence.
+                </AboutText>
               </AboutParagraph>
             </AboutHorizontal>
             <AboutSquare>
@@ -74,7 +79,7 @@ function AboutMe() {
                 </AboutSquareText>
               </AboutCenteredText>
             </AboutSquare>
-            <AboutSquare>
+            <AboutHorizontal>
               <AboutParagraph>
                 <AboutParagraphTitle>Certifications</AboutParagraphTitle>
                 <AboutCenteredCert>
@@ -100,8 +105,8 @@ function AboutMe() {
                   </a>
                 </AboutCenteredCert>
               </AboutParagraph>
-            </AboutSquare>
-            <AboutSquare></AboutSquare>
+            </AboutHorizontal>
+            {/* <AboutSquare>last jawn</AboutSquare> */}
           </AboutPuzzle>
         </CenteredContainer>
       </AboutWrapper>
