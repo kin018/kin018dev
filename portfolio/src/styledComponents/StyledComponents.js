@@ -643,6 +643,14 @@ export const AboutSquare = styled.div.attrs({
 
   //border: 0.1px solid #854ce6;
 
+  
+
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    filter: brightness(1.1);
+
   @media (max-width: 960px) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -662,6 +670,13 @@ export const AboutHorizontal = styled.div.attrs({
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
 
   //border: 0.1px solid #854ce6;
+
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    filter: brightness(1.1);
+  }
 `;
 
 export const CenteredContainer = styled.div.attrs({
