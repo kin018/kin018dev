@@ -644,7 +644,8 @@ export const AboutSquare = styled.div.attrs({
   //border: 0.1px solid #854ce6;
 
   @media (max-width: 960px) {
-    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 `;
 
@@ -661,10 +662,6 @@ export const AboutHorizontal = styled.div.attrs({
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
 
   //border: 0.1px solid #854ce6;
-
-  @media (max-width: 960px) {
-    width: 100%;
-  }
 `;
 
 export const CenteredContainer = styled.div.attrs({
@@ -702,15 +699,15 @@ export const CenteredContainer = styled.div.attrs({
     }
 
     .child3 {
-      order: 3;
+      order: 4;
     }
 
     .child4 {
-      order: 5;
+      order: 3;
     }
 
     .child5 {
-      order: 4;
+      order: 5;
     }
 
     .child6 {
@@ -820,8 +817,7 @@ export const AboutCertImg = styled.img.attrs({
   cursor: pointer;
 
   @media (max-width: 960px) {
-    width: 12%; //horizontal
-    height: auto;
+    width: 19%; //horizontal
   }
 `;
 
