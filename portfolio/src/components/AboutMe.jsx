@@ -27,7 +27,7 @@ function AboutMe() {
         <AboutTitle>ABOUT</AboutTitle>
         <CenteredContainer>
           <AboutPuzzle>
-            <AboutHorizontal>
+            <AboutHorizontal className="child1">
               <AboutParagraph>
                 <AboutParagraphTitle>
                   Your ultimate development partner
@@ -43,13 +43,13 @@ function AboutMe() {
                 </AboutText>
               </AboutParagraph>
             </AboutHorizontal>
-            <AboutSquare>
+            <AboutSquare className="child2">
               <AboutLogoSquareImg
                 src="../images/Logo.png"
                 alt="Front Face Logo"
               />
             </AboutSquare>
-            <AboutSquare>
+            <AboutSquare className="child3">
               <AboutCenteredText>
                 <AboutNumber>20+</AboutNumber>
                 <AboutSquareText>
@@ -58,7 +58,7 @@ function AboutMe() {
                 </AboutSquareText>
               </AboutCenteredText>
             </AboutSquare>
-            <AboutHorizontal>
+            <AboutHorizontal className="child4">
               <AboutParagraph>
                 <AboutMissionStatementTitle>
                   "Elevate! Elevate! Elevate!"
@@ -70,7 +70,7 @@ function AboutMe() {
                 </AboutText>
               </AboutParagraph>
             </AboutHorizontal>
-            <AboutSquare>
+            <AboutSquare className="child5">
               <AboutCenteredText>
                 <AboutNumber>3+</AboutNumber>
                 <AboutSquareText>
@@ -79,7 +79,7 @@ function AboutMe() {
                 </AboutSquareText>
               </AboutCenteredText>
             </AboutSquare>
-            <AboutHorizontal>
+            <AboutHorizontal className="child6">
               <AboutParagraph>
                 <AboutParagraphTitle>Certifications</AboutParagraphTitle>
                 <AboutCenteredCert>

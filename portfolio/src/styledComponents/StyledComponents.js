@@ -688,6 +688,34 @@ export const CenteredContainer = styled.div.attrs({
   @media (max-width: 1151px) {
     width: 80%;
   }
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+
+    .child1 {
+      order: 2;
+    }
+
+    .child2 {
+      order: 1;
+    }
+
+    .child3 {
+      order: 3;
+    }
+
+    .child4 {
+      order: 5;
+    }
+
+    .child5 {
+      order: 4;
+    }
+
+    .child6 {
+      order: 6;
+    }
+  }
 `;
 
 export const AboutContainer = styled.div.attrs({
