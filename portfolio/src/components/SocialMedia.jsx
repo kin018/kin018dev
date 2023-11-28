@@ -4,7 +4,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { FaXTwitter } from 'react-icons/fa6';
-// import TwitterIcon from '@mui/icons-material/Twitter';
 import { SocialMediaIconLink } from '../styledComponents/StyledComponents';
 
 function SocialMedia() {

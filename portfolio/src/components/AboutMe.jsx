@@ -1,25 +1,116 @@
 import React from 'react';
+import { Bio } from '../data/PortfolioData';
+import {
+  AboutCenteredCert,
+  AboutCenteredText,
+  AboutCertImg,
+  AboutContainer,
+  AboutHorizontal,
+  AboutLogoSquareImg,
+  AboutMissionStatementTitle,
+  AboutNumber,
+  AboutParagraph,
+  AboutParagraphTitle,
+  AboutPuzzle,
+  AboutSquare,
+  AboutSquareText,
+  AboutTitle,
+  AboutWrapper,
+  CenteredContainer,
+  AboutText,
+} from '../styledComponents/StyledComponents';
 
 function AboutMe() {
   return (
-    <div>
-      <h1>ABOUT</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
+    <AboutContainer>
+      <AboutWrapper>
+        <AboutTitle>ABOUT</AboutTitle>
+        <CenteredContainer>
+          <AboutPuzzle>
+            <AboutHorizontal className="child1">
+              <AboutParagraph>
+                <AboutParagraphTitle>
+                  Your ultimate development partner
+                </AboutParagraphTitle>
+                <AboutText>
+                  I am a passionate developer, blending creativity with
+                  technical mastery. I guide projects from concept to launch,
+                  ensuring a personalized and innovative journey.
+                  <br />
+                  <br />
+                  Elevating design, captivating interactions, and delivering
+                  exceptional user experiences are my foremost priorities.
+                </AboutText>
+              </AboutParagraph>
+            </AboutHorizontal>
+            <AboutSquare className="child2">
+              <AboutLogoSquareImg
+                src="../images/Logo.png"
+                alt="Front Face Logo"
+              />
+            </AboutSquare>
+            <AboutSquare className="child3">
+              <AboutCenteredText>
+                <AboutNumber>20+</AboutNumber>
+                <AboutSquareText>
+                  Completed <br />
+                  Projects
+                </AboutSquareText>
+              </AboutCenteredText>
+            </AboutSquare>
+            <AboutHorizontal className="child4">
+              <AboutParagraph>
+                <AboutMissionStatementTitle>
+                  "Elevate! Elevate! Elevate!"
+                </AboutMissionStatementTitle>
+                <AboutText>
+                  Empowering startups, small businesses, and creatives with
+                  tailor-made web and design solutions crafted to amplify your
+                  digital presence.
+                </AboutText>
+              </AboutParagraph>
+            </AboutHorizontal>
+            <AboutSquare className="child5">
+              <AboutCenteredText>
+                <AboutNumber>3+</AboutNumber>
+                <AboutSquareText>
+                  Years of <br /> Professional <br />
+                  expertise
+                </AboutSquareText>
+              </AboutCenteredText>
+            </AboutSquare>
+            <AboutHorizontal className="child6">
+              <AboutParagraph>
+                <AboutParagraphTitle>Certifications</AboutParagraphTitle>
+                <AboutCenteredCert>
+                  <a
+                    href={Bio.socialMedia.credly_CCP}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AboutCertImg
+                      src="../images/ccp.png"
+                      alt="AWS Certified Cloud Practitioner Badge"
+                    />
+                  </a>
+                  <a
+                    href={Bio.socialMedia.Credly_PSM}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AboutCertImg
+                      src="../images/psm.png"
+                      alt="Professional Scrum Master™ I (PSM I) Badge"
+                    />
+                  </a>
+                </AboutCenteredCert>
+              </AboutParagraph>
+            </AboutHorizontal>
+            {/* <AboutSquare>last jawn</AboutSquare> */}
+          </AboutPuzzle>
+        </CenteredContainer>
+      </AboutWrapper>
+    </AboutContainer>
   );
 }
 

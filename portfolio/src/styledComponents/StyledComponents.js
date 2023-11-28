@@ -16,6 +16,7 @@ export const darkTheme = {
   text_primary: '#F2F3F4',
   text_secondary: '#b1b2b3',
   card: '#171721',
+  // card: '#211D35',
   card_light: 'rgba(25, 25, 36,1)',
   // card_light: 'rgba(25, 25, 36,.985)', //.985 is alpha channel in other others the transparency, with 0 being completely transparent and 1 being completely opaque
   // card_light: '#191924', og
@@ -29,7 +30,8 @@ export const lightTheme = {
   bgLight: '#f0f0f0',
   primary: '#be1adb',
   text_primary: '#111111',
-  text_secondary: '#48494a',
+  // text_secondary: '#48494a',
+  text_secondary: 'black',
   card: '#FFFFFF',
   card_light: 'rgba(255, 255, 255, 1)',
   button: '#5c5b5b',
@@ -165,11 +167,14 @@ export const SocialMediaIconLink = styled.a.attrs({
   font-size: 1.5rem;
   color: ${({ theme }) =>
     theme.text_primary}; //This changes the Icon Color but may need to change TextLoop Color because I do not like that they match
+
   transition: color 0.2s ease-in-out;
   &:hover {
+    transform: translateY(-1px);
     color: ${({ theme }) => theme.primary};
   }
 `;
+
 export const FooterName = styled.h1.attrs({
   className: 'FooterName',
 })`
@@ -185,9 +190,12 @@ export const FooterLink = styled.a.attrs({
   text-decoration: none;
   font-size: 1.2rem; //Need to change font size this is too large currently
   transition: color 0.2s ease-in-out;
+
   &:hover {
+    transform: translateY(-1px);
     color: ${({ theme }) => theme.primary};
   }
+
   @media (max-width: 768px) {
     font-size: 1rem;
   }
@@ -203,6 +211,7 @@ export const FooterNav = styled.nav.attrs({
   flex-direction: row;
   gap: 2rem;
   justify-content: center;
+
   @media (max-width: 768px) {
     flex-wrap: wrap;
     gap: 1rem;
@@ -280,6 +289,7 @@ export const HeaderThemeMobileMenuBtns = styled.div.attrs({
   display: flex;
   align-items: center;
   margin-right: -16px;
+
   svg {
     vertical-align: middle;
   }
@@ -295,7 +305,7 @@ visibility: hidden;
 export const StyledThemeDarkLightLogoRightMargin = styled.div.attrs({
   className: 'StyledThemeDarkLightLogoRightMargin',
 })`
-margin-right: 1rem
+  margin-right: 1rem
   }
 `;
 
@@ -474,8 +484,9 @@ export const TitleName = styled.div.attrs({
 })`
   font-weight: 700;
   font-size: 44px;
+  line-height: 58px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -504,8 +515,9 @@ export const TextLoop = styled.div.attrs({
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+  line-height: 55px;
   white-space: nowrap;
+
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -517,6 +529,7 @@ export const TextLoop = styled.div.attrs({
     color: ${({ theme }) => theme.text_primary};
     line-height: 62px;
     white-space: nowrap;
+
     @media (max-width: 960px) {
       text-align: center;
   }
@@ -572,12 +585,272 @@ export const HomeSocialMediaHorizantalDiv = styled.div.attrs({
   className: 'HomeSocialMediaHorizantalDiv',
 })`
   font-size: 1.25rem;
+
   @media (min-width: 961px) {
     display: none;
   }
 `;
 
-//Skills Component
-export const BlankName = styled.div.attrs({
-  className: '',
-})``;
+// About
+export const AboutTitle = styled.h2.attrs({
+  className: 'AboutTitle',
+})`
+font-size: 28px;
+font-weight: 600;
+color: ${({ theme }) => theme.text_secondary};
+margin-bottom: 20px;
+text-align: center;
+  }
+`;
+export const AboutPuzzle = styled.div.attrs({
+  className: 'AboutPuzzle',
+})`
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const AboutLogoSquareImg = styled.img.attrs({
+  className: 'AboutLogoSquareImg',
+})`
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+
+  @media (max-width: 960px) {
+    width: 15%;
+    height: auto;
+  }
+`;
+
+export const AboutSquare = styled.div.attrs({
+  className: 'AboutSquare',
+})`
+  display: flex;
+  background-color: lightblue;
+  grid-column: span 1;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.card};
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+
+  //border: 0.1px solid #854ce6;
+
+  
+
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    filter: brightness(1.1);
+`;
+
+export const AboutHorizontal = styled.div.attrs({
+  className: 'AboutHorizontal',
+})`
+  display: flex;
+  grid-column: span 2;
+  background-color: lightblue;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.card};
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+
+  //border: 0.1px solid #854ce6;
+
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    filter: brightness(1.1);
+  }
+`;
+
+export const CenteredContainer = styled.div.attrs({
+  className: 'CenteredContainer',
+})`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+
+  @media (max-width: 1681px) {
+    width: 95%;
+  }
+
+  @media (max-width: 1451px) {
+    width: 90%;
+  }
+
+  @media (max-width: 1151px) {
+    width: 80%;
+  }
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+
+    .child1 {
+      order: 2;
+    }
+
+    .child2 {
+      order: 1;
+      display: none;
+    }
+
+    .child3 {
+      order: 4;
+    }
+
+    .child4 {
+      order: 3;
+    }
+
+    .child5 {
+      order: 5;
+    }
+
+    .child6 {
+      order: 6;
+    }
+  }
+`;
+
+export const AboutContainer = styled.div.attrs({
+  className: 'AboutContainer',
+})`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+`;
+
+export const AboutWrapper = styled.div.attrs({
+  className: 'AboutWrapper',
+})`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+export const AboutParagraph = styled.div.attrs({
+  className: 'AboutParagraph',
+})`
+  font-weight:900px
+  line-height: 1.3em;
+  box-sizing: border-box;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: center;
+  color: ${({ theme }) => theme.text_secondary};
+`;
+
+export const AboutNumber = styled.span.attrs({
+  className: 'AboutNumber',
+})`
+  font-size: 24px;
+  font-weight: bold;
+  color: ${({ theme }) => theme.text_primary};
+`;
+export const AboutCenteredText = styled.div.attrs({
+  className: 'AboutCenteredText',
+})`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const AboutSquareText = styled.span.attrs({
+  className: 'AboutSquareText',
+})`
+  font-size: 16px;
+  color: ${({ theme }) => theme.text_secondary};
+`;
+
+export const AboutParagraphTitle = styled.h2.attrs({
+  className: 'AboutParagraphTitle',
+})`
+font-size: 24px;
+font-weight: 600;
+color: ${({ theme }) => theme.primary};
+margin-bottom: 10px;
+text-align: center;
+  }
+
+  @media (max-width: 960px) {
+    font-size: 22px;
+    font-weight: 600;
+  }
+`;
+export const AboutMissionStatementTitle = styled.h2.attrs({
+  className: 'AboutMissionStatementTitle',
+})`
+font-style: italic;
+font-size: 24px;
+font-weight: 600;
+color: ${({ theme }) => theme.primary};
+margin-bottom: 10px;
+text-align: center;
+  }
+`;
+
+export const AboutCertImg = styled.img.attrs({
+  className: 'AboutCertImg',
+})`
+  // width: 40%; //square
+  width: 20%; //horizontal
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+
+  :hover {
+    color: ${({ theme }) => theme.primary};
+    border-bottom: 1.5px solid ${({ theme }) => theme.primary};
+  }
+
+  @media (max-width: 960px) {
+    width: 19%; //horizontal
+  }
+`;
+
+export const AboutCenteredCert = styled.div.attrs({
+  className: 'AboutCenteredCert',
+})`
+  text-align: center;
+  align-items: center;
+`;
+
+export const AboutText = styled.div.attrs({
+  className: 'AboutText',
+})`
+  @media (max-width: 960px) {
+    text-align: center;
+    align-items: center;
+  }
+`;
