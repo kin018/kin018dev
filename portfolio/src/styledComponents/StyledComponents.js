@@ -698,6 +698,7 @@ export const CenteredContainer = styled.div.attrs({
 
     .child2 {
       order: 1;
+      display: none;
     }
 
     .child3 {
@@ -818,7 +819,10 @@ export const AboutCertImg = styled.img.attrs({
   object-fit: cover;
   cursor: pointer;
 
-56
+  @media (max-width: 960px) {
+    width: 12%; //horizontal
+    height: auto;
+  }
 `;
 
 export const AboutCenteredCert = styled.div.attrs({
