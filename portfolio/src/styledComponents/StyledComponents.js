@@ -829,6 +829,11 @@ export const AboutCertImg = styled.img.attrs({
   object-fit: cover;
   cursor: pointer;
 
+  :hover {
+    color: ${({ theme }) => theme.primary};
+    border-bottom: 1.5px solid ${({ theme }) => theme.primary};
+  }
+
   @media (max-width: 960px) {
     width: 19%; //horizontal
   }
