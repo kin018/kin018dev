@@ -23,7 +23,7 @@ import {
 
 function AboutMe() {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <AboutWrapper>
         <AboutTitle>ABOUT ME</AboutTitle>
         <CenteredContainer>

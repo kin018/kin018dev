@@ -5,7 +5,7 @@ import {
   SkillsWrapper,
   SkillsMainTitle,
   SkillsHubContainer,
-  Skill,
+  SkillFrontBackOther,
   SkillHubTitle,
   SkillList,
   SkillItem,
@@ -14,13 +14,13 @@ import {
 
 function Skills() {
   return (
-    <SkillsMainContainer>
+    <SkillsMainContainer id="skills">
       <SkillsWrapper>
         <SkillsMainTitle>SKILLS</SkillsMainTitle>
         <SkillsHubContainer>
           {skills.map((skill) => (
             // Iterate over each skill
-            <Skill key={skill.title}>
+            <SkillFrontBackOther key={skill.title}>
               {/* Display the skill title */}
               <SkillHubTitle>{skill.title}</SkillHubTitle>
               {/* Display a list of skills for the current skill */}
@@ -35,7 +35,7 @@ function Skills() {
                   </SkillItem>
                 ))}
               </SkillList>
-            </Skill>
+            </SkillFrontBackOther>
           ))}
         </SkillsHubContainer>
       </SkillsWrapper>

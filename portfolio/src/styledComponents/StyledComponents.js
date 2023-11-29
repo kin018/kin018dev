@@ -876,7 +876,7 @@ export const SkillsWrapper = styled.div.attrs({
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1100px;
+  // max-width: 1100px; //makes this span 3 acrosss instead of 2 on top and one on bottom
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -905,11 +905,11 @@ export const SkillsHubContainer = styled.div.attrs({
   justify-content: center;
 `;
 
-export const Skill = styled.div.attrs({
-  className: 'Skill',
+export const SkillFrontBackOther = styled.div.attrs({
+  className: 'SkillFrontBackOther',
 })`
   width: 100%;
-  max-width: 500px;
+  max-width: 50%; //previously 500px
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
