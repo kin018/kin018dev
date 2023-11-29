@@ -648,10 +648,6 @@ export const AboutSquare = styled.div.attrs({
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.5);
     transform: translateY(-10px);
     filter: brightness(1.1);
-    
-  @media (max-width: 960px) {
-
-  }
 `;
 
 export const AboutHorizontal = styled.div.attrs({

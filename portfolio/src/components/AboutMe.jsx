@@ -44,12 +44,14 @@ function AboutMe() {
                 </AboutText>
               </AboutParagraph>
             </AboutHorizontal>
+
             <AboutSquare className="child2">
               <AboutLogoSquareImg
                 src="../images/Logo.png"
                 alt="Front Face Logo"
               />
             </AboutSquare>
+
             <AboutSquare className="child3">
               <AboutCenteredText>
                 <AboutSquareContainerText>
@@ -62,6 +64,7 @@ function AboutMe() {
                 </AboutSquareContainerText>
               </AboutCenteredText>
             </AboutSquare>
+
             <AboutHorizontal className="child4">
               <AboutParagraph>
                 <AboutMissionStatementTitle>
@@ -74,6 +77,7 @@ function AboutMe() {
                 </AboutText>
               </AboutParagraph>
             </AboutHorizontal>
+
             <AboutSquare className="child5">
               <AboutCenteredText>
                 <AboutSquareContainerText>
@@ -86,6 +90,7 @@ function AboutMe() {
                 </AboutSquareContainerText>
               </AboutCenteredText>
             </AboutSquare>
+
             <AboutHorizontal className="child6">
               <AboutParagraph>
                 <AboutParagraphTitle>Certifications</AboutParagraphTitle>
@@ -113,7 +118,6 @@ function AboutMe() {
                 </AboutCenteredCert>
               </AboutParagraph>
             </AboutHorizontal>
-            {/* <AboutSquare>last jawn</AboutSquare> */}
           </AboutPuzzle>
         </CenteredContainer>
       </AboutWrapper>
