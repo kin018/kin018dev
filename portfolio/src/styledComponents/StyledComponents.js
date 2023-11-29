@@ -979,3 +979,85 @@ export const SkillImage = styled.img.attrs({
 //Projects
 
 //Contact
+
+//Bento2.0
+export const Bento = styled.div.attrs({
+  className: 'SkillList',
+})`
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+`;
+
+export const BentoContainer = styled.div.attrs({
+  className: 'SkillItem',
+})`
+position; relative;
+display:grid;
+grid-template-rows: repeat(6, 1fr);
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+padding: 2rem;
+width: 100%;
+height: inherit;
+z-index:10;
+
+@media (max-width: 769px) {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+`;
+export const BentoBox = styled.div.attrs({
+  className: 'SkillList',
+})`
+  position: relative;
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+
+  background-color: rgba(100, 45, 100, 0.5);
+  transition: background-color 0.32s ease-in-out;
+
+  display: flex;
+  allign-items: flex-end;
+  padding: 2rem;
+  cursor: pointer;
+
+  .active {
+    background-color: rgba(100, 45, 100, 0.3);
+    transition: background-color 0.32s ease-in-out;
+  }
+
+  :nth-child(1) {
+    grid-area: 1/1/3/4;
+}
+
+:nth-child(2) {    
+    grid-area: 1/4/3/9;
+}
+
+:nth-child(3) {
+  grid-area: 3/1/5/3;
+}
+:nth-child(4) {
+  grid-area: 3/3/5/7;
+}
+
+:nth-child(5) {
+    
+  grid-area: 3/7/4/9;
+}
+
+:nth-child(6) {
+    
+grid-area: 4/7/5/9;
+}
+  }
+`;
+
+export const BentoBoxText = styled.span.attrs({
+  className: 'SkillImage',
+})`
+  overflow: hidden;
+  font-size: 2.4rem;
+`;
