@@ -41,11 +41,7 @@ export const skills = [
         image:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png',
       },
-      {
-        name: 'Java',
-        image:
-          'https://github.com/tandpfun/skill-icons/raw/main/icons/Java-Dark.svg',
-      },
+
       {
         name: 'HTML',
         image: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png',
@@ -92,6 +88,11 @@ export const skills = [
       {
         name: 'C#',
         image: 'https://github.com/tandpfun/skill-icons/raw/main/icons/CS.svg',
+      },
+      {
+        name: 'Java',
+        image:
+          'https://github.com/tandpfun/skill-icons/raw/main/icons/Java-Dark.svg',
       },
       {
         name: 'MySQL',

@@ -631,7 +631,6 @@ export const AboutLogoSquareImg = styled.img.attrs({
     height: auto;
   }
 `;
-
 export const AboutSquare = styled.div.attrs({
   className: 'AboutSquare',
 })`
@@ -824,7 +823,7 @@ text-align: center;
 export const AboutCertImg = styled.img.attrs({
   className: 'AboutCertImg',
 })`
-  // width: 40%; //square
+  //width: 40%; //square
   width: 20%; //horizontal
   height: auto;
   object-fit: cover;
