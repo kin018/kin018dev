@@ -1,6 +1,7 @@
 import React from 'react';
 import { skills } from '../data/PortfolioData';
 import {
+  AnimatedSkillItem,
   SkillsMainContainer,
   SkillsWrapper,
   SkillsMainTitle,
@@ -12,6 +13,8 @@ import {
   SkillImage,
 } from '../styledComponents/StyledComponents';
 
+// ... (import statements)
+
 function Skills() {
   return (
     <SkillsMainContainer id="skills">
@@ -19,19 +22,15 @@ function Skills() {
         <SkillsMainTitle>SKILLS</SkillsMainTitle>
         <SkillsHubContainer>
           {skills.map((skill) => (
-            // Iterate over each skill
             <SkillFrontBackOther key={skill.title}>
-              {/* Display the skill title */}
               <SkillHubTitle>{skill.title}</SkillHubTitle>
-              {/* Display a list of skills for the current skill */}
               <SkillList>
                 {skill.skills.map((item) => (
-                  // Iterate over each skill item
                   <SkillItem key={item.name}>
-                    {/* Display the skill image */}
-                    <SkillImage src={item.image} alt={item.name} />
-                    {/* Display the skill name */}
-                    {item.name}
+                    <AnimatedSkillItem>
+                      <SkillImage src={item.image} alt={item.name} />
+                      {item.name}
+                    </AnimatedSkillItem>
                   </SkillItem>
                 ))}
               </SkillList>
