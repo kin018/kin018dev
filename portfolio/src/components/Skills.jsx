@@ -1,25 +1,45 @@
 import React from 'react';
+import { skills } from '../data/PortfolioData';
+import {
+  SkillsMainContainer,
+  SkillsWrapper,
+  SkillsMainTitle,
+  SkillsHubContainer,
+  Skill,
+  SkillHubTitle,
+  SkillList,
+  SkillItem,
+  SkillImage,
+} from '../styledComponents/StyledComponents';
 
 function Skills() {
   return (
-    <div>
-      <h1>SKILLS</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-      </p>{' '}
-    </div>
+    <SkillsMainContainer>
+      <SkillsWrapper>
+        <SkillsMainTitle>SKILLS</SkillsMainTitle>
+        <SkillsHubContainer>
+          {skills.map((skill) => (
+            // Iterate over each skill
+            <Skill key={skill.title}>
+              {/* Display the skill title */}
+              <SkillHubTitle>{skill.title}</SkillHubTitle>
+              {/* Display a list of skills for the current skill */}
+              <SkillList>
+                {skill.skills.map((item) => (
+                  // Iterate over each skill item
+                  <SkillItem key={item.name}>
+                    {/* Display the skill image */}
+                    <SkillImage src={item.image} alt={item.name} />
+                    {/* Display the skill name */}
+                    {item.name}
+                  </SkillItem>
+                ))}
+              </SkillList>
+            </Skill>
+          ))}
+        </SkillsHubContainer>
+      </SkillsWrapper>
+    </SkillsMainContainer>
   );
 }
 

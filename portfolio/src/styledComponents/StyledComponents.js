@@ -855,3 +855,128 @@ export const AboutText = styled.div.attrs({
     align-items: center;
   }
 `;
+
+// Skills
+export const SkillsMainContainer = styled.div.attrs({
+  className: 'SkillsMainContainer',
+})`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+`;
+
+export const SkillsWrapper = styled.div.attrs({
+  className: 'SkillsWrapper',
+})`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+export const SkillsMainTitle = styled.div.attrs({
+  className: 'SkillsMainTitle',
+})`
+  font-size: 28px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-top: 30px;
+  //margin-bottom: 10px;
+  text-align: center;
+`;
+
+export const SkillsHubContainer = styled.div.attrs({
+  className: 'SkillsHubContainer',
+})`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 30px;
+  justify-content: center;
+`;
+
+export const Skill = styled.div.attrs({
+  className: 'Skill',
+})`
+  width: 100%;
+  max-width: 500px;
+  background-color: ${({ theme }) => theme.card};
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 18px 36px;
+  @media (max-width: 768px) {
+    max-width: 400px;
+    padding: 10px 36px;
+  }
+  @media (max-width: 500px) {
+    max-width: 330px;
+    padding: 10px 36px;
+  }
+`;
+
+export const SkillHubTitle = styled.h2.attrs({
+  className: 'SkillHubTitle',
+})`
+  font-size: 28px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-bottom: 20px;
+  text-align: center;
+`;
+
+export const SkillList = styled.div.attrs({
+  className: 'SkillList',
+})`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+`;
+
+export const SkillItem = styled.div.attrs({
+  className: 'SkillItem',
+})`
+  font-size: 16px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 80};
+  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  @media (max-width: 500px) {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+`;
+
+export const SkillImage = styled.img.attrs({
+  className: 'SkillImage',
+})`
+  width: 24px;
+  height: 24px;
+`;
+
+// Services
+
+//Projects
+
+//Contact
