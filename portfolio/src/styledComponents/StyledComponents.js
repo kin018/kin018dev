@@ -942,8 +942,6 @@ export const SkillList = styled.div.attrs({
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 20px;
-
-  animation: slide 20s linear infinite; /* Adjust the duration as needed */
 `;
 
 export const SkillItem = styled.div.attrs({
@@ -959,33 +957,21 @@ export const SkillItem = styled.div.attrs({
   align-items: center;
   justify-content: center;
   gap: 8px;
-
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
   }
-
   @media (max-width: 500px) {
     font-size: 14px;
     padding: 6px 12px;
   }
 `;
+
 export const SkillImage = styled.img.attrs({
   className: 'SkillImage',
 })`
   width: 24px;
   height: 24px;
-`;
-
-export const AnimatedSkillItem = styled.div`
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
 `;
 
 // Services
