@@ -789,6 +789,15 @@ export const AboutSquareText = styled.span.attrs({
   color: ${({ theme }) => theme.text_secondary};
 `;
 
+export const AboutSquareContainerText = styled.span.attrs({
+  className: 'AboutSquareContainerText',
+})`
+  @media (max-width: 960px) {
+    margin: 20px 20px 30px 20px;
+    // font-weight: 600;
+  }
+`;
+
 export const AboutParagraphTitle = styled.h2.attrs({
   className: 'AboutParagraphTitle',
 })`

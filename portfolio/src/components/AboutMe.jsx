@@ -18,6 +18,7 @@ import {
   AboutWrapper,
   CenteredContainer,
   AboutText,
+  AboutSquareContainerText,
 } from '../styledComponents/StyledComponents';
 
 function AboutMe() {
@@ -51,11 +52,14 @@ function AboutMe() {
             </AboutSquare>
             <AboutSquare className="child3">
               <AboutCenteredText>
-                <AboutNumber>20+</AboutNumber>
-                <AboutSquareText>
-                  Completed <br />
-                  Projects
-                </AboutSquareText>
+                <AboutSquareContainerText>
+                  <AboutNumber>20+</AboutNumber>
+                  <br />
+                  <AboutSquareText>
+                    Completed <br />
+                    Projects
+                  </AboutSquareText>
+                </AboutSquareContainerText>
               </AboutCenteredText>
             </AboutSquare>
             <AboutHorizontal className="child4">
@@ -72,11 +76,14 @@ function AboutMe() {
             </AboutHorizontal>
             <AboutSquare className="child5">
               <AboutCenteredText>
-                <AboutNumber>3+</AboutNumber>
-                <AboutSquareText>
-                  Years of <br /> Professional <br />
-                  expertise
-                </AboutSquareText>
+                <AboutSquareContainerText>
+                  <AboutNumber>3+</AboutNumber>
+                  <br />
+                  <AboutSquareText>
+                    Years of <br /> Professional <br />
+                    expertise
+                  </AboutSquareText>
+                </AboutSquareContainerText>
               </AboutCenteredText>
             </AboutSquare>
             <AboutHorizontal className="child6">
