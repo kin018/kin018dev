@@ -794,7 +794,7 @@ export const AboutSquareContainerText = styled.span.attrs({
 })`
   @media (max-width: 960px) {
     margin: 20px 20px 30px 20px;
-    // font-weight: 600;
+    padding: 20px 20px;
   }
 `;
 
