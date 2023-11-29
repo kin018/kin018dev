@@ -13,12 +13,12 @@ import {
   AboutParagraphTitle,
   AboutPuzzle,
   AboutSquare,
+  AboutSquareContainerText,
   AboutSquareText,
   AboutTitle,
+  AboutText,
   AboutWrapper,
   CenteredContainer,
-  AboutText,
-  AboutSquareContainerText,
 } from '../styledComponents/StyledComponents';
 
 function AboutMe() {
