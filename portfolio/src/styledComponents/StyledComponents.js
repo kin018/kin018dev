@@ -609,11 +609,11 @@ export const AboutPuzzle = styled.div.attrs({
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  width: 100%;
-  height: 100%;
+  width: 75%;
   margin: 0 auto;
 
   @media (max-width: 960px) {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
