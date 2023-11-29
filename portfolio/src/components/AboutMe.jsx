@@ -25,7 +25,7 @@ function AboutMe() {
   return (
     <AboutContainer>
       <AboutWrapper>
-        <AboutTitle>ABOUT</AboutTitle>
+        <AboutTitle>ABOUT ME</AboutTitle>
         <CenteredContainer>
           <AboutPuzzle>
             <AboutHorizontal className="child1">
