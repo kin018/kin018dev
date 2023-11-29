@@ -636,7 +636,6 @@ export const AboutSquare = styled.div.attrs({
   className: 'AboutSquare',
 })`
   display: flex;
-  background-color: lightblue;
   grid-column: span 1;
   border-radius: 16px;
   justify-content: center;
@@ -644,15 +643,15 @@ export const AboutSquare = styled.div.attrs({
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
 
-  //border: 0.1px solid #854ce6;
-
-  
-
   transition: all 0.5s ease-in-out;
   &:hover {
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.5);
     transform: translateY(-10px);
     filter: brightness(1.1);
+    
+  @media (max-width: 960px) {
+
+  }
 `;
 
 export const AboutHorizontal = styled.div.attrs({
@@ -660,14 +659,11 @@ export const AboutHorizontal = styled.div.attrs({
 })`
   display: flex;
   grid-column: span 2;
-  background-color: lightblue;
   border-radius: 16px;
   justify-content: center;
   align-items: center;
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
-
-  //border: 0.1px solid #854ce6;
 
   transition: all 0.5s ease-in-out;
   &:hover {
