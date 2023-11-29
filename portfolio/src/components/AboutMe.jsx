@@ -13,18 +13,19 @@ import {
   AboutParagraphTitle,
   AboutPuzzle,
   AboutSquare,
+  AboutSquareContainerText,
   AboutSquareText,
   AboutTitle,
+  AboutText,
   AboutWrapper,
   CenteredContainer,
-  AboutText,
 } from '../styledComponents/StyledComponents';
 
 function AboutMe() {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <AboutWrapper>
-        <AboutTitle>ABOUT</AboutTitle>
+        <AboutTitle>ABOUT ME</AboutTitle>
         <CenteredContainer>
           <AboutPuzzle>
             <AboutHorizontal className="child1">
@@ -43,21 +44,27 @@ function AboutMe() {
                 </AboutText>
               </AboutParagraph>
             </AboutHorizontal>
+
             <AboutSquare className="child2">
               <AboutLogoSquareImg
                 src="../images/Logo.png"
                 alt="Front Face Logo"
               />
             </AboutSquare>
+
             <AboutSquare className="child3">
               <AboutCenteredText>
-                <AboutNumber>20+</AboutNumber>
-                <AboutSquareText>
-                  Completed <br />
-                  Projects
-                </AboutSquareText>
+                <AboutSquareContainerText>
+                  <AboutNumber>20+</AboutNumber>
+                  <br />
+                  <AboutSquareText>
+                    Completed <br />
+                    Projects
+                  </AboutSquareText>
+                </AboutSquareContainerText>
               </AboutCenteredText>
             </AboutSquare>
+
             <AboutHorizontal className="child4">
               <AboutParagraph>
                 <AboutMissionStatementTitle>
@@ -70,15 +77,20 @@ function AboutMe() {
                 </AboutText>
               </AboutParagraph>
             </AboutHorizontal>
+
             <AboutSquare className="child5">
               <AboutCenteredText>
-                <AboutNumber>3+</AboutNumber>
-                <AboutSquareText>
-                  Years of <br /> Professional <br />
-                  expertise
-                </AboutSquareText>
+                <AboutSquareContainerText>
+                  <AboutNumber>3+</AboutNumber>
+                  <br />
+                  <AboutSquareText>
+                    Years of <br /> Professional <br />
+                    expertise
+                  </AboutSquareText>
+                </AboutSquareContainerText>
               </AboutCenteredText>
             </AboutSquare>
+
             <AboutHorizontal className="child6">
               <AboutParagraph>
                 <AboutParagraphTitle>Certifications</AboutParagraphTitle>
@@ -106,7 +118,6 @@ function AboutMe() {
                 </AboutCenteredCert>
               </AboutParagraph>
             </AboutHorizontal>
-            {/* <AboutSquare>last jawn</AboutSquare> */}
           </AboutPuzzle>
         </CenteredContainer>
       </AboutWrapper>

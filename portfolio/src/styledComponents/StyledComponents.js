@@ -609,11 +609,11 @@ export const AboutPuzzle = styled.div.attrs({
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  width: 100%;
-  height: 100%;
+  width: 92%;
   margin: 0 auto;
 
   @media (max-width: 960px) {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -631,22 +631,16 @@ export const AboutLogoSquareImg = styled.img.attrs({
     height: auto;
   }
 `;
-
 export const AboutSquare = styled.div.attrs({
   className: 'AboutSquare',
 })`
   display: flex;
-  background-color: lightblue;
   grid-column: span 1;
   border-radius: 16px;
   justify-content: center;
   align-items: center;
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
-
-  //border: 0.1px solid #854ce6;
-
-  
 
   transition: all 0.5s ease-in-out;
   &:hover {
@@ -660,14 +654,11 @@ export const AboutHorizontal = styled.div.attrs({
 })`
   display: flex;
   grid-column: span 2;
-  background-color: lightblue;
   border-radius: 16px;
   justify-content: center;
   align-items: center;
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
-
-  //border: 0.1px solid #854ce6;
 
   transition: all 0.5s ease-in-out;
   &:hover {
@@ -793,6 +784,15 @@ export const AboutSquareText = styled.span.attrs({
   color: ${({ theme }) => theme.text_secondary};
 `;
 
+export const AboutSquareContainerText = styled.span.attrs({
+  className: 'AboutSquareContainerText',
+})`
+  @media (max-width: 960px) {
+    margin: 20px 20px 30px 20px;
+    padding: 20px 20px;
+  }
+`;
+
 export const AboutParagraphTitle = styled.h2.attrs({
   className: 'AboutParagraphTitle',
 })`
@@ -823,7 +823,7 @@ text-align: center;
 export const AboutCertImg = styled.img.attrs({
   className: 'AboutCertImg',
 })`
-  // width: 40%; //square
+  //width: 40%; //square
   width: 20%; //horizontal
   height: auto;
   object-fit: cover;
@@ -854,3 +854,128 @@ export const AboutText = styled.div.attrs({
     align-items: center;
   }
 `;
+
+// Skills
+export const SkillsMainContainer = styled.div.attrs({
+  className: 'SkillsMainContainer',
+})`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+`;
+
+export const SkillsWrapper = styled.div.attrs({
+  className: 'SkillsWrapper',
+})`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  // max-width: 1100px; //makes this span 3 acrosss instead of 2 on top and one on bottom
+  gap: 12px;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+export const SkillsMainTitle = styled.div.attrs({
+  className: 'SkillsMainTitle',
+})`
+  font-size: 28px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-top: 30px;
+  //margin-bottom: 10px;
+  text-align: center;
+`;
+
+export const SkillsHubContainer = styled.div.attrs({
+  className: 'SkillsHubContainer',
+})`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 30px;
+  justify-content: center;
+`;
+
+export const SkillFrontBackOther = styled.div.attrs({
+  className: 'SkillFrontBackOther',
+})`
+  width: 100%;
+  max-width: 50%; //previously 500px
+  background-color: ${({ theme }) => theme.card};
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 18px 36px;
+  @media (max-width: 768px) {
+    max-width: 400px;
+    padding: 10px 36px;
+  }
+  @media (max-width: 500px) {
+    max-width: 330px;
+    padding: 10px 36px;
+  }
+`;
+
+export const SkillHubTitle = styled.h2.attrs({
+  className: 'SkillHubTitle',
+})`
+  font-size: 28px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-bottom: 20px;
+  text-align: center;
+`;
+
+export const SkillList = styled.div.attrs({
+  className: 'SkillList',
+})`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+`;
+
+export const SkillItem = styled.div.attrs({
+  className: 'SkillItem',
+})`
+  font-size: 16px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 80};
+  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  @media (max-width: 500px) {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+`;
+
+export const SkillImage = styled.img.attrs({
+  className: 'SkillImage',
+})`
+  width: 24px;
+  height: 24px;
+`;
+
+// Services
+
+//Projects
+
+//Contact
