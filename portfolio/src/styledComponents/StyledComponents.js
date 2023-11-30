@@ -623,7 +623,7 @@ export const SkillsWrapper = styled.div.attrs({
 export const SkillsMainTitle = styled.div.attrs({
   className: 'SkillsMainTitle',
 })`
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   margin-top: 30px;
@@ -638,6 +638,8 @@ export const SkillsHubContainer = styled.div.attrs({
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
+  margin-bottom: 80px;
+
   gap: 30px;
   justify-content: center;
 `;
@@ -650,14 +652,13 @@ export const SkillFrontBackOther = styled.div.attrs({
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  padding: 18px 36px;
+  padding: 18px 26px;
+
   @media (max-width: 768px) {
     max-width: 400px;
-    padding: 10px 36px;
   }
   @media (max-width: 500px) {
     max-width: 330px;
-    padding: 10px 36px;
   }
 `;
 
@@ -923,4 +924,124 @@ export const AboutBentoBoxCertImg = styled.img.attrs({
   @media (max-width: 960px) {
     width: 19%; //horizontal
   }
+`;
+
+//Services
+export const ServicesMainContainer = styled.div.attrs({
+  className: 'ServicesMainContainer',
+})`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+`;
+
+export const ServicesWrapper = styled.div.attrs({
+  className: 'ServicesWrapper',
+})`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+export const ServicesMainTitle = styled.div.attrs({
+  className: 'ServicesMainTitle',
+})`
+  font-size: 34px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-top: 30px;
+  //margin-bottom: 10px;
+  text-align: center;
+`;
+
+export const ServicesHubContainer = styled.div.attrs({
+  className: 'ServicesHubContainer',
+})`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 30px;
+  justify-content: center;
+`;
+
+export const ServicesCard = styled.div.attrs({
+  className: 'ServicesTitleCard',
+})`
+  width: 100%;
+  max-width: 535px;
+  background-color: ${({ theme }) => theme.card};
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 18px 36px;
+  @media (max-width: 768px) {
+    max-width: 400px;
+    padding: 10px 36px;
+  }
+  @media (max-width: 500px) {
+    max-width: 330px;
+    padding: 10px 36px;
+  }
+`;
+
+export const ServicesHubTitle = styled.h2.attrs({
+  className: 'ServicesHubTitle',
+})`
+  font-size: 24px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_primary};
+  margin-top: 5px;
+`;
+
+export const ServicesParagraph = styled.p.attrs({
+  className: 'ServicesParagraph',
+})`
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  color: ${({ theme }) => theme.text_primary + 95};
+
+  @media (max-width: 960px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 14px;
+    line-height: 28px;
+  }
+`;
+
+export const ServicesTextContent = styled.div.attrs({
+  className: 'ServicesTextContent',
+})`
+  padding-left: 20px;
+`;
+
+export const ServicesImgIcon = styled.span.attrs({
+  className: 'ServicesImgIcon',
+})`
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  color: ${({ theme }) => theme.primary};
+`;
+
+export const ServicesMediaContent = styled.div.attrs({
+  className: 'ServicesMediaContent',
+})`
+  display: flex;
 `;
