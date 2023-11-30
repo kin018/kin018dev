@@ -392,6 +392,7 @@ export const HomeMainContainer = styled.div.attrs({
   position: relative;
   background-color: ${({ theme }) => theme.card_light};
   padding: 80px 30px;
+  //height: 100vh;
 
   @media (max-width: 960px) {
     padding: 66px 16px;
