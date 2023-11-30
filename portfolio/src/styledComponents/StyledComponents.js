@@ -751,7 +751,7 @@ export const AboutBentoBox = styled.div.attrs({
 })`
   position: relative;
   backdrop-filter: blur(1rem);
-  border-radius: 1rem;
+  border-radius: 16px;
 
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
