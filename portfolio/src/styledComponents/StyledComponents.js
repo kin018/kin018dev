@@ -392,7 +392,6 @@ export const HomeMainContainer = styled.div.attrs({
   position: relative;
   background-color: ${({ theme }) => theme.card_light};
   padding: 80px 30px;
-  //height: 100vh;
 
   @media (max-width: 960px) {
     padding: 66px 16px;
@@ -998,7 +997,7 @@ export const ServicesCard = styled.div.attrs({
 export const ServicesHubTitle = styled.h2.attrs({
   className: 'ServicesHubTitle',
 })`
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   color: ${({ theme }) => theme.text_primary};
   margin-top: 5px;
@@ -1007,19 +1006,19 @@ export const ServicesHubTitle = styled.h2.attrs({
 export const ServicesParagraph = styled.p.attrs({
   className: 'ServicesParagraph',
 })`
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 27px;
   margin-bottom: 12px;
   color: ${({ theme }) => theme.text_primary + 95};
 
   @media (max-width: 960px) {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 26px;
   }
 
   @media (max-width: 640px) {
     font-size: 14px;
-    line-height: 28px;
+    line-height: 26px;
   }
 `;
 
