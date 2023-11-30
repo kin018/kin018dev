@@ -41,7 +41,11 @@ export const skills = [
         image:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png',
       },
-
+      {
+        name: 'TypeScript',
+        image:
+          'https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/TypeScript.svg',
+      },
       {
         name: 'HTML',
         image: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png',
@@ -52,11 +56,6 @@ export const skills = [
           'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png',
       },
 
-      {
-        name: 'TypeScript',
-        image:
-          'https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/TypeScript.svg',
-      },
       {
         name: 'Bootstrap',
         image:
@@ -73,19 +72,6 @@ export const skills = [
     title: 'Backend',
     skills: [
       {
-        name: 'Node Js',
-        image: 'https://nodejs.org/static/images/logo.svg',
-      },
-      {
-        name: 'Graph Ql',
-        image: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
-      },
-      {
-        name: 'DotNet',
-        image:
-          'https://github.com/tandpfun/skill-icons/raw/main/icons/DotNet.svg',
-      },
-      {
         name: 'C#',
         image: 'https://github.com/tandpfun/skill-icons/raw/main/icons/CS.svg',
       },
@@ -94,6 +80,12 @@ export const skills = [
         image:
           'https://github.com/tandpfun/skill-icons/raw/main/icons/Java-Dark.svg',
       },
+      {
+        name: 'DotNet',
+        image:
+          'https://github.com/tandpfun/skill-icons/raw/main/icons/DotNet.svg',
+      },
+
       {
         name: 'MySQL',
         image:
@@ -104,9 +96,18 @@ export const skills = [
         image:
           'https://camo.githubusercontent.com/42dfd0950d93092d82d677877fe87d5bab1e2acccc1110bf0f9dd755988ccb7e/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3330333232392f6d6963726f736f66742d73716c2d7365727665722d6c6f676f2e737667',
       },
+
       {
         name: 'Postgresql',
         image: 'https://www.postgresql.org/media/img/about/press/elephant.png',
+      },
+      {
+        name: 'Node Js',
+        image: 'https://nodejs.org/static/images/logo.svg',
+      },
+      {
+        name: 'Graph Ql',
+        image: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
       },
     ],
   },

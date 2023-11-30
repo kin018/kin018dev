@@ -591,270 +591,6 @@ export const HomeSocialMediaHorizantalDiv = styled.div.attrs({
   }
 `;
 
-// About
-export const AboutTitle = styled.h2.attrs({
-  className: 'AboutTitle',
-})`
-font-size: 28px;
-font-weight: 600;
-color: ${({ theme }) => theme.text_secondary};
-margin-bottom: 20px;
-text-align: center;
-  }
-`;
-export const AboutPuzzle = styled.div.attrs({
-  className: 'AboutPuzzle',
-})`
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  width: 92%;
-  margin: 0 auto;
-
-  @media (max-width: 960px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-`;
-
-export const AboutLogoSquareImg = styled.img.attrs({
-  className: 'AboutLogoSquareImg',
-})`
-  width: 30%;
-  height: auto;
-  object-fit: cover;
-
-  @media (max-width: 960px) {
-    width: 15%;
-    height: auto;
-  }
-`;
-export const AboutSquare = styled.div.attrs({
-  className: 'AboutSquare',
-})`
-  display: flex;
-  grid-column: span 1;
-  border-radius: 16px;
-  justify-content: center;
-  align-items: center;
-  background-color: ${({ theme }) => theme.card};
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
-
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.5);
-    transform: translateY(-10px);
-    filter: brightness(1.1);
-`;
-
-export const AboutHorizontal = styled.div.attrs({
-  className: 'AboutHorizontal',
-})`
-  display: flex;
-  grid-column: span 2;
-  border-radius: 16px;
-  justify-content: center;
-  align-items: center;
-  background-color: ${({ theme }) => theme.card};
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
-
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.5);
-    transform: translateY(-10px);
-    filter: brightness(1.1);
-  }
-`;
-
-export const CenteredContainer = styled.div.attrs({
-  className: 'CenteredContainer',
-})`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1100px;
-  gap: 12px;
-
-  @media (max-width: 1681px) {
-    width: 95%;
-  }
-
-  @media (max-width: 1451px) {
-    width: 90%;
-  }
-
-  @media (max-width: 1151px) {
-    width: 80%;
-  }
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-
-    .child1 {
-      order: 2;
-    }
-
-    .child2 {
-      order: 1;
-      display: none;
-    }
-
-    .child3 {
-      order: 4;
-    }
-
-    .child4 {
-      order: 3;
-    }
-
-    .child5 {
-      order: 5;
-    }
-
-    .child6 {
-      order: 6;
-    }
-  }
-`;
-
-export const AboutContainer = styled.div.attrs({
-  className: 'AboutContainer',
-})`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  align-items: center;
-`;
-
-export const AboutWrapper = styled.div.attrs({
-  className: 'AboutWrapper',
-})`
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1100px;
-  gap: 12px;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
-
-export const AboutParagraph = styled.div.attrs({
-  className: 'AboutParagraph',
-})`
-  font-weight:900px
-  line-height: 1.3em;
-  box-sizing: border-box;
-  margin: 20px 20px;
-  padding: 20px 20px;
-  align-items: center;
-  justify-content: center;
-  color: ${({ theme }) => theme.text_secondary};
-`;
-
-export const AboutNumber = styled.span.attrs({
-  className: 'AboutNumber',
-})`
-  font-size: 24px;
-  font-weight: bold;
-  color: ${({ theme }) => theme.text_primary};
-`;
-export const AboutCenteredText = styled.div.attrs({
-  className: 'AboutCenteredText',
-})`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-export const AboutSquareText = styled.span.attrs({
-  className: 'AboutSquareText',
-})`
-  font-size: 16px;
-  color: ${({ theme }) => theme.text_secondary};
-`;
-
-export const AboutSquareContainerText = styled.span.attrs({
-  className: 'AboutSquareContainerText',
-})`
-  @media (max-width: 960px) {
-    margin: 20px 20px 30px 20px;
-    padding: 20px 20px;
-  }
-`;
-
-export const AboutParagraphTitle = styled.h2.attrs({
-  className: 'AboutParagraphTitle',
-})`
-font-size: 24px;
-font-weight: 600;
-color: ${({ theme }) => theme.primary};
-margin-bottom: 10px;
-text-align: center;
-  }
-
-  @media (max-width: 960px) {
-    font-size: 22px;
-    font-weight: 600;
-  }
-`;
-export const AboutMissionStatementTitle = styled.h2.attrs({
-  className: 'AboutMissionStatementTitle',
-})`
-font-style: italic;
-font-size: 24px;
-font-weight: 600;
-color: ${({ theme }) => theme.primary};
-margin-bottom: 10px;
-text-align: center;
-  }
-`;
-
-export const AboutCertImg = styled.img.attrs({
-  className: 'AboutCertImg',
-})`
-  //width: 40%; //square
-  width: 20%; //horizontal
-  height: auto;
-  object-fit: cover;
-  cursor: pointer;
-
-  :hover {
-    color: ${({ theme }) => theme.primary};
-    border-bottom: 1.5px solid ${({ theme }) => theme.primary};
-  }
-
-  @media (max-width: 960px) {
-    width: 19%; //horizontal
-  }
-`;
-
-export const AboutCenteredCert = styled.div.attrs({
-  className: 'AboutCenteredCert',
-})`
-  text-align: center;
-  align-items: center;
-`;
-
-export const AboutText = styled.div.attrs({
-  className: 'AboutText',
-})`
-  @media (max-width: 960px) {
-    text-align: center;
-    align-items: center;
-  }
-`;
-
 // Skills
 export const SkillsMainContainer = styled.div.attrs({
   className: 'SkillsMainContainer',
@@ -974,8 +710,216 @@ export const SkillImage = styled.img.attrs({
   height: 24px;
 `;
 
-// Services
+// About
+export const AboutMainTitle = styled.div.attrs({
+  className: 'AboutMainTitle',
+})`
+  font-size: 28px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+`;
+export const AboutBento = styled.div.attrs({
+  className: 'Bento',
+})`
+  position: relative;
+  width: 50%;
+  margin: auto; //centers in the middle of page
+`;
 
-//Projects
+export const AboutBentoContainer = styled.div.attrs({
+  className: 'AboutBentoContainer',
+})`
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  gap: 12px;
+  //padding: 2rem;
+  width: 100%;
+  height: inherit;
+  z-index: 10;
 
-//Contact
+  @media (max-width: 769px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+`;
+export const AboutBentoBox = styled.div.attrs({
+  className: 'BentoBox',
+})`
+  position: relative;
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+
+  background-color: ${({ theme }) => theme.card};
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  allign-items: flex-end;
+  //padding: 2rem;
+  cursor: pointer;
+  align-items: center; 
+  justify-content: center;
+
+
+//   Example https://css-tricks.com/almanac/properties/g/grid-area/
+//   grid-area: 2 / 4 / 4 / 6;
+
+//   /* is equivalent to: */
+//   grid-row-start: 2;
+//   grid-column-start: 4;
+//   grid-row-end: 4;
+//   grid-column-end: 6;
+// }
+
+  :nth-child(1) {
+    grid-area: 1/1/3/7;
+}
+
+:nth-child(2) {    
+    grid-area: 1/7/3/9;
+}
+
+:nth-child(3) {
+  grid-area: 3/6/5/9;
+  
+}
+:nth-child(4) {
+  grid-area: 3/3/5/6;
+}
+
+:nth-child(5) {
+    
+  grid-area: 3/1/4/3;
+}
+
+:nth-child(6) {
+    
+grid-area: 4/1/5/3;
+}
+  }
+`;
+export const AboutBentoBoxParagraph = styled.div.attrs({
+  className: 'AboutBentoBoxParagraph',
+})`
+  font-weight:900px
+  line-height: 1.3em;
+  box-sizing: border-box;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: center;
+  color: ${({ theme }) => theme.text_secondary};
+`;
+
+export const AboutBentoBoxParagraphTitle = styled.h2.attrs({
+  className: 'AboutBentoBoxParagraphTitle',
+})`
+font-size: 24px;
+font-weight: 600;
+color: ${({ theme }) => theme.primary};
+margin-bottom: 10px;
+text-align: center;
+  }
+
+  @media (max-width: 960px) {
+    font-size: 22px;
+    font-weight: 600;
+  }
+`;
+
+export const AboutBentoBoxMissionStatementTitle = styled.h2.attrs({
+  className: 'AboutBentoBoxMissionStatementTitle',
+})`
+font-style: italic;
+font-size: 24px;
+font-weight: 600;
+color: ${({ theme }) => theme.primary};
+margin-bottom: 10px;
+text-align: center;
+  }
+`;
+
+export const AboutBentoBoxText = styled.span.attrs({
+  className: 'AboutBentoBoxText',
+})`
+  // overflow: hidden;
+  // font-size: 2.4rem;
+  @media (max-width: 960px) {
+    text-align: center;
+    align-items: center;
+  }
+`;
+
+export const AboutBentoBoxImg = styled.img.attrs({
+  className: 'AboutBentoBoxImg',
+})`
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+
+  @media (max-width: 960px) {
+    width: 15%;
+    height: auto;
+  }
+`;
+
+export const AboutBentoBoxNumber = styled.span.attrs({
+  className: 'AboutBentoBoxNumber',
+})`
+  font-size: 24px;
+  font-weight: bold;
+  color: ${({ theme }) => theme.text_primary};
+`;
+
+export const AboutBentoBoxSquareText = styled.span.attrs({
+  className: 'AboutBentoBoxSquareText',
+})`
+  font-size: 16px;
+  color: ${({ theme }) => theme.text_secondary};
+`;
+
+export const AboutBentoBoxSquareContainerText = styled.span.attrs({
+  className: 'AboutBentoBoxSquareContainerText',
+})`
+  @media (max-width: 960px) {
+    margin: 20px 20px 30px 20px;
+    padding: 20px 20px;
+  }
+`;
+
+export const AboutBentoBoxCenteredText = styled.div.attrs({
+  className: 'AboutBentoBoxCenteredText',
+})`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const AboutBentoBoxCenteredCert = styled.div.attrs({
+  className: 'AboutBentoBoxCenteredCert',
+})`
+  text-align: center;
+  align-items: center;
+`;
+
+export const AboutBentoBoxCertImg = styled.img.attrs({
+  className: 'AboutBentoBoxCertImg',
+})`
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+
+  :hover {
+    color: ${({ theme }) => theme.primary};
+    border-bottom: 1.5px solid ${({ theme }) => theme.primary};
+  }
+
+  @media (max-width: 960px) {
+    width: 19%; //horizontal
+  }
+`;
