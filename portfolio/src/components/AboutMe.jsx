@@ -21,7 +21,7 @@ import {
 function AboutMe() {
   return (
     <div>
-      <AboutBento>
+      {/* <AboutBento>
         <AboutMainTitle>ABOUT ME</AboutMainTitle>
 
         <AboutBentoContainer>
@@ -118,7 +118,7 @@ function AboutMe() {
             </AboutBentoBoxCenteredText>
           </AboutBentoBox>
         </AboutBentoContainer>
-      </AboutBento>
+      </AboutBento> */}
     </div>
   );
 }
