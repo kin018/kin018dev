@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import About from './components/About';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -38,7 +37,6 @@ function App() {
             <AboutMe />
             <Skills />
           </GradientWrapper>
-          <About />
           <Services />
           <Projects />
           <GradientWrapper>
