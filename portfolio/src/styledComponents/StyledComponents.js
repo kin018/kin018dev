@@ -392,6 +392,8 @@ export const HomeMainContainer = styled.div.attrs({
   position: relative;
   background-color: ${({ theme }) => theme.card_light};
   padding: 80px 30px;
+  // height: 100vh;
+  // width: 100vw;
 
   @media (max-width: 960px) {
     padding: 66px 16px;
@@ -976,7 +978,7 @@ export const ServicesHubContainer = styled.div.attrs({
 `;
 
 export const ServicesCard = styled.div.attrs({
-  className: 'ServicesTitleCard',
+  className: 'ServicesCard',
 })`
   width: 100%;
   max-width: 535px;
@@ -984,10 +986,16 @@ export const ServicesCard = styled.div.attrs({
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   padding: 18px 36px;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.primary + 95};
+  }
+
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
   }
+
   @media (max-width: 500px) {
     max-width: 330px;
     padding: 10px 36px;
