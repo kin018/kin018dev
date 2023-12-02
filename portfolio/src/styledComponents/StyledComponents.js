@@ -675,7 +675,7 @@ export const SkillHubTitle = styled.h2.attrs({
   font-size: 28px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
 `;
 
@@ -693,16 +693,47 @@ export const SkillList = styled.div.attrs({
 export const SkillItem = styled.div.attrs({
   className: 'SkillItem',
 })`
-  font-size: 16px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
   border: 1px solid ${({ theme }) => theme.text_primary + 80};
   border-radius: 12px;
   padding: 12px 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 15px;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 5px 20px 30px;
+    transform: scale(1.1);
+
+    .SkillImage {
+        transform: scale(1.5) translateY(-20px);
+
+        .SkillImageImg {
+            animation: bouncing 0.5s .3s infinite;
+        }
+    }
+
+    .SkillItemText {      
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+}
+
+@keyframes bouncing {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+`;
+
+export const SkillItemText = styled.div.attrs({
+  className: 'SkillItemText',
+})`
+  font-size: 16px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 80};
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 768px) {
     font-size: 14px;
@@ -714,11 +745,19 @@ export const SkillItem = styled.div.attrs({
   }
 `;
 
-export const SkillImage = styled.img.attrs({
+export const SkillImage = styled.div.attrs({
   className: 'SkillImage',
 })`
-  width: 24px;
-  height: 24px;
+  transition: all 0.3s ease-in-out 0.1s;
+`;
+export const SkillImageImg = styled.img.attrs({
+  className: 'SkillImageImg',
+})`
+  width: 25px;
+  height: 25px;
+  max-width: 75px;
+  max-height: 75px;
+  object-fit: contain;
 `;
 
 // About
