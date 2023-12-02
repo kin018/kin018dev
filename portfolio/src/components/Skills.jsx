@@ -10,6 +10,7 @@ import {
   SkillList,
   SkillItem,
   SkillImage,
+  SkillItemText,
 } from '../styledComponents/StyledComponents';
 
 function Skills() {
@@ -31,7 +32,7 @@ function Skills() {
                     {/* Display the skill image */}
                     <SkillImage src={item.image} alt={item.name} />
                     {/* Display the skill name */}
-                    {item.name}
+                    <SkillItemText>{item.name}</SkillItemText>
                   </SkillItem>
                 ))}
               </SkillList>
