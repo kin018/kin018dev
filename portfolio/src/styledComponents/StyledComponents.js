@@ -714,8 +714,9 @@ export const SkillItem = styled.div.attrs({
         }
     }
 
-    .SkillItemText {
+    .SkillItemText {      
         letter-spacing: 2px;
+        font-weight: bold;
     }
 }
 
