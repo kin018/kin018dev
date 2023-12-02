@@ -23,6 +23,8 @@ export const darkTheme = {
   button: '#854CE6',
   white: '#FFFFFF',
   black: '#000000',
+  input: '#171721' + 99,
+  border: '#854CE6',
 };
 
 export const lightTheme = {
@@ -37,6 +39,8 @@ export const lightTheme = {
   button: '#5c5b5b',
   white: '#FFFFFF',
   black: '#000000',
+  input: '#e2e8f0', //#f0f3ff might do this color
+  border: '#e2e8f0',
 };
 
 // Logo
@@ -1142,9 +1146,12 @@ export const ContactHubFormInput = styled.input.attrs({
   className: 'ContactHubFormInput',
 })`
   width: 100%;
-  background-color: pink;
+  height: 35px;
+  background-color: ${({ theme }) => theme.input};
   color: green;
   letter-spacing: 1px;
+  padding: 8px;
+  border: 1px solid ${({ theme }) => theme.border};
   border-radius: 6px;
 `;
 
@@ -1152,8 +1159,24 @@ export const ContactHubFormMessageInput = styled.textarea.attrs({
   className: 'ContactHubFormMessageInput',
 })`
   width: 100%;
-  background-color: pink;
+  background-color: ${({ theme }) => theme.input};
+  color: green;
+  letter-spacing: 1px;
+  padding: 8px;
+  border: 1px solid ${({ theme }) => theme.border};
+  border-radius: 6px;
+`;
+
+export const ContactHubSendButton = styled.button.attrs({
+  className: 'ContactHubSendButton',
+})`
+  width: 100%;
+  height: 35px;
+  background-color: lightblue;
   color: green;
   letter-spacing: 1px;
   border-radius: 6px;
+  overflow: hidden;
+  cursor:pointer;
+  }
 `;

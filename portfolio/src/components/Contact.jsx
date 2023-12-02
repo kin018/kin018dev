@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPaperPlane } from 'react-icons/fa6';
 import {
   ContactMainContainer,
   ContactWrapper,
@@ -10,6 +11,7 @@ import {
   ContactHubMediaBlob,
   ContactHubFormInput,
   ContactHubFormMessageInput,
+  ContactHubSendButton,
 } from '../styledComponents/StyledComponents';
 
 function Contact() {
@@ -40,10 +42,22 @@ function Contact() {
             </ContactHubMediaBlob>
           </ContactHubMediaContainer>
           <ContactHubFormContainer>
-            <ContactHubFormInput placeholder="FULL NAME" />
-            <ContactHubFormInput placeholder="EMAIL" />
-            <ContactHubFormInput placeholder="SUBJECT" />
-            <ContactHubFormMessageInput placeholder="MESSAGE" />
+            <>
+              <ContactHubFormInput
+                type="text"
+                placeholder="FULL NAME"
+                required
+              />
+              <ContactHubFormInput type="email" placeholder="EMAIL" required />
+              <ContactHubFormInput type="text" placeholder="SUBJECT" />
+              <ContactHubFormMessageInput
+                type="text"
+                rows="6"
+                placeholder="MESSAGE"
+                required
+              />
+            </>
+            <ContactHubSendButton type="submit">SEND</ContactHubSendButton>
           </ContactHubFormContainer>
         </ContactHubContainer>
       </ContactWrapper>
