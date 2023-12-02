@@ -703,6 +703,7 @@ export const SkillItem = styled.div.attrs({
   align-items: center;
   justify-content: center;
   gap: 8px;
+
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
