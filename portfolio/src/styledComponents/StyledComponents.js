@@ -1184,6 +1184,7 @@ export const ContactHubMediaBlob = styled.div.attrs({
   justify-content: center;
   gap: 30px;
   overflow: hidden;
+  border-radius: 16px;
 `;
 
 export const ContactHubFormContainer = styled.div.attrs({
