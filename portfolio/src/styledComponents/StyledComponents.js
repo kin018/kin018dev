@@ -618,8 +618,8 @@ export const SkillsWrapper = styled.div.attrs({
   align-items: center;
   flex-direction: column;
   width: 100%;
-  // max-width: 1100px; //makes this span 3 acrosss instead of 2 on top and one on bottom
   gap: 12px;
+
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -632,7 +632,6 @@ export const SkillsMainTitle = styled.div.attrs({
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   margin-top: 30px;
-  //margin-bottom: 10px;
   text-align: center;
 `;
 
@@ -640,6 +639,7 @@ export const SkillsHubContainer = styled.div.attrs({
   className: 'SkillsHubContainer',
 })`
   width: 100%;
+  max-width: 4500px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -653,7 +653,7 @@ export const SkillFrontBackOther = styled.div.attrs({
   className: 'SkillFrontBackOther',
 })`
   width: 100%;
-  max-width: 50%; //previously 500px
+  max-width: 50%;
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
@@ -680,6 +680,7 @@ export const SkillHubTitle = styled.h2.attrs({
 export const SkillList = styled.div.attrs({
   className: 'SkillList',
 })`
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -966,7 +967,6 @@ export const ServicesMainTitle = styled.div.attrs({
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   margin-top: 30px;
-  //margin-bottom: 10px;
   text-align: center;
 `;
 
@@ -1110,6 +1110,22 @@ export const ContactHubContainer = styled.div.attrs({
   border-radius: 16px;
   padding: 18px 36px;
   z-index: 1;
+  }
+
+  @media (max-width: 1099px) {
+    max-width: 535px;
+    padding: 20px 36px 0;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+    padding: 20px 36px 0;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 330px;
+    padding: 20px 36px 0;
+  }
 `;
 export const ContactHubMediaContainer = styled.div.attrs({
   className: 'ContactHubMediaContainer',
@@ -1118,8 +1134,11 @@ export const ContactHubMediaContainer = styled.div.attrs({
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  //justify-content: center;
   margin-bottom: 30px;
+
+  @media (max-width: 1099px) {
+    display: none;
+  }
 `;
 export const ContactHubMediaHeader = styled.h2.attrs({
   className: 'ContactHubMediaHeader',
@@ -1129,10 +1148,29 @@ export const ContactHubMediaHeader = styled.h2.attrs({
   line-height: 1;
   font-weight: bold;
   letter-spacing: 2px;
-  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   padding: 150px 40px 0;
   justify-content: center;
+
+  @media (max-width: 500px) {
+    visibility: hidden;
+  }
+`;
+export const ContactHubMediaVerticalHeader = styled.h2.attrs({
+  className: 'ContactHubMediaVerticalHeader',
+})`
+  display: none;
+
+  @media (max-width: 1099px) {
+    display: block;
+    color: ${({ theme }) => theme.text_primary};
+    font-size: 26px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    justify-content: center;
+  }
 `;
 export const ContactHubMediaBlob = styled.div.attrs({
   className: 'ContactHubMediaBlob',
@@ -1186,7 +1224,7 @@ export const ContactHubSendButton = styled.button.attrs({
   className: 'ContactHubSendButton',
 })`
   width: 100%;
-  height: 35px;
+  height: 45px;
   background-color: lightblue;
   color: green;
   letter-spacing: 1px;

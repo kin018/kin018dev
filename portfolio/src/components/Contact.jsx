@@ -13,6 +13,7 @@ import {
   ContactHubFormInput,
   ContactHubFormMessageInput,
   ContactHubSendButton,
+  ContactHubMediaVerticalHeader,
 } from '../styledComponents/StyledComponents';
 
 function Contact() {
@@ -24,14 +25,16 @@ function Contact() {
           <ContactHubMediaContainer>
             <ContactHubMediaBlob>
               <ContactHubMediaHeader>
-                {/* Let's <br />
-                Talk */}
-                Send <br /> me a message
+                Let's <br />
+                Chat!
               </ContactHubMediaHeader>
               <ContactBlob />
             </ContactHubMediaBlob>
           </ContactHubMediaContainer>
           <ContactHubFormContainer>
+            <ContactHubMediaVerticalHeader>
+              Let's Chat!
+            </ContactHubMediaVerticalHeader>
             <ContactHubFormInput type="text" placeholder="FULL NAME" required />
             <ContactHubFormInput type="email" placeholder="EMAIL" required />
             <ContactHubFormInput type="text" placeholder="SUBJECT" />
