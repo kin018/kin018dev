@@ -35,16 +35,16 @@ function Contact() {
             <ContactHubMediaVerticalHeader>
               Let's Chat!
             </ContactHubMediaVerticalHeader>
-            <ContactHubFormInput type="text" placeholder="FULL NAME" required />
-            <ContactHubFormInput type="email" placeholder="EMAIL" required />
-            <ContactHubFormInput type="text" placeholder="SUBJECT" />
+            <ContactHubFormInput type="text" placeholder="Full Name" required />
+            <ContactHubFormInput type="email" placeholder="Email" required />
+            <ContactHubFormInput type="text" placeholder="Subject" />
             <ContactHubFormMessageInput
               type="text"
               rows="6"
               placeholder="MESSAGE"
               required
             />
-            <ContactHubSendButton type="submit">SEND</ContactHubSendButton>
+            <ContactHubSendButton type="submit">Send</ContactHubSendButton>
           </ContactHubFormContainer>
         </ContactHubContainer>
       </ContactWrapper>

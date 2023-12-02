@@ -703,6 +703,7 @@ export const SkillItem = styled.div.attrs({
   align-items: center;
   justify-content: center;
   gap: 8px;
+
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
@@ -1153,10 +1154,6 @@ export const ContactHubMediaHeader = styled.h2.attrs({
   text-transform: uppercase;
   padding: 150px 40px 0;
   justify-content: center;
-
-  @media (max-width: 500px) {
-    visibility: hidden;
-  }
 `;
 export const ContactHubMediaVerticalHeader = styled.h2.attrs({
   className: 'ContactHubMediaVerticalHeader',
@@ -1184,6 +1181,7 @@ export const ContactHubMediaBlob = styled.div.attrs({
   justify-content: center;
   gap: 30px;
   overflow: hidden;
+  border-radius: 16px;
 `;
 
 export const ContactHubFormContainer = styled.div.attrs({
@@ -1195,6 +1193,7 @@ export const ContactHubFormContainer = styled.div.attrs({
   justify-content: center;
   gap: 30px;
   margin: 30px 0px;
+  max-width: 434px;
 `;
 
 export const ContactHubFormInput = styled.input.attrs({
@@ -1208,6 +1207,12 @@ export const ContactHubFormInput = styled.input.attrs({
   padding: 8px;
   border: 1px solid ${({ theme }) => theme.border};
   border-radius: 6px;
+  text-transform: uppercase;
+
+  &:focus {
+    border: 2px solid lightblue;
+    outline: none;
+  }
 `;
 
 export const ContactHubFormMessageInput = styled.textarea.attrs({
@@ -1220,6 +1225,12 @@ export const ContactHubFormMessageInput = styled.textarea.attrs({
   padding: 8px;
   border: 1px solid ${({ theme }) => theme.border};
   border-radius: 6px;
+  text-transform: uppercase;
+
+  &:focus {
+    border: 2px solid lightblue;
+    outline: none;
+  }
 `;
 
 export const ContactHubSendButton = styled.button.attrs({
@@ -1230,13 +1241,15 @@ export const ContactHubSendButton = styled.button.attrs({
   background-color: #644ed7;
   color: white;
   letter-spacing: 1px;
-  border-radius: 6px;
   overflow: hidden;
-  cursor:pointer;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: .01px solid ${({ theme }) => theme.border};
+  border-radius: 6px;
+
 
   :hover {
     background-color: ${({ theme }) => theme.buttonHover};
-
   }
 
   }
