@@ -11,6 +11,7 @@ import {
   SkillItem,
   SkillImage,
   SkillItemText,
+  SkillImageImg,
 } from '../styledComponents/StyledComponents';
 
 function Skills() {
@@ -29,8 +30,10 @@ function Skills() {
                 {skill.skills.map((item) => (
                   // Iterate over each skill item
                   <SkillItem key={item.name}>
-                    {/* Display the skill image */}
-                    <SkillImage src={item.image} alt={item.name} />
+                    <SkillImage>
+                      {/* Display the skill image */}
+                      <SkillImageImg src={item.image} alt={item.name} />
+                    </SkillImage>
                     {/* Display the skill name */}
                     <SkillItemText>{item.name}</SkillItemText>
                   </SkillItem>

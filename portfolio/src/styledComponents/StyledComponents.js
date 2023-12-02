@@ -675,7 +675,7 @@ export const SkillHubTitle = styled.h2.attrs({
   font-size: 28px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
 `;
 
@@ -699,26 +699,31 @@ export const SkillItem = styled.div.attrs({
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 15px;
   transition: all 0.3s ease-in;
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 20px 20px 30px;
     transform: scale(1.1);
 
-    .SkillImage{
-      transform: scale(1.5) translateY(-20px);
-  
-    .SkillItemText{
-      letter-spacing: 2px;
-    }
-  }
+    .SkillImage {
+        transform: scale(1.5) translateY(-20px);
 
-  @keyframes bouncing {
-    from, to { transform: scale(1, 1); }
-    25% { transform: scale(0.9, 1.1); }
-    50% { transform: scale(1.1, 0.9); }
-    75% { transform: scale(0.95, 1.05); }
+        .SkillImageImg {
+            animation: bouncing 0.5s .3s infinite;
+        }
+    }
+
+    .SkillItemText {
+        letter-spacing: 2px;
+    }
+}
+
+@keyframes bouncing {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
 `;
 
 export const SkillItemText = styled.div.attrs({
@@ -739,15 +744,18 @@ export const SkillItemText = styled.div.attrs({
   }
 `;
 
-export const SkillImage = styled.img.attrs({
+export const SkillImage = styled.div.attrs({
   className: 'SkillImage',
 })`
   transition: all 0.3s ease-in-out 0.1s;
+`;
+export const SkillImageImg = styled.img.attrs({
+  className: 'SkillImageImg',
+})`
   width: 25px;
   height: 25px;
   max-width: 75px;
   max-height: 75px;
-
   object-fit: contain;
 `;
 
