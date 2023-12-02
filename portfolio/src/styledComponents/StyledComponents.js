@@ -703,7 +703,7 @@ export const SkillItem = styled.div.attrs({
   transition: all 0.3s ease-in;
 
   &:hover {
-    box-shadow: rgba(0, 0, 0, 0.1) 20px 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 5px 20px 30px;
     transform: scale(1.1);
 
     .SkillImage {
