@@ -23,6 +23,9 @@ export const darkTheme = {
   button: '#854CE6',
   white: '#FFFFFF',
   black: '#000000',
+  input: '#171721' + 99,
+  border: '#644ed7',
+  buttonHover: '#854CE6',
 };
 
 export const lightTheme = {
@@ -37,6 +40,9 @@ export const lightTheme = {
   button: '#5c5b5b',
   white: '#FFFFFF',
   black: '#000000',
+  input: '#e2e8f0', //#f0f3ff might do this color
+  border: '#e2e8f0',
+  buttonHover: '#854CE6',
 };
 
 // Logo
@@ -614,8 +620,8 @@ export const SkillsWrapper = styled.div.attrs({
   align-items: center;
   flex-direction: column;
   width: 100%;
-  // max-width: 1100px; //makes this span 3 acrosss instead of 2 on top and one on bottom
   gap: 12px;
+
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -628,7 +634,6 @@ export const SkillsMainTitle = styled.div.attrs({
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   margin-top: 30px;
-  //margin-bottom: 10px;
   text-align: center;
 `;
 
@@ -636,6 +641,7 @@ export const SkillsHubContainer = styled.div.attrs({
   className: 'SkillsHubContainer',
 })`
   width: 100%;
+  max-width: 4500px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -649,7 +655,7 @@ export const SkillFrontBackOther = styled.div.attrs({
   className: 'SkillFrontBackOther',
 })`
   width: 100%;
-  max-width: 50%; //previously 500px
+  max-width: 50%;
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
@@ -676,6 +682,7 @@ export const SkillHubTitle = styled.h2.attrs({
 export const SkillList = styled.div.attrs({
   className: 'SkillList',
 })`
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -763,7 +770,7 @@ export const AboutBentoBox = styled.div.attrs({
   allign-items: flex-end;
   //padding: 2rem;
   cursor: pointer;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 
 
@@ -781,25 +788,25 @@ export const AboutBentoBox = styled.div.attrs({
     grid-area: 1/1/3/7;
 }
 
-:nth-child(2) {    
+:nth-child(2) {
     grid-area: 1/7/3/9;
 }
 
 :nth-child(3) {
   grid-area: 3/6/5/9;
-  
+
 }
 :nth-child(4) {
   grid-area: 3/3/5/6;
 }
 
 :nth-child(5) {
-    
+
   grid-area: 3/1/4/3;
 }
 
 :nth-child(6) {
-    
+
 grid-area: 4/1/5/3;
 }
   }
@@ -962,7 +969,6 @@ export const ServicesMainTitle = styled.div.attrs({
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   margin-top: 30px;
-  //margin-bottom: 10px;
   text-align: center;
 `;
 
@@ -973,6 +979,8 @@ export const ServicesHubContainer = styled.div.attrs({
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
+  margin-bottom: 30px;
+
   gap: 30px;
   justify-content: center;
 `;
@@ -1051,4 +1059,221 @@ export const ServicesMediaContent = styled.div.attrs({
   className: 'ServicesMediaContent',
 })`
   display: flex;
+`;
+
+//Contact
+export const ContactMainContainer = styled.div.attrs({
+  className: 'ContactMainContainer',
+})`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  padding-bottom: 150px;
+`;
+
+export const ContactWrapper = styled.div.attrs({
+  className: 'ContactWrapper',
+})`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+export const ContactMainTitle = styled.div.attrs({
+  className: 'ContactMainTitle',
+})`
+  font-size: 34px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-top: 30px;
+  text-align: center;
+`;
+
+export const ContactHubContainer = styled.div.attrs({
+  className: 'ContactHubContainer',
+})`
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  background-color: ${({ theme }) => theme.card};
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 18px 36px;
+  z-index: 1;
+  }
+
+  @media (max-width: 1099px) {
+    max-width: 535px;
+    padding: 20px 36px 0;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+    padding: 20px 36px 0;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 330px;
+    padding: 20px 36px 0;
+  }
+`;
+export const ContactHubMediaContainer = styled.div.attrs({
+  className: 'ContactHubMediaContainer',
+})`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+
+  @media (max-width: 1099px) {
+    display: none;
+  }
+`;
+export const ContactHubMediaHeader = styled.h2.attrs({
+  className: 'ContactHubMediaHeader',
+})`
+  color: ${({ theme }) => theme.text_primary};
+  font-size: 90px;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 150px 40px 0;
+  justify-content: center;
+
+  @media (max-width: 500px) {
+    visibility: hidden;
+  }
+`;
+export const ContactHubMediaVerticalHeader = styled.h2.attrs({
+  className: 'ContactHubMediaVerticalHeader',
+})`
+  display: none;
+
+  @media (max-width: 1099px) {
+    display: block;
+    color: ${({ theme }) => theme.text_primary};
+    font-size: 26px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+`;
+export const ContactHubMediaBlob = styled.div.attrs({
+  className: 'ContactHubMediaBlob',
+})`
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  overflow: hidden;
+`;
+
+export const ContactHubFormContainer = styled.div.attrs({
+  className: 'ContactHubFormContainer ',
+})`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0px;
+`;
+
+export const ContactHubFormInput = styled.input.attrs({
+  className: 'ContactHubFormInput',
+})`
+  width: 100%;
+  height: 35px;
+  background-color: ${({ theme }) => theme.input};
+  color: ${({ theme }) => theme.text_primary};
+  letter-spacing: 1px;
+  padding: 8px;
+  border: 1px solid ${({ theme }) => theme.border};
+  border-radius: 6px;
+`;
+
+export const ContactHubFormMessageInput = styled.textarea.attrs({
+  className: 'ContactHubFormMessageInput',
+})`
+  width: 100%;
+  background-color: ${({ theme }) => theme.input};
+  color: ${({ theme }) => theme.text_primary};
+  letter-spacing: 1px;
+  padding: 8px;
+  border: 1px solid ${({ theme }) => theme.border};
+  border-radius: 6px;
+`;
+
+export const ContactHubSendButton = styled.button.attrs({
+  className: 'ContactHubSendButton',
+})`
+  width: 100%;
+  height: 45px;
+  background-color: #644ed7;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor:pointer;
+
+  :hover {
+    background-color: ${({ theme }) => theme.buttonHover};
+
+  }
+
+  }
+`;
+
+export const ContactBlobImgSVGWrapper = styled.div.attrs({
+  className: 'ContactBlobImgSVGWrapper',
+})`
+  justify-self: center;
+  position: absolute;
+  top: 0;
+  bottom: -6px;
+  fill: #023f92;
+  width: 92%;
+  z-index: -1;
+  animation: moveAnimation 10s ease-in-out infinite;
+  transform-origin: 50% 50%;
+  pointer-events: none;
+
+  @keyframes moveAnimation {
+    0% {
+      transform: scale(1) translate(10px, -30px);
+    }
+    38% {
+      transform: scale(0.8, 1) translate(40%, 30%) rotate(160deg);
+    }
+    40% {
+      transform: scale(0.8, 1) translate(40%, 30%) rotate(160deg);
+    }
+    78% {
+      transform: scale(1.3) translate(0%, 50%) rotate(-20deg);
+    }
+    80% {
+      transform: scale(1.3) translate(0%, 50%) rotate(-20deg);
+    }
+    100% {
+      transform: scale(1) translate(10px, -30px);
+    }
+  }
 `;
