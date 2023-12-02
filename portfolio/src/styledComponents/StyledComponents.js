@@ -1208,6 +1208,11 @@ export const ContactHubFormInput = styled.input.attrs({
   padding: 8px;
   border: 1px solid ${({ theme }) => theme.border};
   border-radius: 6px;
+
+  &:focus {
+    border: 2px solid lightblue;
+    outline: none;
+  }
 `;
 
 export const ContactHubFormMessageInput = styled.textarea.attrs({
@@ -1220,6 +1225,11 @@ export const ContactHubFormMessageInput = styled.textarea.attrs({
   padding: 8px;
   border: 1px solid ${({ theme }) => theme.border};
   border-radius: 6px;
+
+  &:focus {
+    border: 2px solid lightblue;
+    outline: none;
+  }
 `;
 
 export const ContactHubSendButton = styled.button.attrs({
