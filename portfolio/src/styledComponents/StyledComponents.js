@@ -1153,10 +1153,6 @@ export const ContactHubMediaHeader = styled.h2.attrs({
   text-transform: uppercase;
   padding: 150px 40px 0;
   justify-content: center;
-
-  @media (max-width: 500px) {
-    visibility: hidden;
-  }
 `;
 export const ContactHubMediaVerticalHeader = styled.h2.attrs({
   className: 'ContactHubMediaVerticalHeader',
@@ -1196,6 +1192,7 @@ export const ContactHubFormContainer = styled.div.attrs({
   justify-content: center;
   gap: 30px;
   margin: 30px 0px;
+  max-width: 434px;
 `;
 
 export const ContactHubFormInput = styled.input.attrs({
