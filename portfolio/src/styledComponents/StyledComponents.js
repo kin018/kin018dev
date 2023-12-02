@@ -1061,7 +1061,7 @@ export const ServicesMediaContent = styled.div.attrs({
 
 //Contact
 export const ContactMainContainer = styled.div.attrs({
-  className: 'ServicesMainContainer',
+  className: 'ContactMainContainer',
 })`
   display: flex;
   flex-direction: column;
@@ -1069,6 +1069,7 @@ export const ContactMainContainer = styled.div.attrs({
   position: relative;
   z-index: 1;
   align-items: center;
+  padding-bottom: 150px;
 `;
 
 export const ContactWrapper = styled.div.attrs({
@@ -1108,6 +1109,7 @@ export const ContactHubContainer = styled.div.attrs({
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   padding: 18px 36px;
+  z-index: 1;
 `;
 export const ContactHubMediaContainer = styled.div.attrs({
   className: 'ContactHubMediaContainer',
@@ -1122,14 +1124,27 @@ export const ContactHubMediaContainer = styled.div.attrs({
 export const ContactHubMediaHeader = styled.h2.attrs({
   className: 'ContactHubMediaHeader',
 })`
-  font-weight: 500;
-  font-size: 29px;
-  line-height: 41px;
   color: ${({ theme }) => theme.text_primary};
+  font-size: 90px;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  padding: 150px 40px 0;
+  justify-content: center;
 `;
 export const ContactHubMediaBlob = styled.div.attrs({
   className: 'ContactHubMediaBlob',
-})``;
+})`
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  overflow: hidden;
+`;
 
 export const ContactHubFormContainer = styled.div.attrs({
   className: 'ContactHubFormContainer ',
@@ -1178,5 +1193,41 @@ export const ContactHubSendButton = styled.button.attrs({
   border-radius: 6px;
   overflow: hidden;
   cursor:pointer;
+  }
+`;
+
+export const ContactBlobImgSVGWrapper = styled.div.attrs({
+  className: 'ContactBlobImgSVGWrapper',
+})`
+  justify-self: center;
+  position: absolute;
+  top: 0;
+  bottom: -6px;
+  fill: #023f92;
+  width: 92%;
+  z-index: -1;
+  animation: moveAnimation 10s ease-in-out infinite;
+  transform-origin: 50% 50%;
+  pointer-events: none;
+
+  @keyframes moveAnimation {
+    0% {
+      transform: scale(1) translate(10px, -30px);
+    }
+    38% {
+      transform: scale(0.8, 1) translate(40%, 30%) rotate(160deg);
+    }
+    40% {
+      transform: scale(0.8, 1) translate(40%, 30%) rotate(160deg);
+    }
+    78% {
+      transform: scale(1.3) translate(0%, 50%) rotate(-20deg);
+    }
+    80% {
+      transform: scale(1.3) translate(0%, 50%) rotate(-20deg);
+    }
+    100% {
+      transform: scale(1) translate(10px, -30px);
+    }
   }
 `;
