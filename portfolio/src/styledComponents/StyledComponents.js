@@ -686,7 +686,7 @@ export const SkillList = styled.div.attrs({
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
   margin-bottom: 20px;
 `;
 
