@@ -1306,7 +1306,7 @@ export const ContactHubAltSendButtonText = styled.span.attrs({
   className: 'ContactHubAltSendButtonText',
 })`
   display: block;
-  margin-top: 6px;
+  padding-top: 6px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
@@ -1316,7 +1316,7 @@ export const ContactHubAltSendButtonIcon = styled.div.attrs({
   className: 'ContactHubAltSendText',
 })`
   display: block;
-  margin-top: 12px;
+  padding-top: 12px;
   font-size: 16px;
 `;
 
