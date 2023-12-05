@@ -686,7 +686,7 @@ export const SkillList = styled.div.attrs({
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
   margin-bottom: 20px;
 `;
 
@@ -1239,7 +1239,7 @@ export const ContactHubFormInput = styled.input.attrs({
   className: 'ContactHubFormInput',
 })`
   width: 100%;
-  height: 35px;
+  height: 34px;
   background-color: ${({ theme }) => theme.input};
   color: ${({ theme }) => theme.text_primary};
   letter-spacing: 1px;
@@ -1275,23 +1275,49 @@ export const ContactHubFormMessageInput = styled.textarea.attrs({
 export const ContactHubSendButton = styled.button.attrs({
   className: 'ContactHubSendButton',
 })`
-  width: 100%;
-  height: 45px;
-  background-color: #644ed7;
-  color: white;
-  letter-spacing: 1px;
-  overflow: hidden;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: .01px solid ${({ theme }) => theme.border};
-  border-radius: 6px;
-
+width: 100%;
+height: 44px;
+background-color: #644ed7;
+color: white;
+overflow: hidden;
+cursor: pointer;
+border: .01px solid ${({ theme }) => theme.border};
+border-radius: 6px;
+transition: all .2s ease-in-out;
 
   :hover {
     background-color: ${({ theme }) => theme.buttonHover};
-  }
+  }}
+`;
 
-  }
+export const ContactHubAltSendButton = styled.div.attrs({
+  className: 'ContactHubAltSendButton',
+})`
+width: 100%;
+height: 44px;
+transition: all .2s ease-in-out;
+
+:hover {
+  transform: translate3d(0px, -29px, 0px);
+}}
+`;
+
+export const ContactHubAltSendButtonText = styled.span.attrs({
+  className: 'ContactHubAltSendButtonText',
+})`
+  display: block;
+  padding-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+`;
+
+export const ContactHubAltSendButtonIcon = styled.div.attrs({
+  className: 'ContactHubAltSendText',
+})`
+  display: block;
+  padding-top: 12px;
+  font-size: 16px;
 `;
 
 export const ContactBlobImgSVGWrapper = styled.div.attrs({

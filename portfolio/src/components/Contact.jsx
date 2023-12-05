@@ -14,6 +14,9 @@ import {
   ContactHubFormMessageInput,
   ContactHubSendButton,
   ContactHubMediaVerticalHeader,
+  ContactHubAltSendButton,
+  ContactHubAltSendButtonText,
+  ContactHubAltSendButtonIcon,
 } from '../styledComponents/StyledComponents';
 
 function Contact() {
@@ -44,7 +47,14 @@ function Contact() {
               placeholder="MESSAGE"
               required
             />
-            <ContactHubSendButton type="submit">Send</ContactHubSendButton>
+            <ContactHubSendButton id="submit" type="submit" value="SEND">
+              <ContactHubAltSendButton>
+                <ContactHubAltSendButtonIcon>
+                  <FaPaperPlane />
+                </ContactHubAltSendButtonIcon>
+                <ContactHubAltSendButtonText>Send</ContactHubAltSendButtonText>
+              </ContactHubAltSendButton>
+            </ContactHubSendButton>
           </ContactHubFormContainer>
         </ContactHubContainer>
       </ContactWrapper>
