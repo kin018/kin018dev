@@ -1276,7 +1276,7 @@ export const ContactHubSendButton = styled.button.attrs({
   className: 'ContactHubSendButton',
 })`
 width: 100%;
-height: 34px;
+height: 44px;
 background-color: #644ed7;
 color: white;
 overflow: hidden;
@@ -1294,7 +1294,7 @@ export const ContactHubAltSendButton = styled.div.attrs({
   className: 'ContactHubAltSendButton',
 })`
 width: 100%;
-height: 34px;
+height: 44px;
 transition: all .2s ease-in-out;
 
 :hover {
@@ -1306,18 +1306,18 @@ export const ContactHubAltSendButtonText = styled.span.attrs({
   className: 'ContactHubAltSendButtonText',
 })`
   display: block;
-  margin-top: 7px;
+  margin-top: 6px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 16px;
 `;
 
 export const ContactHubAltSendButtonIcon = styled.div.attrs({
   className: 'ContactHubAltSendText',
 })`
   display: block;
-  margin-top: 7px;
-  font-size: 14px;
+  margin-top: 12px;
+  font-size: 16px;
 `;
 
 export const ContactBlobImgSVGWrapper = styled.div.attrs({
