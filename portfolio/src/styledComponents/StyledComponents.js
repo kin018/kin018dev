@@ -1283,7 +1283,6 @@ overflow: hidden;
 cursor: pointer;
 border: .01px solid ${({ theme }) => theme.border};
 border-radius: 6px;
-margin-top: 15px;
 transition: all .2s ease-in-out;
 
   :hover {
