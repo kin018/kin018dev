@@ -104,7 +104,7 @@ function Services() {
                     point, I am dedicated to delivering continual maintenance
                     and support for all client projects. My commitment lies in
                     ensuring the sustained efficiency and success of your
-                    endeavors.
+                    projects.
                   </ServicesParagraph>
                 </ServicesTextContent>
               </ServicesMediaContent>
