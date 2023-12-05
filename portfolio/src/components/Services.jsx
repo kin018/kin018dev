@@ -33,10 +33,10 @@ function Services() {
                   <ServicesHubTitle>Web Development</ServicesHubTitle>
                   <ServicesParagraph>
                     With a wealth of experience, I specialize in building
-                    responsive and user-friendly web applications. Proficient in
-                    technologies such as React, Angular, MaterialUI and more! I
-                    can assist you in developing customized web solutions that
-                    precisely align with your unique needs.
+                    responsive and user-friendly web applications. I am
+                    proficient in technologies such as React, Angular,
+                    MaterialUI and more! I can assist you in developing
+                    customized web solutions that align with your unique needs.
                   </ServicesParagraph>
                 </ServicesTextContent>
               </ServicesMediaContent>
