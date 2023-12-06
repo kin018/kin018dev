@@ -1385,7 +1385,7 @@ export const ProjectMainTitle = styled.div.attrs({
 export const ProjectCarousel = styled.div.attrs({
   className: 'Projectarousel',
 })`
-  //background-color: green;
+  background-color: green;
   //background-color: ${({ theme }) => theme.card};
   overflow: hidden;
   padding: 100px 0;
@@ -1444,7 +1444,6 @@ export const ProjectCarouselSlide = styled.div.attrs({
 export const ProjectCarouselSlideImg = styled.img.attrs({
   className: 'ProjectCarouselSlideImg',
 })`
-  height: 100%;
   padding: 0 15px;
-  border-radius: 693px;
+  //border-radius: 693px;
 `;
