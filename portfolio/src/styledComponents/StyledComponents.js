@@ -1386,10 +1386,15 @@ export const ProjectCarousel = styled.div.attrs({
   className: 'Projectarousel',
 })`
   background-color: green;
+  //background-color: ${({ theme }) => theme.card};
   overflow: hidden;
   padding: 100px 0;
   white-space: nowrap;
   width: 100%;
+
+  :hover .ProjectCarouselSlide {
+    animation-play-state: paused;
+  }
 `;
 
 export const ProjectCarouselSlide = styled.div.attrs({
@@ -1413,4 +1418,5 @@ export const ProjectCarouselSlideImg = styled.img.attrs({
 })`
   height: 100%;
   padding: 0 15px;
+  border-radius: 693px;
 `;
