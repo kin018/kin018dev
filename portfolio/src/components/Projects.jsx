@@ -1,25 +1,79 @@
 import React from 'react';
+import {
+  ProjectMainContainer,
+  ProjectMainTitle,
+  ProjectCarousel,
+  ProjectCarouselSlide,
+  ProjectCarouselSlideImg,
+} from '../styledComponents/StyledComponents';
 
 function Projects() {
   return (
-    <div>
-      <h1>PROJECTS</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
+    <ProjectMainContainer>
+      <ProjectMainTitle>Projects</ProjectMainTitle>
+      <ProjectCarousel>
+        <ProjectCarouselSlide>
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon1"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon2"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon3"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon4"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon5"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon6"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon7"
+          />
+        </ProjectCarouselSlide>
+        <ProjectCarouselSlide>
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon1"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon2"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon3"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon4"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon5"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon6"
+          />
+          <ProjectCarouselSlideImg
+            src="../images/comingSoon.jpg"
+            alt="comingSoon7"
+          />
+        </ProjectCarouselSlide>
+      </ProjectCarousel>
+    </ProjectMainContainer>
   );
 }
 
