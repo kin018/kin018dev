@@ -1385,16 +1385,44 @@ export const ProjectMainTitle = styled.div.attrs({
 export const ProjectCarousel = styled.div.attrs({
   className: 'Projectarousel',
 })`
-  background-color: green;
+  //background-color: green;
   //background-color: ${({ theme }) => theme.card};
   overflow: hidden;
   padding: 100px 0;
   white-space: nowrap;
   width: 100%;
+  //position: relative;
 
   :hover .ProjectCarouselSlide {
     animation-play-state: paused;
   }
+
+  // ::before,
+  // ::after {
+  //   position: absolute;
+  //   top: 0;
+  //   width: 5%;
+  //   height: 100%;
+  //   content: '';
+  //   z-index: 1;
+  // }
+  // ::before {
+  //   left: 0;
+  //   background: linear-gradient(
+  //     to left,
+  //     rgba(255, 255, 255, 0),
+  //     ${({ theme }) => theme.bg}
+  //   );
+  // }
+
+  // ::after {
+  //   right: 0;
+  //   background: linear-gradient(
+  //     to right,
+  //     rgba(255, 255, 255, 0),
+  //     ${({ theme }) => theme.bg}
+  //   );
+  // }
 `;
 
 export const ProjectCarouselSlide = styled.div.attrs({
