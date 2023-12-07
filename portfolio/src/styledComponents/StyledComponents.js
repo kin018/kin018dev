@@ -1391,45 +1391,13 @@ export const ProjectCarousel = styled.div.attrs({
   padding: 100px 0;
   white-space: nowrap;
   width: 100%;
-  //position: relative;
-
-  :hover .ProjectCarouselSlide {
-    animation-play-state: paused;
-  }
-
-  // ::before,
-  // ::after {
-  //   position: absolute;
-  //   top: 0;
-  //   width: 5%;
-  //   height: 100%;
-  //   content: '';
-  //   z-index: 1;
-  // }
-  // ::before {
-  //   left: 0;
-  //   background: linear-gradient(
-  //     to left,
-  //     rgba(255, 255, 255, 0),
-  //     ${({ theme }) => theme.bg}
-  //   );
-  // }
-
-  // ::after {
-  //   right: 0;
-  //   background: linear-gradient(
-  //     to right,
-  //     rgba(255, 255, 255, 0),
-  //     ${({ theme }) => theme.bg}
-  //   );
-  // }
 `;
 
 export const ProjectCarouselSlide = styled.div.attrs({
   className: 'ProjectCarouselSlide',
 })`
   display: inline-block;
-  animation: slideAnimation 50s infinite linear;
+  animation: slideAnimation 5s infinite linear;
 
   @keyframes slideAnimation {
     from {
@@ -1440,10 +1408,18 @@ export const ProjectCarouselSlide = styled.div.attrs({
     }
   }
 `;
+export const ProjectCarouselSlideContainer = styled.div.attrs({
+  className: 'ProjectCarouselSlideContainer ',
+})`
+  :hover .ProjectCarouselSlide {
+    animation-play-state: paused;
+  }
+`;
 
 export const ProjectCarouselSlideImg = styled.img.attrs({
   className: 'ProjectCarouselSlideImg',
 })`
   padding: 0 15px;
   //border-radius: 693px;
+  background-color: yellow;
 `;
