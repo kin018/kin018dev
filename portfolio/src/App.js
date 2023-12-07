@@ -38,8 +38,9 @@ function App() {
             <Skills />
           </GradientWrapper>
           <Services />
-          <Projects />
           <GradientWrapper>
+            <Projects />
+
             <Contact />
           </GradientWrapper>
           <Footer />

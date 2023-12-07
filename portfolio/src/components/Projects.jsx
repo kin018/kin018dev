@@ -16,61 +16,61 @@ function Projects() {
         <ProjectCarouselSlideContainer>
           <ProjectCarouselSlide>
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon1"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon2"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon3"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon4"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon5"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon6"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon7"
             />
           </ProjectCarouselSlide>
           <ProjectCarouselSlide>
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon1"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon2"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon3"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon4"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon5"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon6"
             />
             <ProjectCarouselSlideImg
-              src="../images/comingSoon.jpg"
+              src="../images/screely.png"
               alt="comingSoon7"
             />
           </ProjectCarouselSlide>
