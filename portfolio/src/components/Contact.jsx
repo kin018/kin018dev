@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { FaPaperPlane } from 'react-icons/fa6';
 import ContactBlob from './ContactBlob';
 import {
@@ -15,11 +16,31 @@ import {
   ContactHubSendButton,
   ContactHubMediaVerticalHeader,
   ContactHubAltSendButton,
-  ContactHubAltSendButtonText,
   ContactHubAltSendButtonIcon,
+  ContactHubAltSendButtonText,
 } from '../styledComponents/StyledComponents';
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault(); //prevent refresh
+
+    emailjs
+      .sendForm(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        form.current,
+        'YOUR_PUBLIC_KEY'
+      )
+      .then((result) => {
+        console.log(result.text);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+  };
+
   return (
     <ContactMainContainer>
       <ContactWrapper>
@@ -38,23 +59,41 @@ function Contact() {
             <ContactHubMediaVerticalHeader>
               Let's Chat!
             </ContactHubMediaVerticalHeader>
-            <ContactHubFormInput type="text" placeholder="Full Name" required />
-            <ContactHubFormInput type="email" placeholder="Email" required />
-            <ContactHubFormInput type="text" placeholder="Subject" />
-            <ContactHubFormMessageInput
-              type="text"
-              rows="6"
-              placeholder="MESSAGE"
-              required
-            />
-            <ContactHubSendButton id="submit" type="submit" value="SEND">
-              <ContactHubAltSendButton>
-                <ContactHubAltSendButtonIcon>
-                  <FaPaperPlane />
-                </ContactHubAltSendButtonIcon>
-                <ContactHubAltSendButtonText>Send</ContactHubAltSendButtonText>
-              </ContactHubAltSendButton>
-            </ContactHubSendButton>
+            <form ref={form} onSubmit={sendEmail}>
+              <ContactHubFormInput
+                type="text"
+                name="user_name"
+                placeholder="Full Name"
+                required
+              />
+              <ContactHubFormInput
+                type="email"
+                name="user_email"
+                placeholder="Email"
+                required
+              />
+              <ContactHubFormInput
+                type="text"
+                name="subject"
+                placeholder="Subject"
+              />
+              <ContactHubFormMessageInput
+                name="message"
+                rows="6"
+                placeholder="MESSAGE"
+                required
+              />
+              <ContactHubSendButton type="submit" value="SEND">
+                <ContactHubAltSendButton>
+                  <ContactHubAltSendButtonIcon>
+                    <FaPaperPlane />
+                  </ContactHubAltSendButtonIcon>
+                  <ContactHubAltSendButtonText>
+                    Send
+                  </ContactHubAltSendButtonText>
+                </ContactHubAltSendButton>
+              </ContactHubSendButton>
+            </form>
           </ContactHubFormContainer>
         </ContactHubContainer>
       </ContactWrapper>
