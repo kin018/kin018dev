@@ -635,6 +635,7 @@ export const SkillsMainTitle = styled.div.attrs({
   color: ${({ theme }) => theme.text_secondary};
   margin-top: 30px;
   text-align: center;
+  text-transform: uppercase;
 `;
 
 export const SkillsHubContainer = styled.div.attrs({
@@ -770,6 +771,7 @@ export const AboutMainTitle = styled.div.attrs({
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
+  text-transform: uppercase;
 `;
 export const AboutBento = styled.div.attrs({
   className: 'Bento',
@@ -1010,6 +1012,7 @@ export const ServicesMainTitle = styled.div.attrs({
   color: ${({ theme }) => theme.text_secondary};
   margin-top: 30px;
   text-align: center;
+  text-transform: uppercase;
 `;
 
 export const ServicesHubContainer = styled.div.attrs({
@@ -1138,6 +1141,7 @@ export const ContactMainTitle = styled.div.attrs({
   color: ${({ theme }) => theme.text_secondary};
   margin-top: 30px;
   text-align: center;
+  text-transform: uppercase;
 `;
 
 export const ContactHubContainer = styled.div.attrs({
@@ -1354,4 +1358,66 @@ export const ContactBlobImgSVGWrapper = styled.div.attrs({
       transform: scale(1) translate(10px, -30px);
     }
   }
+`;
+
+//Projects
+export const ProjectMainContainer = styled.div.attrs({
+  className: 'ProjectMainContainer',
+})`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+`;
+
+export const ProjectMainTitle = styled.div.attrs({
+  className: 'ProjectMainTitle',
+})`
+  font-size: 34px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+`;
+export const ProjectCarousel = styled.div.attrs({
+  className: 'Projectarousel',
+})`
+  //background-color: green;
+  //background-color: ${({ theme }) => theme.card};
+  overflow: hidden;
+  padding: 100px 0;
+  white-space: nowrap;
+  width: 100%;
+`;
+
+export const ProjectCarouselSlide = styled.div.attrs({
+  className: 'ProjectCarouselSlide',
+})`
+  display: inline-block;
+  animation: slideAnimation 50s infinite linear;
+
+  @keyframes slideAnimation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+`;
+export const ProjectCarouselSlideContainer = styled.div.attrs({
+  className: 'ProjectCarouselSlideContainer ',
+})`
+  :hover .ProjectCarouselSlide {
+    animation-play-state: paused;
+  }
+`;
+
+export const ProjectCarouselSlideImg = styled.img.attrs({
+  className: 'ProjectCarouselSlideImg',
+})`
+  padding: 0 15px;
 `;

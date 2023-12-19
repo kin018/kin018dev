@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+//import 'dotenv/config';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -38,8 +39,9 @@ function App() {
             <Skills />
           </GradientWrapper>
           <Services />
-          <Projects />
           <GradientWrapper>
+            <Projects />
+
             <Contact />
           </GradientWrapper>
           <Footer />
