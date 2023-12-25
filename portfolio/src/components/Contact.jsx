@@ -37,11 +37,11 @@ function Contact() {
       .then((result) => {
         console.log(result.text);
         e.target.reset();
-        toast.success('Message sent');
+        toast.success('Success! Message sent');
       })
       .catch((error) => {
         console.log(error.text);
-        toast.error('Message failed');
+        toast.error('Oops! Message failed');
       });
   };
 
