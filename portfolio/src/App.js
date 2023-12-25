@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-//import 'dotenv/config';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -30,6 +31,18 @@ function App() {
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <Router>
         <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
         <MainAppContainer>
@@ -41,7 +54,6 @@ function App() {
           <Services />
           <GradientWrapper>
             <Projects />
-
             <Contact />
           </GradientWrapper>
           <Footer />

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 import { FaPaperPlane } from 'react-icons/fa6';
+import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
 import ContactBlob from './ContactBlob';
 import {
   ContactMainContainer,
@@ -35,10 +36,12 @@ function Contact() {
       )
       .then((result) => {
         console.log(result.text);
-        console.log('message sent');
+        e.target.reset();
+        toast.success('Message sent');
       })
       .catch((error) => {
         console.log(error.text);
+        toast.error('Message failed');
       });
   };
 
