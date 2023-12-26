@@ -29,7 +29,7 @@ export const darkTheme = {
 };
 
 export const lightTheme = {
-  bg: '#FFFFFF',
+  bg: '#F8F8FF', //#ffffff OLD COLOR
   bgLight: '#f0f0f0',
   primary: '#be1adb',
   text_primary: '#111111',
@@ -84,7 +84,7 @@ export const GradientWrapper = styled.div.attrs({
   background: linear-gradient(
       38.73deg,
       var(--purple-gradient-start) 0%,
-      var(--purple-gradient-end) 50%
+      var(--purple-gradient-end) 80%
     ),
     linear-gradient(
       141.27deg,
