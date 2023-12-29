@@ -19,16 +19,16 @@ function Footer() {
       <FooterWrapper>
         <FooterName>Kenechukwu Nwankwo</FooterName>
         <FooterNav>
-          {/* <Link to="about" smooth duration={500} offset={-100}>
+          {/* <Link to="about" smooth duration={300} offset={-100}>
             <FooterLink>About</FooterLink>
           </Link> */}
-          <Link to="skills" smooth duration={500} offset={-100}>
+          <Link to="skills" smooth duration={300} offset={-100}>
             <FooterLink>Skills</FooterLink>
           </Link>
-          <Link to="services" smooth duration={500} offset={-100}>
+          <Link to="services" smooth duration={300} offset={-100}>
             <FooterLink>Services</FooterLink>
           </Link>
-          <Link to="projects" smooth duration={500} offset={-100}>
+          <Link to="projects" smooth duration={300} offset={-100}>
             <FooterLink>Projects</FooterLink>
           </Link>
         </FooterNav>

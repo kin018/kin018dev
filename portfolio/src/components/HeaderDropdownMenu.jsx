@@ -9,7 +9,7 @@ import {
 function HeaderDropdownMenu() {
   return (
     <>
-      <Link to="home" smooth duration={500} offset={-100}>
+      <Link to="home" smooth duration={300} offset={-100}>
         <StyledHeaderDropdownMenuLink>
           <StyledHeaderDropdownMenuIcon>
             <Icon icon="uil:estate" />
@@ -27,7 +27,7 @@ function HeaderDropdownMenu() {
         </StyledHeaderDropdownMenuLink>
       </Link> */}
 
-      <Link to="skills" smooth duration={500} offset={-100}>
+      <Link to="skills" smooth duration={300} offset={-100}>
         <StyledHeaderDropdownMenuLink>
           <StyledHeaderDropdownMenuIcon>
             <Icon icon="uil:file-alt" />
@@ -35,7 +35,7 @@ function HeaderDropdownMenu() {
           Skills
         </StyledHeaderDropdownMenuLink>
       </Link>
-      <Link to="services" smooth duration={500} offset={-100}>
+      <Link to="services" smooth duration={300} offset={-100}>
         <StyledHeaderDropdownMenuLink>
           <StyledHeaderDropdownMenuIcon>
             <Icon icon="uil:briefcase-alt" />
@@ -43,7 +43,7 @@ function HeaderDropdownMenu() {
           Services
         </StyledHeaderDropdownMenuLink>
       </Link>
-      <Link to="projects" smooth duration={500} offset={-100}>
+      <Link to="projects" smooth duration={300} offset={-100}>
         <StyledHeaderDropdownMenuLink>
           <StyledHeaderDropdownMenuIcon>
             <Icon icon="uil:scenery" />
@@ -51,7 +51,7 @@ function HeaderDropdownMenu() {
           Projects
         </StyledHeaderDropdownMenuLink>
       </Link>
-      <Link to="contact" smooth duration={500} offset={-100}>
+      <Link to="contact" smooth duration={300} offset={-100}>
         <StyledHeaderDropdownMenuLink>
           <StyledHeaderDropdownMenuIcon>
             <Icon icon="uil:message" />
