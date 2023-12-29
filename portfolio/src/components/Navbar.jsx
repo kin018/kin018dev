@@ -13,7 +13,7 @@ function Navbar({ toggleTheme, isDarkTheme }) {
         <Link to="home" smooth duration={500}>
           <StyledNavLink>Home</StyledNavLink>
         </Link>
-        {/* <Link to="about" smooth duration={500}>
+        {/* <Link to="about" smooth duration={500} offset={-100}>
           <StyledNavLink>About</StyledNavLink>
         </Link> */}
         <Link to="skills" smooth duration={500} offset={-100}>
