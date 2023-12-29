@@ -41,7 +41,7 @@ export const lightTheme = {
   white: '#FFFFFF',
   black: '#000000',
   input: '#e2e8f0', //#f0f3ff might do this color
-  border: '#e2e8f0',
+  border: '#cad4e0',
   buttonHover: '#854CE6',
 };
 
@@ -1388,7 +1388,7 @@ export const ProjectCarousel = styled.div.attrs({
   //background-color: green;
   //background-color: ${({ theme }) => theme.card};
   overflow: hidden;
-  padding: 100px 0;
+  padding: 40px 0 100px 0;
   white-space: nowrap;
   width: 100%;
 `;

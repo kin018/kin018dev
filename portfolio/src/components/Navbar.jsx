@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import ThemeIcon from './ThemeIcon';
 import {
   NavbarContainer,
@@ -10,24 +10,26 @@ function Navbar({ toggleTheme, isDarkTheme }) {
   return (
     <nav>
       <NavbarContainer>
-        <StyledNavLink as={NavLink} to="/">
-          Home
-        </StyledNavLink>
-        <StyledNavLink as={NavLink} to="/about">
-          About
-        </StyledNavLink>
-        <StyledNavLink as={NavLink} to="/skills">
-          Skills
-        </StyledNavLink>
-        <StyledNavLink as={NavLink} to="/services">
-          Services
-        </StyledNavLink>
-        <StyledNavLink as={NavLink} to="/projects">
-          Projects
-        </StyledNavLink>
-        <StyledNavLink as={NavLink} to="/contact">
-          Contact
-        </StyledNavLink>
+        <Link to="home" smooth duration={300}>
+          <StyledNavLink>Home</StyledNavLink>
+        </Link>
+        {/* <Link to="about" smooth duration={300} offset={-100}>
+          <StyledNavLink>About</StyledNavLink>
+        </Link> 
+        
+        */}
+        <Link to="skills" smooth duration={300} offset={-100}>
+          <StyledNavLink>Skills</StyledNavLink>
+        </Link>
+        <Link to="services" smooth duration={300} offset={-100}>
+          <StyledNavLink>Services</StyledNavLink>
+        </Link>
+        <Link to="projects" smooth duration={300} offset={-100}>
+          <StyledNavLink>Projects</StyledNavLink>
+        </Link>
+        <Link to="contact" smooth duration={300} offset={-100}>
+          <StyledNavLink>Contact</StyledNavLink>
+        </Link>
         <ThemeIcon toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
       </NavbarContainer>
     </nav>

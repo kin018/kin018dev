@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import SocialMedia from './SocialMedia';
 import {
   Copyright,
@@ -19,18 +19,18 @@ function Footer() {
       <FooterWrapper>
         <FooterName>Kenechukwu Nwankwo</FooterName>
         <FooterNav>
-          <FooterLink as={Link} to="/about">
-            About
-          </FooterLink>
-          <FooterLink as={Link} to="/skills">
-            Skills
-          </FooterLink>
-          <FooterLink as={Link} to="/services">
-            Services
-          </FooterLink>
-          <FooterLink as={Link} to="/projects">
-            Projects
-          </FooterLink>
+          {/* <Link to="about" smooth duration={300} offset={-100}>
+            <FooterLink>About</FooterLink>
+          </Link> */}
+          <Link to="skills" smooth duration={300} offset={-100}>
+            <FooterLink>Skills</FooterLink>
+          </Link>
+          <Link to="services" smooth duration={300} offset={-100}>
+            <FooterLink>Services</FooterLink>
+          </Link>
+          <Link to="projects" smooth duration={300} offset={-100}>
+            <FooterLink>Projects</FooterLink>
+          </Link>
         </FooterNav>
         <SocialMediaIconDiv>
           <SocialMedia />

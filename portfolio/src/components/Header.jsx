@@ -5,6 +5,8 @@ import Navbar from './Navbar';
 import Logo from './Logo';
 import ThemeIcon from './ThemeIcon';
 import HeaderDropdownMenu from './HeaderDropdownMenu';
+import { Link } from 'react-scroll';
+
 import {
   AppHeader,
   HeaderMainContainer,
@@ -50,7 +52,9 @@ function Header({ toggleTheme, isDarkTheme }) {
   return (
     <AppHeader>
       <HeaderMainContainer>
-        <Logo isDarkTheme={isDarkTheme} />
+        <Link to="home" smooth duration={500}>
+          <Logo isDarkTheme={isDarkTheme} />
+        </Link>
         <HeaderThemeMobileMenuWrapper>
           <HeaderThemeMobileMenuBtns>
             <StyledThemeDarkLightLogoRightMargin>
