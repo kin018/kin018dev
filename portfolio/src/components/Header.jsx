@@ -5,6 +5,8 @@ import Navbar from './Navbar';
 import Logo from './Logo';
 import ThemeIcon from './ThemeIcon';
 import HeaderDropdownMenu from './HeaderDropdownMenu';
+import { Link } from 'react-scroll';
+
 import {
   AppHeader,
   HeaderMainContainer,

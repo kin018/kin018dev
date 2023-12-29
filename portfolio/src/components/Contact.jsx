@@ -46,7 +46,7 @@ function Contact() {
   };
 
   return (
-    <ContactMainContainer>
+    <ContactMainContainer id="contact">
       <ContactWrapper>
         <ContactMainTitle>Contact</ContactMainTitle>
         <ContactHubContainer>

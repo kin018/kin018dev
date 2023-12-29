@@ -10,7 +10,7 @@ import {
 
 function Projects() {
   return (
-    <ProjectMainContainer>
+    <ProjectMainContainer id="projects">
       <ProjectMainTitle>Projects</ProjectMainTitle>
       <ProjectCarousel>
         <ProjectCarouselSlideContainer>
