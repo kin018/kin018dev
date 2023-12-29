@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import {
   StyledHeaderDropdownMenuIcon,
   StyledHeaderDropdownMenuLink,
@@ -9,42 +9,56 @@ import {
 function HeaderDropdownMenu() {
   return (
     <>
-      <StyledHeaderDropdownMenuLink as={Link} to="/">
-        <StyledHeaderDropdownMenuIcon>
-          <Icon icon="uil:estate" />
-        </StyledHeaderDropdownMenuIcon>
-        Home
-      </StyledHeaderDropdownMenuLink>
-      <StyledHeaderDropdownMenuLink as={Link} to="/about">
-        <StyledHeaderDropdownMenuIcon>
-          <Icon icon="uil:user" />
-        </StyledHeaderDropdownMenuIcon>
-        About
-      </StyledHeaderDropdownMenuLink>
-      <StyledHeaderDropdownMenuLink as={Link} to="/skills">
-        <StyledHeaderDropdownMenuIcon>
-          <Icon icon="uil:file-alt" />
-        </StyledHeaderDropdownMenuIcon>
-        Skills
-      </StyledHeaderDropdownMenuLink>
-      <StyledHeaderDropdownMenuLink as={Link} to="/services">
-        <StyledHeaderDropdownMenuIcon>
-          <Icon icon="uil:briefcase-alt" />
-        </StyledHeaderDropdownMenuIcon>
-        Services
-      </StyledHeaderDropdownMenuLink>
-      <StyledHeaderDropdownMenuLink as={Link} to="/projects">
-        <StyledHeaderDropdownMenuIcon>
-          <Icon icon="uil:scenery" />
-        </StyledHeaderDropdownMenuIcon>
-        Projects
-      </StyledHeaderDropdownMenuLink>
-      <StyledHeaderDropdownMenuLink as={Link} to="/contact">
-        <StyledHeaderDropdownMenuIcon>
-          <Icon icon="uil:message" />
-        </StyledHeaderDropdownMenuIcon>
-        Contact
-      </StyledHeaderDropdownMenuLink>
+      <Link to="home" smooth duration={500} offset={-100}>
+        <StyledHeaderDropdownMenuLink>
+          <StyledHeaderDropdownMenuIcon>
+            <Icon icon="uil:estate" />
+          </StyledHeaderDropdownMenuIcon>
+          Home
+        </StyledHeaderDropdownMenuLink>
+      </Link>
+
+      {/* <Link to="about" smooth duration={250} offset={-100}>
+        <StyledHeaderDropdownMenuLink>
+          <StyledHeaderDropdownMenuIcon>
+            <Icon icon="uil:user" />
+          </StyledHeaderDropdownMenuIcon>
+          About
+        </StyledHeaderDropdownMenuLink>
+      </Link> */}
+
+      <Link to="skills" smooth duration={500} offset={-100}>
+        <StyledHeaderDropdownMenuLink>
+          <StyledHeaderDropdownMenuIcon>
+            <Icon icon="uil:file-alt" />
+          </StyledHeaderDropdownMenuIcon>
+          Skills
+        </StyledHeaderDropdownMenuLink>
+      </Link>
+      <Link to="services" smooth duration={500} offset={-100}>
+        <StyledHeaderDropdownMenuLink>
+          <StyledHeaderDropdownMenuIcon>
+            <Icon icon="uil:briefcase-alt" />
+          </StyledHeaderDropdownMenuIcon>
+          Services
+        </StyledHeaderDropdownMenuLink>
+      </Link>
+      <Link to="projects" smooth duration={500} offset={-100}>
+        <StyledHeaderDropdownMenuLink>
+          <StyledHeaderDropdownMenuIcon>
+            <Icon icon="uil:scenery" />
+          </StyledHeaderDropdownMenuIcon>
+          Projects
+        </StyledHeaderDropdownMenuLink>
+      </Link>
+      <Link to="contact" smooth duration={500} offset={-100}>
+        <StyledHeaderDropdownMenuLink>
+          <StyledHeaderDropdownMenuIcon>
+            <Icon icon="uil:message" />
+          </StyledHeaderDropdownMenuIcon>
+          Contact
+        </StyledHeaderDropdownMenuLink>
+      </Link>
     </>
   );
 }
