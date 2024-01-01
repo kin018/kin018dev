@@ -76,6 +76,7 @@ function Contact() {
                 placeholder="Email"
                 required
               />
+
               <ContactHubFormInput
                 type="text"
                 name="subject"

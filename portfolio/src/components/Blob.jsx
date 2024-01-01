@@ -47,7 +47,7 @@ function Blob() {
         />
         <image
           href="/images/Logo.png"
-          x="32%" // adjust the x and y coordinates as needed
+          x="32%" // adjust the x & y coordinates as needed
           y="45%"
           width="100%"
           height="85%"
