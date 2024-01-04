@@ -32,3 +32,6 @@ yarn-error.log*
 
 # ContactMe
 .env
+
+# Node.js
+node_modules/
