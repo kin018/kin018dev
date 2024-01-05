@@ -1,3 +1,3 @@
-# kin018.dev
+# knwankwo.com
 
 "Welcome! This README will grow as the website progresses. Stay tuned for frequent updates and changes!
