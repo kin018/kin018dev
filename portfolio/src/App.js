@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import AboutMe from './components/AboutMe';
+// import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -48,7 +48,7 @@ function App() {
         <MainAppContainer>
           <Home />
           <GradientWrapper>
-            <AboutMe />
+            {/* <AboutMe /> */}
             <Skills />
           </GradientWrapper>
           <Services />

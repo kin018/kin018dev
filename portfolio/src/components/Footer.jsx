@@ -17,7 +17,7 @@ function Footer() {
   return (
     <FooterMainContainer>
       <FooterWrapper>
-        <FooterName>Kenechukwu Nwankwo</FooterName>
+        <FooterName>Ken Nwankwo</FooterName>
         <FooterNav>
           {/* <Link to="about" smooth duration={300} offset={-100}>
             <FooterLink>About</FooterLink>
