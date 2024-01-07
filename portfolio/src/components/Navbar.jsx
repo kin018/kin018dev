@@ -10,8 +10,8 @@ function Navbar({ toggleTheme, isDarkTheme }) {
   return (
     <nav>
       <NavbarContainer>
-        <Link to="home" smooth duration={300}>
-          <StyledNavLink>Home</StyledNavLink>
+        <Link to="home" smooth duration={300} offset={-100}>
+          <StyledNavLink> Home </StyledNavLink>
         </Link>
         {/* <Link to="about" smooth duration={300} offset={-100}>
           <StyledNavLink>About</StyledNavLink>

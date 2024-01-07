@@ -51,8 +51,10 @@ export const LogoWrapper = styled.img.attrs({
 })`
   display: flex;
   align-items: center;
-  height: 75px;
-  width: 75px;
+  height: 75px; //for my logo
+  width: 75px; //for my logo
+  // height: 200px; //for text logo
+  // width: 300px; //for text logo
   border-radius: 40px;
   background: no-repeat center center/cover;
   cursor: pointer;
@@ -121,7 +123,7 @@ export const StyledNavLink = styled.a.attrs({
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
-  :hover {
+  &:hover {
     color: ${({ theme }) => theme.primary};
     border-bottom: 1.5px solid ${({ theme }) => theme.primary};
   }
@@ -196,6 +198,7 @@ export const FooterLink = styled.a.attrs({
   text-decoration: none;
   font-size: 1.2rem; //Need to change font size this is too large currently
   transition: color 0.2s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-1px);
@@ -1289,7 +1292,7 @@ border: .01px solid ${({ theme }) => theme.border};
 border-radius: 6px;
 transition: all .2s ease-in-out;
 
-  :hover {
+  &:hover {
     background-color: ${({ theme }) => theme.buttonHover};
   }}
 `;
@@ -1301,8 +1304,8 @@ width: 100%;
 height: 44px;
 transition: all .2s ease-in-out;
 
-:hover {
-  transform: translate3d(0px, -29px, 0px);
+&:hover {
+  transform: translate3d(0px, -33px, 0px);
 }}
 `;
 
@@ -1411,7 +1414,7 @@ export const ProjectCarouselSlide = styled.div.attrs({
 export const ProjectCarouselSlideContainer = styled.div.attrs({
   className: 'ProjectCarouselSlideContainer ',
 })`
-  :hover .ProjectCarouselSlide {
+  &:hover .ProjectCarouselSlide {
     animation-play-state: paused;
   }
 `;
