@@ -19,9 +19,9 @@ function Footer() {
       <FooterWrapper>
         <FooterName>Ken Nwankwo</FooterName>
         <FooterNav>
-          {/* <Link to="about" smooth duration={300} offset={-100}>
+          <Link to="about" smooth duration={300} offset={-100}>
             <FooterLink>About</FooterLink>
-          </Link> */}
+          </Link>
           <Link to="skills" smooth duration={300} offset={-100}>
             <FooterLink>Skills</FooterLink>
           </Link>

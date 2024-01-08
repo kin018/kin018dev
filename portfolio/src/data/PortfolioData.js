@@ -99,7 +99,7 @@ export const skills = [
       {
         name: 'SQL Server',
         image:
-          'https://camo.githubusercontent.com/42dfd0950d93092d82d677877fe87d5bab1e2acccc1110bf0f9dd755988ccb7e/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3330333232392f6d6963726f736f66742d73716c2d7365727665722d6c6f676f2e737667',
+          'https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg',
       },
 
       {

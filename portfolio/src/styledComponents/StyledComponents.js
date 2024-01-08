@@ -16,6 +16,7 @@ export const darkTheme = {
   text_primary: '#F2F3F4',
   text_secondary: '#b1b2b3',
   card: '#171721',
+
   // card: '#211D35',
   card_light: 'rgba(25, 25, 36,1)',
   // card_light: 'rgba(25, 25, 36,.985)', //.985 is alpha channel in other others the transparency, with 0 being completely transparent and 1 being completely opaque
@@ -401,14 +402,21 @@ export const HomeMainContainer = styled.div.attrs({
   position: relative;
   background-color: ${({ theme }) => theme.card_light};
   padding: 80px 30px;
-  // height: 100vh;
-  // width: 100vw;
+
+  @media (min-width: 961px) {
+    height: 100vh; //full screen height for landing page
+    width: 100vw; //full screen width for landing page
+  }
 
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
 
   @media (max-width: 640px) {
+    padding: 32px 16px;
+  }
+
+  @media (max-width: 363px) {
     padding: 32px 16px;
   }
 
@@ -776,97 +784,57 @@ export const AboutMainTitle = styled.div.attrs({
   text-align: center;
   text-transform: uppercase;
 `;
-export const AboutBento = styled.div.attrs({
-  className: 'Bento',
-})`
-  position: relative;
-  width: 50%;
-  margin: auto; //centers in the middle of page
-`;
 
-export const AboutBentoContainer = styled.div.attrs({
-  className: 'AboutBentoContainer',
+export const BentoBox_ = styled.div.attrs({
+  className: 'BentoBox_',
 })`
-  position: relative;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(8, 1fr);
-  gap: 12px;
-  //padding: 2rem;
-  width: 100%;
-  height: inherit;
-  z-index: 10;
-
-  @media (max-width: 769px) {
-    grid-template-columns: repeat(5, 1fr);
-  }
-`;
-export const AboutBentoBox = styled.div.attrs({
-  className: 'BentoBox',
-})`
-  position: relative;
-  backdrop-filter: blur(1rem);
   border-radius: 16px;
-
   background-color: ${({ theme }) => theme.card};
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+`;
 
-  display: flex;
-  allign-items: flex-end;
-  //padding: 2rem;
-  cursor: pointer;
-  align-items: center;
+export const BentoBoxContainer = styled.div.attrs({
+  className: 'BentoBoxContainer',
+})`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  max-width: 50%;
+  margin: 0 auto;
   justify-content: center;
 
-
-//   Example https://css-tricks.com/almanac/properties/g/grid-area/
-//   grid-area: 2 / 4 / 4 / 6;
-
-//   /* is equivalent to: */
-//   grid-row-start: 2;
-//   grid-column-start: 4;
-//   grid-row-end: 4;
-//   grid-column-end: 6;
-// }
-
-  :nth-child(1) {
-    grid-area: 1/1/3/7;
-}
-
-:nth-child(2) {
-    grid-area: 1/7/3/9;
-}
-
-:nth-child(3) {
-  grid-area: 3/6/5/9;
-
-}
-:nth-child(4) {
-  grid-area: 3/3/5/6;
-}
-
-:nth-child(5) {
-
-  grid-area: 3/1/4/3;
-}
-
-:nth-child(6) {
-
-grid-area: 4/1/5/3;
-}
+  @media (max-width: 768px) {
+    max-width: 400px;
+  }
+  @media (max-width: 500px) {
+    max-width: 330px;
   }
 `;
-export const AboutBentoBoxParagraph = styled.div.attrs({
-  className: 'AboutBentoBoxParagraph',
+
+export const AboutLargestBox = styled(BentoBox_).attrs({
+  className: 'BentoBoxContainer',
 })`
-  font-weight:900px
-  line-height: 1.3em;
-  box-sizing: border-box;
-  margin: 20px 20px;
-  padding: 20px 20px;
-  align-items: center;
-  justify-content: center;
-  color: ${({ theme }) => theme.text_secondary};
+  grid-column: span 2;
+
+  & p {
+    margin: 0;
+  }
+`;
+export const AboutSquareBento = styled(BentoBox_).attrs({
+  className: 'BentoBoxContainer',
+})`
+  grid-row: span 1;
+  grid-column: span 1;
+
+  @media (max-width: 1500px) {
+    grid-column: span 2;
+
+    & p {
+      margin: 0;
+    }
+  }
 `;
 
 export const AboutBentoBoxParagraphTitle = styled.h2.attrs({
@@ -884,43 +852,31 @@ text-align: center;
     font-weight: 600;
   }
 `;
-
-export const AboutBentoBoxMissionStatementTitle = styled.h2.attrs({
-  className: 'AboutBentoBoxMissionStatementTitle',
+export const AboutBentoBoxTextContainer = styled.div.attrs({
+  className: 'AboutBentoBoxTextContainer',
 })`
-font-style: italic;
-font-size: 24px;
-font-weight: 600;
-color: ${({ theme }) => theme.primary};
-margin-bottom: 10px;
-text-align: center;
-  }
+  margin-left: 20px;
 `;
 
 export const AboutBentoBoxText = styled.span.attrs({
   className: 'AboutBentoBoxText',
 })`
-  // overflow: hidden;
-  // font-size: 2.4rem;
+  //overflow: hidden;
   @media (max-width: 960px) {
     text-align: center;
     align-items: center;
   }
 `;
-
-export const AboutBentoBoxImg = styled.img.attrs({
-  className: 'AboutBentoBoxImg',
+export const AboutBentoBoxParagraph = styled.div.attrs({
+  className: 'AboutBentoBoxParagraph',
 })`
-  width: 50%;
-  height: auto;
-  object-fit: cover;
-
-  @media (max-width: 960px) {
-    width: 15%;
-    height: auto;
-  }
+  font-weight:900px
+  line-height: 1.3em;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  color: ${({ theme }) => theme.text_secondary};
 `;
-
 export const AboutBentoBoxNumber = styled.span.attrs({
   className: 'AboutBentoBoxNumber',
 })`
@@ -929,54 +885,51 @@ export const AboutBentoBoxNumber = styled.span.attrs({
   color: ${({ theme }) => theme.text_primary};
 `;
 
-export const AboutBentoBoxSquareText = styled.span.attrs({
-  className: 'AboutBentoBoxSquareText',
+export const AboutBentoBoxMissionStatementTitle = styled.h2.attrs({
+  className: 'AboutBentoBoxMissionStatementTitle',
 })`
-  font-size: 16px;
-  color: ${({ theme }) => theme.text_secondary};
-`;
-
-export const AboutBentoBoxSquareContainerText = styled.span.attrs({
-  className: 'AboutBentoBoxSquareContainerText',
-})`
-  @media (max-width: 960px) {
-    margin: 20px 20px 30px 20px;
-    padding: 20px 20px;
+font-style: italic;
+font-size: 24px;
+font-weight: 600;
+color: ${({ theme }) => theme.primary};
+text-align: center;
   }
 `;
-
-export const AboutBentoBoxCenteredText = styled.div.attrs({
-  className: 'AboutBentoBoxCenteredText',
-})`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
 export const AboutBentoBoxCenteredCert = styled.div.attrs({
   className: 'AboutBentoBoxCenteredCert',
 })`
   text-align: center;
   align-items: center;
 `;
-
 export const AboutBentoBoxCertImg = styled.img.attrs({
   className: 'AboutBentoBoxCertImg',
 })`
-  width: 35%;
+  width: 16%;
   height: auto;
   object-fit: cover;
   cursor: pointer;
 
-  :hover {
+  &:hover {
     color: ${({ theme }) => theme.primary};
     border-bottom: 1.5px solid ${({ theme }) => theme.primary};
   }
 
-  @media (max-width: 960px) {
-    width: 19%; //horizontal
+  @media (max-width: 1900px) {
+    width: 25%;
   }
+  @media (max-width: 1500px) {
+    width: 18%;
+  }
+
+  @media (max-width: 900px) {
+    width: 25%;
+  }
+`;
+export const AboutBentoBoxCenteredText = styled.div.attrs({
+  className: 'AboutBentoBoxCenteredText',
+})`
+  text-align: center;
+  align-items: center;
 `;
 
 //Services
