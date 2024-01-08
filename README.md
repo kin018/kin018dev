@@ -1,3 +1,3 @@
 # knwankwo.com
 
-"Welcome! This README will grow as the website progresses. Stay tuned for frequent updates and changes!
+"Welcome to knwankwo.com! Stay tuned for upcoming updates, including images and videos showcasing the completed website. Visit now for your personalized viewing experience!"
