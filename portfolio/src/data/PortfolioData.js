@@ -101,16 +101,6 @@ export const skills = [
         image:
           'https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg',
       },
-
-      {
-        name: 'Postgresql',
-        image: 'https://www.postgresql.org/media/img/about/press/elephant.png',
-      },
-
-      {
-        name: 'Graph Ql',
-        image: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
-      },
     ],
   },
 
