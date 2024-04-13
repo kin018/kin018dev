@@ -85,7 +85,7 @@ export const GradientWrapper = styled.div.attrs({
   --blue-gradient-end: rgba(0, 70, 209, 0.15);
 
   background: linear-gradient(
-      38.73deg,
+      8.73deg,
       var(--purple-gradient-start) 0%,
       var(--purple-gradient-end) 80%
     ),
@@ -801,6 +801,7 @@ export const BentoBoxContainer = styled.div.attrs({
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto auto;
   gap: 20px;
+  //max-width: 800px;
   max-width: 50%;
   margin: 0 auto;
   justify-content: center;
@@ -1086,6 +1087,11 @@ export const ContactWrapper = styled.div.attrs({
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
+  }
+
+  @media (max-width: 1099px) {
+    max-width: 555px;
+    padding: 10px 36px 0;
   }
 `;
 
