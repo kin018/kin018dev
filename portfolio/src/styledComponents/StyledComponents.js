@@ -1093,6 +1093,11 @@ export const ContactWrapper = styled.div.attrs({
     max-width: 555px;
     padding: 10px 36px 0;
   }
+
+  @media (max-width: 768px) {
+    max-width: 475px;
+    padding: 10px 36px;
+  }
 `;
 
 export const ContactMainTitle = styled.div.attrs({
